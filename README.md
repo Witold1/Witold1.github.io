@@ -11,7 +11,7 @@
 * Hosted through `GitHub Pages`. Media storage is where originally published, some files (mostly, large animated .gif) are not web-optimized
 
 ## 📌 Links
-> Placeholder
+> ⓦ Go to [Witold1.GitHub.IO](https://witold1.github.io/)
 
 ## 🐉 License and legals
 Ask before use.
