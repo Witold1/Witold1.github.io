@@ -2,202 +2,449 @@
 <html lang="en">
 
 	<head>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css.css" />
-    <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
-    <title>Witold1's Data 💫</title>
-
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/gallery-filter-content.css" />
+		<!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
+		<title>Witold1's Data 💫</title>
 	</head>
 
 	<body>
 
 		<!-- Site Navigation Bar -->
-    <div class="top-navigation-bar">
-      <a class="active" href="#home">📊 <b>Witold's</b> Data Viz Project</a>
+		<div class="top-navigation-bar">
+			<a class="active_page" href="#home">📊 <b>Witold's</b> Data Viz Project</a>
+			<a href="#blog">Blog</a>
+			<!--
 			<a href="#blog">News</a>
-      <!--
-			<a href="#blog">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
 			-->
     </div>
 
 		<!-- Page Text Header -->
 		<div class="page-text-header">
+			<!-- Page Content Title -->
 			<h1>Data and information visualization pond ⛵</h1>
-      <p>💡 Click image to enlarge. 💡 Check `github` for raw codes and documentations.<br>💡 Check `LinkedIn` for detailed descriptions of every chart.</p>
+			<!-- Page Content Suptitle -->
+			<p>💡 Click image to enlarge. 💡 Check `github` for raw codes and documentations.<br>💡 Check `LinkedIn` for detailed descriptions of every chart.</p>
+
+			<!-- Gallery Content Control Buttons -->
+			<div id="content-control-buttons">
+			  <button class="btn active" onclick="filterSelection('all')">Show all</button>
+			  <button class="btn" onclick="filterSelection('Data-Visualization')">Data Visualization</button>
+			  <button class="btn" onclick="filterSelection('Population-Charts')">Population Charts</button>
+			  <button class="btn" onclick="filterSelection('3D-LiDAR')">3D/LiDAR</button>
+			  <button class="btn" onclick="filterSelection('Geography')">Geography</button>
+				<!-- <button class="btn" onclick="filterSelection('Asia')">Asia</button> -->
+			</div>
+
 		</div>
 
 		<!-- Image Gallery Grid -->
 		<div class="row">
-			<!-- Gallery column i -->
-			<div class="column">
-				<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇺 Road network of Western Russia 🛣️.">
-					<source src="https://dms.licdn.com/playlist/vid/D5605AQGOb1fhL5e38Q/mp4-640p-30fp-crf28/0/1687603631138?e=2147483647&v=beta&t=62HL3eqoALq0G0BZrx3pVrJWsXmzASNVPPBkj2jyi-Q">
-					<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D562CAQEEq0jnkoUYKA/comment-image-shrink_8192_480/0/1687604709063?e=1689872400&v=beta&t=B-33JRbLcsQlCm59RGQytNRIumTa8lu6HllDpVyhZH4" loading="lazy" alt="🇷🇺 Road network of Western Russia 🛣️.">
-				</video>
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">1 / 3</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQF9YTOTtabnsA/feedshare-shrink_2048_1536/0/1685989183942?e=1689811200&v=beta&t=ZNQVMksKriQ4PZnfj8gUSIrBPQUgWaatqxxUU9fFAdc" loading="lazy" alt="🇦🇫 Afghanistan elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">2 / 3</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGNxhkF2BIexQ/feedshare-shrink_2048_1536/0/1685989167188?e=1692230400&v=beta&t=QVaXWEbAGZOnUR4-wpIVHTU3lRKli7oT4MQPAvpGgPY" loading="lazy" alt="🇦🇫 Afghanistan elevation, shaded terrain ⛰️">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 3</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHFmAZYGQYvyA/feedshare-shrink_2048_1536/0/1685989170736?e=1690416000&v=beta&t=sdwpfTC3GGaoVj5CBY2lN2kXL3kkmi0d_mNbX7JgaTI" loading="lazy" alt="🇦🇫 Afghanistan elevation, shaded terrain ⛰️">
-					</div>
-					<a class="prev">&#10094;</a>
-					<a class="next">&#10095;</a>
-					<div style="text-align:center">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+
+			<!-- Gallery column-responsive i -->
+			<div class="column-responsive">
+				<div class="gallery-filter-content Data-Visualization Geography">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇺 Road network of Western Russia 🛣️.">
+						<source src="../../assets/content/RoadNetwork-WesternRussia.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Geography Southeast-Asia Afghanistan">
+				</div>
+				<div class="gallery-filter-content Population-Charts All-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Asia-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Asia [colored-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
 					</div>
 				</div>
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">1 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGo7rJdICRsCg/feedshare-shrink_2048_1536/0/1682948871696?e=1690416000&v=beta&t=LEbYdBHHLFNDHBAt8pOpTrV9MJe4Bm2SbnDHmTbvqIs" loading="lazy" alt="🌐 Population of Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">2 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGL9NrjUxj8mg/feedshare-shrink_2048_1536/0/1682948872408?e=1690416000&v=beta&t=JEqA8gX8HjOboaDK3rzK-oH-auCQS32nzsv_lpVEj4I" loading="lazy" alt="🌐 Population of Asia [plasma]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGsGbWcE2zlSA/feedshare-shrink_2048_1536/0/1682948903461?e=1690416000&v=beta&t=RldJjrSirytUOSOH1SZ-TwxHQFb8464W_Ob7_lLkN6Y" loading="lazy" alt="🌐 Population of Asia [terrain]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">4 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQEdsV-fHsFsRA/feedshare-shrink_2048_1536/0/1682948871504?e=1690416000&v=beta&t=L6gl1bcbJzqKRj3yEUN3IvIZe7-d2ub460QNM1zfGXw" loading="lazy" alt="🌐 Population of Asia [ice]">
-					</div>
-					<a class="prev">&#10094;</a>
-					<a class="next">&#10095;</a>
-					<div style="text-align:center">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+				<div class="gallery-filter-content 3D-LiDAR South-America Brazil">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="Central São Paulo, Brazil 🇧🇷 [1m LiDAR, data from GeoSampa]">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Sao-Paulo-City-Center-Brazil-Colored-Smaller.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Eastern-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Eastern-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Eastern-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Eastern-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Eastern-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
 					</div>
 				</div>
-				<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQHCOFQVWFbGRA/feedshare-shrink_800/0/1677604642649?e=1690416000&v=beta&t=3LQ_AD5_0GHhMtYHzk2xAZzA-vK4bOYkFLirF7nerTU" loading="lazy" alt="Central São Paulo, Brazil 🇧🇷 [1m LiDAR, GeoSampa]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQEK3KMPnEVxXw/feedshare-shrink_2048_1536/0/1681316892302?e=1691020800&v=beta&t=ngi-lT_9FZJkKkkQTUfbxThX88K2P34JmalYQhdG4sM" loading="lazy" alt="Population of Eastern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQH8zBowYRsaKg/feedshare-shrink_2048_1536/0/1679506716165?e=1691020800&v=beta&t=5J-9mipGb3iiJFxcEel1Ly4P6UaBR_A89NiOr0isdag" loading="lazy" alt="🌎 Population of Caribbean America [plasma]<br>[WGS 84 (EPSG:3857) | UN M49 (selective) | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQGi3ECMpTLlYQ/feedshare-shrink_2048_1536/0/1676439838285?e=1691020800&v=beta&t=hMRRIIEdIWA1XgX_acF7bpXE_luas1XhvlczCxgUbbQ" loading="lazy" alt="🌆 Downtown Cleveland, OH [1m LiDAR, USGS 3DEP]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQFBZWVedjk9rA/feedshare-shrink_2048_1536/0/1675174844159?e=1691020800&v=beta&t=lTI99AlhExn90ptjBGWxGqnTc2CxSMBpfyM1nuyKSFw" loading="lazy" alt="🏔️ Breckenridge, CO and its alpine resort [1m LiDAR, USGS 3DEP]">
-        <img class="myImages" id="myImg" src="https://raw.githubusercontent.com/Witold1/quilt_test_task/master/figures/CitiesAndProblems.png" loading="lazy" alt="Tweeting and Social problems, pie charts to a map">
-      </div>
-			<!-- Gallery column i+1 -->
-			<div class="column">
-				<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Romania elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]">
-					<source src="https://dms-exp3.licdn.com/playlist/vid/D5605AQFmZ_9svrGlsA/mp4-640p-30fp-crf28/0/1687178012367?e=2147483647&v=beta&t=IQ9YQIQ5ifxWkp-86falNxiHN-VKOurSFwgt0IoVXTg">
-					<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D562CAQFR-Mooz28d1w/comment-image-shrink_8192_480/0/1687179494861?e=1689872400&v=beta&t=YbR9jElobOSRN631K6S_VHe1rU-Ed1GWfUsBQBYY0KA" loading="lazy" alt="🇷🇴 Romania elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]">
-				</video>
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">1 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQFNExMxMBG8bg/feedshare-shrink_2048_1536/0/1683650812191?e=1690416000&v=beta&t=k4TYsy7yWCoODnhKpqwHS-aXS2xYWd8svkVy7dXBwF4" loading="lazy" alt="Population of Central Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">2 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHk32jnNQWnhQ/feedshare-shrink_2048_1536/0/1683650810225?e=1690416000&v=beta&t=HQivsyYE9yURYxAPpugwt27TP2JFaIfvVLdQd6N-15w" loading="lazy" alt="Population of Central Asia [ice]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHSpa59T9UB8Q/feedshare-shrink_2048_1536/0/1683650828590?e=1690416000&v=beta&t=8HTNJ3c4HBIZ_eDHml5y6G4Mc-dV1IBV8uwdnjRYtk0" loading="lazy" alt="Population of Central Asia [white terrain]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">4 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQFmFl7u5LO9Ig/feedshare-shrink_2048_1536/0/1683650809987?e=1690416000&v=beta&t=8yTZrnnXzxsHJPhb1GxggbFut4JofIdAtov8nHk2KPQ" loading="lazy" alt="Population of Central Asia [plasma]">
-					</div>
-					<a class="prev">&#10094;</a>
-					<a class="next">&#10095;</a>
-					<div style="text-align:center">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Caribbean-America">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Caribbean-America-ice.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Caribbean-America-plasma.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-Caribbean-America-white.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
 					</div>
 				</div>
-				<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D4E10AQF67LO-vqCglQ/image-shrink_1280/0/1683705782583?e=1689872400&v=beta&t=I4KRkWArS1Rqe8XNDpDOF6qSOE49yzPF57zN8xxqEdA" loading="lazy" alt="U.S.A. Park and Parkings">
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">1 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQEGe6co0uVg8w/feedshare-shrink_2048_1536/0/1682345150650?e=1690416000&v=beta&t=gILtky4mQFEo2S_KrN0t8bdd2REFFfYiupXsJ2qtUSY" loading="lazy" alt="Population of Southeast Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">2 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQEV1TQ6i4KdWw/feedshare-shrink_2048_1536/0/1682345152526?e=1690416000&v=beta&t=xPV9ajg6y6a2aOHN-3v09arT4C7tDfZ0EnOdgi5UuDY" loading="lazy" alt="Population of Southeast Asia [ice]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHVCJJhqpsDsg/feedshare-shrink_2048_1536/0/1682345165975?e=1690416000&v=beta&t=pH-Cy2y4vWVo3nr9lD8LUq_SP8J9TJ3ymxkGaoLpYJY" loading="lazy" alt="Population of Southeast Asia [white terrain]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">4 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQFWpcnsCbSCgw/feedshare-shrink_2048_1536/0/1682345170632?e=1690416000&v=beta&t=1DJHctYU2cLqlhxWIRZ2nUi15bknWFh9ByTDEVTH6f0" loading="lazy" alt="Population of Southeast Asia [plasma]">
-					</div>
-					<a class="prev">&#10094;</a>
-					<a class="next">&#10095;</a>
-					<div style="text-align:center">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🌆 Downtown Cleveland, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Cleveland-Downtown-Ohio.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Mountains">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏔️ Breckenridge, CO and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Breckenridge-Ski-Resort-Colorado.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization General">
+					<img class="myImages" id="myImg" src="https://raw.githubusercontent.com/Witold1/quilt_test_task/master/figures/CitiesAndProblems.png" loading="lazy" alt="🐦 Tweets to measure Social problems, Sweden 🇸🇪 [ad-hoc-collected dataset]">
+				</div>
+			</div>
+
+			<!-- Gallery column-responsive i+1 -->
+			<div class="column-responsive">
+				<div class="gallery-filter-content Data-Visualization Geography Baltic-States">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Baltic States Road Network and Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]">
+						<source src="../../assets/content/RoadNetwork-BalticStates.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Geography Romania">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Romania elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]">
+						<source src="../../assets/content/Geography-Terrain/TerrainHillshade-Romania.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Central-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Central-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Central Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Central-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Central-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Central-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
 					</div>
 				</div>
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGvkC5UWt5BwQ/feedshare-shrink_2048_1536/0/1680537666983?e=1691020800&v=beta&t=8lmTLQmqkzy3NAKBdPyOpG2xiux0Mku7tG41dHFFpo0" loading="lazy" alt="🌐 Population of Africa [hot]<br>[WGS 84 (EPSG:3857) | UN M49, selective | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C4D22AQGNCV6SbFdL5A/feedshare-shrink_1280/0/1679062466798?e=1691020800&v=beta&t=pUYbPxBmTg6o_EUu8uyyPlVVKaW2gwO9hRwVFl7t3zk" loading="lazy" alt="Population of Eastern Europe, Baltics & Scandinavia [plasma]<br>[Custom Orthographic projection | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQEWHYW736Jugg/feedshare-shrink_2048_1536/0/1676136459799?e=1691020800&v=beta&t=xyv-CxycCEO8n1NbYQ5Sv-8w6FLcSlWbKwwwsaWaamc" loading="lazy" alt="🏙️ Downtown Columbus, OH [1m LiDAR, USGS 3DEP]">
-				<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D562CAQHmaYx6P1J60A/comment-image-shrink_8192_1280/0/1677855867187?e=1689872400&v=beta&t=wcqhwxCfbMCg7Ps7oK57COCcXIpT2tAqbinarcUw_GE" loading="lazy" alt="🏙️ Michigan State University campus in East Lansing, MI [1m LiDAR, USGS 3DEP]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQE4wzscINIykg/feedshare-shrink_1280/0/1674579638251?e=1691020800&v=beta&t=e7VraQvnDTNsxjh0FhfQGOWOBme_F4wy9ycNCoYjv34" loading="lazy" alt="🏙️ Downtown Detroit, MI [1m LiDAR, USGS 3DEP]">
-      </div>
-			<!-- Gallery column i+2 -->
-			<div class="column">
-				<video controls muted autoplay loop id="myImg" loading="lazy" title="🇫🇷 Road network of the European France 🛣️.">
-					<source src="https://dms-exp3.licdn.com/playlist/vid/D5605AQFFsrDl59Wg1A/mp4-720p-30fp-crf28/0/1688573814897?e=1689872400&v=beta&t=3kTHXVT5_WOtewKD92SICb22rLUQB4-S3T2WseCiKf8">
-					<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D562CAQFkmv-Rv7VvJw/comment-image-shrink_8192_1280/0/1688574686147?e=1689872400&v=beta&t=qHB8SfypFBxqBJdkiqWzVQ4zHPyAsZ93hr6EuZmta9Q" loading="lazy" alt="🇷🇺 Road network of Western Russia 🛣️.">
-				</video>
-				<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQGNOUd8VRcgiA/feedshare-shrink_800/0/1686334322024?e=1690416000&v=beta&t=yNJ3Z-eL4rYhDi5Ut1HJkViq9gsoQ4VzJU0gmuAURoo" loading="lazy" alt="🇺🇿 🇹🇯 🇰🇬 Fergana Valley elevation, ridge plot terrain chart ⛰️<br>[data from terradactile.sparkgeo.com]">
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">1 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D4D22AQGI5IRoFqiYhQ/feedshare-shrink_2048_1536/0/1683214719995?e=1690416000&v=beta&t=jNZ2wk-nQ0CEKUWZ2iNsOH-vhbDqiIWP_Aw_H0-RYtI" loading="lazy" alt="Population of Western Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">2 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D4D22AQHtAV9zbMh4fg/feedshare-shrink_2048_1536/0/1683214701300?e=1690416000&v=beta&t=8RqMfdjM-2PFzLUO-ry4qMksVNy9LzYJl05orcKVmOU" loading="lazy" alt="Population of Western Asia [ice]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D4D22AQFO4SIJDjvakQ/feedshare-shrink_2048_1536/0/1683214722160?e=1690416000&v=beta&t=35NNj25-CIdm-xfQtDt5mKoCB0ZSJjYfcd_c9Bw7Cmo" loading="lazy" alt="Population of Western Asia [white terrain]">
-					</div>
-					<div class="mySlides fade">
-						<div class="slideshow-slideshow-numbertext">3 / 4</div>
-						<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D4D22AQEXMMMUZuXY4w/feedshare-shrink_2048_1536/0/1683214718075?e=1690416000&v=beta&t=YCd4I9lDGQEnsDJWVPpjYmY6XU9WTAus56tWV_vDDo4" loading="lazy" alt="Population of Western Asia [plasma]">
-					</div>
-					<a class="prev">&#10094;</a>
-					<a class="next">&#10095;</a>
-					<div style="text-align:center">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+				<div class="gallery-filter-content Data-Visualization Geography USA-Parks-Parkings">
+					<img class="myImages" id="myImg" src="../../assets/content/USA Parks and Parkings.gif" loading="lazy" alt="🗺️ Comparative analysis and visualization of parking and park footprints across 33 urban downtowns<br>[U.S.A. Park and Parkings | Data from OSM]">
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Southeast-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southeast-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southeast-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southeast-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southeast-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
 					</div>
 				</div>
-				<img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQEx38N_yAMGMw/feedshare-shrink_800/0/1676990453458?e=1692230400&v=beta&t=VdK2WI5g69O9H1mxpbtiUSjJzyrO0MVqj-_yYgwpNzQ" loading="lazy" alt="🏔️ Nordic Valley, UT and its alpine resort [1m LiDAR, USGS 3DEP]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHXOOrWzz5auQ/feedshare-shrink_2048_1536/0/1681830829144?e=1691020800&v=beta&t=tUL8G2kpcjTb3KGM3BK6Rc5Mby9ToipBgtd1e3ESN3A" loading="lazy" alt="Population of Southern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/D5622AQHoLIwV8FciYA/feedshare-shrink_1280/0/1680010858526?e=1691020800&v=beta&t=iLrcUsa8Ba6dEDhoMUzpe8vXaC4OE-UylH1A_y29mw0" loading="lazy" alt="🌎 Population of South America [ice]<br>[WGS 84 (EPSG:3857) | UN M49 (selective) | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C4E22AQGJ2R9SoHR_7A/feedshare-shrink_2048_1536/0/1678893186742?e=1691020800&v=beta&t=pAnDbzTTsqp2TrGhJu-9oiCWJmWgALduFbK_AVQ3OXM" loading="lazy" alt="Population of Alternative Asia (Altasia) [plasma]<br>[WGS 84 (EPSG:3857) | Article from The Economist & UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C4D22AQGrpIQ6Tm3KZw/feedshare-shrink_2048_1536/0/1675782236923?e=1691020800&v=beta&t=TYTQj22wOzkgrn-rEaABRPSthXvACpreIpBavO8e0Ek" loading="lazy" alt="🏙️ Downtown Seattle, WA and its seaport [1m LiDAR, USGS 3DEP]">
-        <img class="myImages" id="myImg" src="https://media.licdn.com/dms/image/C5622AQG2FVacWoozkg/feedshare-shrink_800/0/1673808824416?e=1691020800&v=beta&t=S3py3uo0th1To3JtAfDJzUn3v_s-koEjfPPgOhsSybM" loading="lazy" alt="🏙️ Miami Beach, FL [1m LiDAR, USGS 3DEP]">
-      </div>
-			<!-- The Modal -->
+				<div class="gallery-filter-content Data-Visualization Population-Charts Eastern-Europe">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Eastern-Europe-ice.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Eastern-Europe-plasma.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Eastern-Europe-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [colored-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Columbus, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Columbus-Downtown-Ohio.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" loading="lazy" alt="🏙️ Michigan State University campus in East Lansing, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Michigan-State-University-Lansing-Michigan.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Detroit, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Detroit-Downtown-Michigan.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization General">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="https://github.com/Witold1/CAV_data_case/raw/master/figures/internal/slide_mixed.png?raw=true" loading="lazy" alt="🚙 Presentation on CAV (AV) testing operations<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="https://github.com/Witold1/CAV_data_case/raw/master/figures/internal/slide_lines.png?raw=true" loading="lazy" alt="🚙 Presentation on CAV (AV) testing operations<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="https://github.com/Witold1/CAV_data_case/raw/master/figures/internal/slide_clouds.png?raw=true" loading="lazy" alt="🚙 Presentation on CAV (AV) testing operations<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Gallery column-responsive i+2 -->
+			<div class="column-responsive">
+				<div class="gallery-filter-content Data-Visualization Geography Baltic-States-Terrain">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Baltic States Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]">
+						<source src="../../assets/content/Geography-Terrain/TerrainHillshaded-BalticStates.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Geography France-Metropilitan-Roads">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇫🇷 Road network of the European France 🛣️.">
+						<source src="../../assets/content/RoadNetwork-France.mp4">
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Geography Ridge-Plot-Ferghana">
+					<img class="myImages" id="myImg" src="../../assets/content/Geography-Terrain/Ridge-Plot-Ferghana-Valley.jpeg" loading="lazy" alt="🇺🇿 🇹🇯 🇰🇬 Fergana Valley elevation, ridge plot terrain chart ⛰️<br>[data from terradactile.sparkgeo.com]">
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Western-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Western-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Western Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Western-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Western Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Western-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Western Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Western-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Western Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="�️ Nordic Valley, UT and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Nordic-Valley-Ski-Resort-Utah.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Southern-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southern-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southern-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [ice]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southern-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">4 / 4</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Southern-Asia-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [colored-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts South-America">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-South-America-ice.jpeg" loading="lazy" alt="🌐 Population of South America [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-South-America-plasma.jpeg" loading="lazy" alt="🌐 Population of South America [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-All-South-America-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of South America [colored-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-filter-content Data-Visualization Population-Charts Alternative-Asia">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Alternative-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Alternative-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [plasma]">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="../../assets/content/Population-Charts/Population-Custom-Alternative-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [white-basemap-terrain]">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Seattle, WA and its seaport, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Seattle-Downtown-Washington.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Miami Beach, FL, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
+						<source src="../../assets/content/3D-LiDAR-charts/LiDAR-Miami-Beach-Florida.mp4"
+					</video>
+				</div>
+				<div class="gallery-filter-content Data-Visualization General">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">1 / 3</div>
+							<img class="myImages" id="myImg" src="https://github.com/Witold1/mta_data_research/raw/master/figures/internal/DA6.png?raw=true" loading="lazy" alt="🏙 NYC MTA Turnstile Usage Dataset, hourly trends<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">2 / 3</div>
+							<img class="myImages" id="myImg" src="https://github.com/Witold1/mta_data_research/raw/master/figures/internal/VIZ5.png?raw=true" loading="lazy" alt="🏙 NYC MTA Turnstile Usage Dataset, monthly trends<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<div class="mySlides fade">
+							<div class="slideshow-slide-number-text">3 / 3</div>
+							<img class="myImages" id="myImg" src="https://raw.githubusercontent.com/Witold1/mta_data_research/master/figures/internal/DA4.png" loading="lazy" alt="🏙 NYC MTA Turnstile Usage Dataset, station-wise trends<br>[ad-hoc-collected dataset]</br>">
+						</div>
+						<a class="prev">&#10094;</a>
+						<a class="next">&#10095;</a>
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Make All Images Modal -->
 			<div id="myModal" class="modal">
 				<span class="close">&times;</span>
 				<img class="modal-content" id="img01">
@@ -207,16 +454,17 @@
 
 		<!-- Site Bottom Bar -->
 		<div class="bottom-bar">
-			<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fwitold1.github.io%2F">
-				<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fwitold1.github.io%2F&countColor=%23263759"/>
+			<a href="https://visitorbadge.io/status?path=https://witold1.github.io/">
+				<img src="https://api.visitorbadge.io/api/visitors?path=https://witold1.github.io/&countColor=%23263759"/>
 			</a>
 		</div>
 
 	</body>
 
 	<footer>
-		<script src="scripts.js"></script>
-		<link rel="stylesheet" href="css.css" />
+		<script src="./assets/js/gallery-images-modal.js"></script>
+		<script src="./assets/js/gallery-images-slideshow.js"></script>
+		<script src="./assets/js/gallery-filter-content.js"></script>
 	</footer>
 
 </html>

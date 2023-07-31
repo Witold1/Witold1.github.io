@@ -1,81 +1,3 @@
-// IMAGE SLIDER :
-(function() {
-
-  init(); //on page load - show first slide, hidethe rest
-
-  function init() {
-
-    parents = document.getElementsByClassName('slideshow-container');
-
-    for (j = 0; j < parents.length; j++) {
-      var slides = parents[j].getElementsByClassName("mySlides");
-      var dots = parents[j].getElementsByClassName("dot");
-      slides[0].classList.add('active-slide');
-      dots[0].classList.add('active');
-    }
-  }
-
-  dots = document.getElementsByClassName('dot'); //dots functionality
-
-  for (i = 0; i < dots.length; i++) {
-
-    dots[i].onclick = function() {
-
-      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
-
-      for (j = 0; j < this.parentNode.children.length; j++) {
-        this.parentNode.children[j].classList.remove('active');
-        slides[j].classList.remove('active-slide');
-        if (this.parentNode.children[j] == this) {
-          index = j;
-        }
-      }
-      this.classList.add('active');
-      slides[index].classList.add('active-slide');
-
-    }
-  }
-  //prev/next functionality
-  links = document.querySelectorAll('.slideshow-container a');
-
-  for (i = 0; i < links.length; i++) {
-    links[i].onclick = function() {
-      current = this.parentNode;
-
-      var slides = current.getElementsByClassName("mySlides");
-      var dots = current.getElementsByClassName("dot");
-      curr_slide = current.getElementsByClassName('active-slide')[0];
-      curr_dot = current.getElementsByClassName('active')[0];
-      curr_slide.classList.remove('active-slide');
-      curr_dot.classList.remove('active');
-      if (this.className == 'next') {
-
-        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
-          curr_slide.nextElementSibling.classList.add('active-slide');
-          curr_dot.nextElementSibling.classList.add('active');
-        } else {
-          slides[0].classList.add('active-slide');
-          dots[0].classList.add('active');
-        }
-
-      }
-
-      if (this.className == 'prev') {
-
-        if (curr_slide.previousElementSibling) {
-          curr_slide.previousElementSibling.classList.add('active-slide');
-          curr_dot.previousElementSibling.classList.add('active');
-        } else {
-          slides[slides.length - 1].classList.add('active-slide');
-          dots[slides.length - 1].classList.add('active');
-        }
-
-      }
-
-    }
-
-  }
-})();
 
 // MAKE IMAGES MODAL (meaning - CLICKABLE AND EXPANDABLE) :
 // create references to the modal...
@@ -102,4 +24,52 @@ var span = document.getElementsByClassName("modal")[0];
 
 span.onclick = function() {
   modal.style.display = "none";
+}
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }

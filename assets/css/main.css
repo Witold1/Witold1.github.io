@@ -1,127 +1,82 @@
-/*                     */
-/* Slideshow container */
-/*                     */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
+/* Table of Content:
+  1. Top Navigation panel
+  2. Top Navigation panel
+  3. Page Header block
+  4. Gallery Content block
+    1. Responsive Image Grid Layout feature
+    2. Modal Image feature
+    3. Slideshow IMages Container feature
+*/
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 20px;
+/*                                                                      */
+/* https://www.w3schools.com/howto/howto_js_topnav.asp                  */
+/* https://www.w3schools.com/howto/howto_js_bottom_nav_responsive.asp   */
+/*        Top Navigation panel                                          */
+/*                                                                      */
+/* Add a black background color to the top navigation                   */
+.top-navigation-bar {
+  background-color: #333;
+  overflow: hidden;
+  bottom: 0;
   width: 100%;
-  text-align: center;
 }
 
-.mySlides {
-  display: none;
-}
-
-.active-slide {
+/* Style the links inside the navigation bar */
+.top-navigation-bar a {
+  float: left;
   display: block;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
+  overflow: hidden;
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 50px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Change the color of links on hover */
+.top-navigation-bar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
+/* Add a color to the active/current link */
+.top-navigation-bar a.active_page {
+  background-color: #04AA6D;
+  color: white;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+/*                                                            */
+/* https://www.w3schools.com/howto/howto_css_bottom_nav.asp   */
+/*        Page Bottom panel                                   */
+/*                                                            */
+/* Add a black background color to the bottom navigation         */
+.bottom-bar {
+  padding: 14px 16px;
+  background-color: #333;
+  margin-top: 8px;
+  overflow: hidden;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+/* Style the links inside the navigation bar */
+.bottom-bar img {
+  display: block;
+  overflow: hidden;
+  left: 50%;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
+/*                      */
+/* Page Header block    */
+/*                      */
 .page-text-header {
   text-align: center;
   padding: 32px;
 }
 
+/*                        */
+/* Gallery Content Page   */
+/*                        */
+/* Responsive Image Grid  */
 .row {
   display: -ms-flexbox;
   /* IE10 */
@@ -132,8 +87,8 @@ body {
   padding: 0 4px;
 }
 
-/* Create N, where N = 100 / max-width, equal columns that sits next to each other */
-.column {
+/* Create N, where N = 100 / max-width, equal column-responsives that sits next to each other */
+.column-responsive {
   -ms-flex: 33%;
   /* IE10 */
   flex: 33%;
@@ -141,30 +96,30 @@ body {
   padding: 0 4px;
 }
 
-.column img {
+.column-responsive img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
-.column video {
+.column-responsive video {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes two column-layout instead of three (or four) columns */
 @media screen and (max-width: 1400px) {
-  .column {
+  .column-responsive {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .column-responsive {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -206,7 +161,10 @@ body {
   /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
+/*                        */
+/* Gallery Content Page   */
+/*                        */
+/* Modal Content (Image)  */
 .modal-content {
   margin: auto;
   display: block;
@@ -268,52 +226,121 @@ body {
   }
 }
 
-/*                      */
-/* https://www.w3schools.com/howto/howto_js_topnav.asp */
-/* Top Navigation panel */
-/*                      */
-/* Add a black background color to the top navigation */
-.top-navigation-bar {
-  background-color: #333;
-  overflow: hidden;
-  bottom: 0;
-  width: 100%;
+/*                     */
+/* Slideshow Container */
+/*                     */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
 }
 
-/* Style the links inside the navigation bar */
-.top-navigation-bar a {
-  float: left;
-  display: block;
-  overflow: hidden;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 50px;
-}
-
-/* Change the color of links on hover */
-.top-navigation-bar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.top-navigation-bar a.active {
-  background-color: #04AA6D;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.bottom-bar {
-  padding: 14px 16px;
-  background-color: #333;
-  overflow: hidden;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-/* Style the links inside the navigation bar */
-.bottom-bar img {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.active-slide {
   display: block;
-  overflow: hidden;
-  left: 50%;
+}
+
+/* Slideshow Slide Number text (1/3 etc) */
+.slideshow-slide-number-text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 1%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
 }
