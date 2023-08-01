@@ -133,6 +133,22 @@
   transition: 0.3s;
 }
 
+/*
+  How to add a "loading" gif to an image? There are many ways, as usual. The fastest is:
+    https://stackoverflow.com/questions/29742508/show-loading-gif-while-image-is-loading
+  However, now it works only when image is not loaded for sure. Otherwise lazy loading is in priority.
+  Generally, "loading" asset is just an animated placeholder, f.e. see the specialized site https://loading.io/
+*/
+#myImg:after, .loading {
+  content: ' ';
+  background: transparent url('../preload.gif')  center no-repeat ;
+  background-size : auto 100%;
+  width: 100%;
+  height: 106px;
+  float: left;
+  display: block;
+}
+
 #myImg:hover {
   opacity: 0.7;
 }
