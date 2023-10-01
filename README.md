@@ -1,5 +1,9 @@
 ## Project
-**Website gallery for visualization products**
+**Website gallery. Witold's Data visualization products.**
+
+<p align="center">
+  <img src="./assets/preview-animated-scrolling.gif" title="Website moving display animation.">
+</p>
 
 1. Cross-device friendly [Responsive grid](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
   * 🖥️ Check various displays
