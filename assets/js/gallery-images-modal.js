@@ -1,5 +1,5 @@
 
-// MAKE IMAGES MODAL (meaning - CLICKABLE AND EXPANDABLE) :
+// MAKE IMAGES MODAL (meaning - CLICK TO EXPAND) :
 // create references to the modal...
 var modal = document.getElementById('myModal');
 // to all images -- note I'm using a class!
@@ -15,7 +15,7 @@ for (var i = 0; i < images.length; i++) {
   // and attach our click listener for this image.
   img.onclick = function(evt) {
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.src = this.src.replace("_preview.jpeg", ".jpeg");
     captionText.innerHTML = this.alt;
   }
 }

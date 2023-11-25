@@ -7,13 +7,14 @@
 		<link rel="stylesheet" href="./assets/css/gallery-filter-content.css" />
 		<!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Witold1's Data 💫</title>
 	</head>
 
 	<body>
 
 		<!-- Site Navigation Bar -->
-		<div class="top-navigation-bar">
+		<div class="top-navigation-bar" id="top-navigation">
 			<a class="active_page" href="#home">📊 <b>Witold's</b> Data Viz Project</a>
 			<!--<a href="#blog">Blog</a>-->
 			<!--
@@ -21,6 +22,11 @@
 			<a href="#contact">Contact</a>
 			<a href="#about">About</a>
 			-->
+			<a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right"></a>
+			<a href="https://github.com/witold1/" class="fa fa-github" style="float: right"></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
     </div>
 
 		<!-- Page Text Header -->
@@ -28,7 +34,7 @@
 			<!-- Page Content Title -->
 			<h1>Data and information visualization pond ⛵</h1>
 			<!-- Page Content Suptitle -->
-			<p>💡 Click image to enlarge. 💡 Check `github` for raw codes and documentations.<br>💡 Check `LinkedIn` for detailed descriptions of every chart.</p>
+			<p>💡 Click image to enlarge and see in better quality. 💡 Check `github` for raw codes and documentations.<br>💡 Check `LinkedIn` for detailed descriptions of every chart.</p>
 
 			<!-- Gallery Content Control Buttons -->
 			<div id="content-control-buttons">
@@ -52,11 +58,11 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Korean-Peninsula-1.jpeg" loading="lazy" alt="🇰🇷 🇰🇵 Road network of South​ Korea (ROK) and North Korea​ (DPRK​) 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Korean-Peninsula-1_preview.jpeg" loading="lazy" alt="🇰🇷 🇰🇵 Road network of South​ Korea (ROK) and North Korea​ (DPRK​) 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 2</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Korean-Peninsula-2.jpeg" loading="lazy" alt="🇰🇷 🇰🇵 Road network of South​ Korea (ROK) and North Korea​ (DPRK​) 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Korean-Peninsula-2_preview.jpeg" loading="lazy" alt="🇰🇷 🇰🇵 Road network of South​ Korea (ROK) and North Korea​ (DPRK​) 🛣️">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -100,19 +106,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Asia [colored-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Asia-coloredterrain_preview.jpeg" loading="lazy" alt="🌐 Population of Asia [colored-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -134,19 +140,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Eastern-Asia-white_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -162,15 +168,15 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-ice.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-plasma.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-white.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-Caribbean-America-white_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -206,15 +212,15 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-ice.jpeg" loading="lazy" alt="🌐 Population of South America [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-ice_preview.jpeg" loading="lazy" alt="🌐 Population of South America [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-plasma.jpeg" loading="lazy" alt="🌐 Population of South America [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of South America [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of South America [colored-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-All-South-America-coloredterrain_preview.jpeg" loading="lazy" alt="🌐 Population of South America [colored-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -257,23 +263,23 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 5</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-1.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-1_preview.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 5</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-2.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-2_preview.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 5</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-3.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-3_preview.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 5</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-4.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-4_preview.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">5 / 5</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-5.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Indian-Peninsula-5_preview.jpeg" loading="lazy" alt="🇮🇳 🇵🇰 🇧🇩 🇳🇵 🇱🇰 🇲🇻 🇧🇹 Road network of Indian subcontinent 🛣️">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -290,19 +296,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-1.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-1_preview.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-2.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-2_preview.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-3.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-3_preview.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-4.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Post-Yugoslavia-4_preview.jpeg" loading="lazy" alt="🇷🇸 🇸🇮 🇭🇷 🇲🇪 🇽🇰 🇧🇦 🇲🇰 Road network of former Yugoslavia 🛣️">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -328,19 +334,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Central Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Central-Asia-white_preview.jpeg" loading="lazy" alt="🌐 Population of Central Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -359,19 +365,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southeast-Asia-white_preview.jpeg" loading="lazy" alt="🌐 Population of Southeast Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -387,15 +393,15 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-ice.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-plasma.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [colored-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Eastern-Europe-coloredterrain_preview.jpeg" loading="lazy" alt="🌐 Population of Eastern Europe [colored-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -485,19 +491,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-1.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-1_preview.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-2.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-2_preview.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-3.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-3_preview.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-4.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Central-Asia-4_preview.jpeg" loading="lazy" alt="🇰🇿 🇰🇬 🇺🇿 🇹🇯 🇹🇲 Road network of Central Asia 🛣️</br>">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -513,19 +519,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-1.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-1_preview.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-2.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-2_preview.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-3.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-3_preview.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-4.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
+							<img class="myImages" id="myImg" src="./assets/content/Road-Networks/RoadNetwork-Northern-Africa-4_preview.jpeg" loading="lazy" alt="🇩🇿 🇲🇦 🇪🇭 🇹🇳 🇱🇾 🇪🇬 🇸🇩 🇸🇸 Road network of Northern Africa states 🛣️">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -554,19 +560,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Western Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Western Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 400m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Western Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Western Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Western Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Western Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Western Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Western-Asia-white_preview.jpeg" loading="lazy" alt="🌐 Population of Western Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -588,19 +594,19 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-hot.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-hot_preview.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [hot]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [ice]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [ice]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">4 / 4</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-coloredterrain.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [colored-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Southern-Asia-coloredterrain_preview.jpeg" loading="lazy" alt="🌐 Population of Southern Asia [colored-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -616,15 +622,15 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-ice.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-ice_preview.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [ice]<br>[WGS 84 (EPSG:3857) | UN M49 | ⬡ 1000m2 Kontur Population dataset - 2022/June]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">2 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-plasma.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [plasma]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-plasma_preview.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [plasma]">
 						</div>
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">3 / 3</div>
-							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-white.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [white-basemap-terrain]">
+							<img class="myImages" id="myImg" src="./assets/content/Population-Charts/Population-Custom-Alternative-Asia-white_preview.jpeg" loading="lazy" alt="🌐 Population of Alternative Asia [white-basemap-terrain]">
 						</div>
 						<a class="prev">&#10094;</a>
 						<a class="next">&#10095;</a>
@@ -697,6 +703,7 @@
 
 		<!-- Site Bottom Bar -->
 		<div class="bottom-bar">
+			<title>Witold1's Data 💫</title>
 			<a href="https://visitorbadge.io/status?path=https://witold1.github.io/">
 				<img src="https://api.visitorbadge.io/api/visitors?path=https://witold1.github.io/&countColor=%23263759" alt="visitor badge"/>
 			</a>
@@ -705,6 +712,7 @@
 	</body>
 
 	<footer>
+		<script src="./assets/js/website-navitation-bar.js"></script>
 		<script src="./assets/js/gallery-images-modal.js"></script>
 		<script src="./assets/js/gallery-images-slideshow.js"></script>
 		<script src="./assets/js/gallery-filter-content.js"></script>
