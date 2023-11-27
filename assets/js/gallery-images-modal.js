@@ -1,5 +1,13 @@
+/*
+  SOURCE: https://www.w3schools.com/howto/howto_css_modal_images.asp
+  Title: How TO - Filter Elements
 
-// MAKE IMAGES MODAL (meaning - CLICK TO EXPAND) :
+  SOURCE2: https://stackoverflow.com/questions/47798971/several-modal-images-on-page
+  Title: Several Modal Images on page
+
+  Description: Click image to "enlarge" it on top of the current page.
+*/
+
 // create references to the modal...
 var modal = document.getElementById('myModal');
 // to all images -- note I'm using a class!

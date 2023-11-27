@@ -1,19 +1,37 @@
-/* Table of Content:
+/* Table of Content (ToC):
+
   1. Top Navigation panel
-  2. Top Navigation panel
-  3. Page Header block
-  4. Gallery Content block
-    1. Responsive Image Grid Layout feature
-    2. Modal Image feature
-    3. Slideshow IMages Container feature
+    1.1. Top Navigation visual style
+    1.2. Top Navigation responsive style
+
+  2. Buttom Navigation panel
+    2.1. Buttom Navigation visual style
+    2.2. Buttom Navigation responsive style
+
+  3. Page Header [text and content filtering] mega-block
+    3.1. Page Header [text and content filtering] mega-block visual style
+
+  4. Content Gallery block
+    4.1. Responsive Image Grid Layout feature
+    4.2. Modal Image feature
+    4.3. Slideshow Images Container feature
+    4.4. Animated Loading widget placeholder
+
 */
 
-/*                                                                      */
-/* https://www.w3schools.com/howto/howto_js_topnav.asp                  */
-/* https://www.w3schools.com/howto/howto_js_bottom_nav_responsive.asp   */
-/*        Top Navigation panel                                          */
-/*                                                                      */
-/* Add a black background color to the top navigation                   */
+/*
+  1. Top Navigation panel
+
+  SOURCE: https://www.w3schools.com/howto/howto_js_topnav.asp
+  TITLE: How TO - Top Navigation
+
+  SOURCE2: https://www.w3schools.com/howto/howto_js_bottom_nav_responsive.asp
+  TITLE: How TO - Responsive Bottom Navigation
+
+  Description: Top Navigation panel
+*/
+
+/* Add a black background color to the top navigation */
 .top-navigation-bar {
   background-color: #333;
   overflow: hidden;
@@ -75,11 +93,16 @@
   }
 }
 
-/*                                                            */
-/* https://www.w3schools.com/howto/howto_css_bottom_nav.asp   */
-/*        Page Bottom panel                                   */
-/*                                                            */
-/* Add a black background color to the bottom navigation         */
+/*
+  2. Bottom Navigation panel
+
+  SOURCE: https://www.w3schools.com/howto/howto_css_bottom_nav.asp
+  TITLE: How TO - Bottom Navigation
+
+  Description: Bottom Navigation panel
+*/
+
+/* Add a black background color to the bottom navigation */
 .bottom-bar {
   padding: 14px 16px;
   background-color: #333;
@@ -94,18 +117,31 @@
   left: 50%;
 }
 
-/*                      */
-/* Page Header block    */
-/*                      */
+
+/*
+  3. Page Header [text and content filtering] mega-block
+    3.1. Page Header [text and content filtering] mega-block visual style
+
+  Description: Page Header [text and content filtering] mega-block
+*/
 .page-text-header {
-  text-align: center;
+  text-align: left;
   padding: 32px;
 }
 
-/*                        */
-/* Gallery Content Page   */
-/*                        */
-/* Responsive Image Grid  */
+/*
+  4. Content Gallery block
+    4.1. Responsive Image Grid Layout feature
+
+  SOURCE: https://www.w3schools.com/html/html_responsive.asp
+  Title: HTML Responsive Web Design
+
+  SOURCE2: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+  Title: How TO - Responsive Image Grid
+
+  Description: Block Grid Layout change its structure,
+              as well as images change their size according devise window size.
+*/
 .row {
   display: -ms-flexbox;
   /* IE10 */
@@ -163,25 +199,17 @@
 }
 
 /*
-  How to add a "loading" gif to an image? There are many ways, as usual. The fastest is:
-    https://stackoverflow.com/questions/29742508/show-loading-gif-while-image-is-loading
-  However, now it works only when image is not loaded for sure. Otherwise lazy loading is in priority.
-  Generally, "loading" asset is just an animated placeholder, f.e. see the specialized site https://loading.io/
+  4. Content Gallery block
+    4.2. Modal Image feature
+
+  SOURCE: https://www.w3schools.com/howto/howto_css_modal_images.asp
+  Title: How TO - Filter Elements
+
+  SOURCE2: https://stackoverflow.com/questions/47798971/several-modal-images-on-page
+  Title: Several Modal Images on page
+
+  Description: Click image to "enlarge" it on top of the current page.
 */
-#myImg:after, .loading {
-  content: ' ';
-  background: transparent url('../preload.gif')  center no-repeat ;
-  background-size : auto 100%;
-  width: 100%;
-  height: 106px;
-  float: left;
-  display: block;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
 /* The Modal (background) */
 .modal {
   display: none;
@@ -206,10 +234,6 @@
   /* Black w/ opacity */
 }
 
-/*                        */
-/* Gallery Content Page   */
-/*                        */
-/* Modal Content (Image)  */
 .modal-content {
   margin: auto;
   display: block;
@@ -271,9 +295,15 @@
   }
 }
 
-/*                     */
-/* Slideshow Container */
-/*                     */
+/*
+  4. Content Gallery block
+    4.2. Slideshow Images Container feature
+
+  SOURCE: https://www.w3schools.com/howto/howto_js_slideshow.asp
+  Title: How TO - Slideshow
+
+  Description: Click-able Image slider / Slideshow / Carousel
+*/
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -388,4 +418,33 @@
 body {
   margin: 0;
   font-family: Arial;
+}
+
+/*
+  4. Content Gallery block
+    4.2. Animated Loading widget placeholder
+
+  SOURCE: https://stackoverflow.com/questions/29742508/show-loading-gif-while-image-is-loading
+  TITLE: Show loading gif while image is loading
+
+  Description: How to add a "loading" gif to an image?
+    Generally, the "loading" asset is just an animated placeholder image.
+    As a reference see the specialized site https://loading.io/
+
+  TODO:
+    Currently this is active only image can't be loaded.
+    Otherwise the standard lazy loading is in priority, with no regard to speed and size.
+*/
+#myImg:after, .loading {
+  content: ' ';
+  background: transparent url('../preload.gif')  center no-repeat ;
+  background-size : auto 100%;
+  width: 100%;
+  height: 106px;
+  float: left;
+  display: block;
+}
+
+#myImg:hover {
+  opacity: 0.7;
 }

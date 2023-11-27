@@ -1,6 +1,8 @@
 /*
   SOURCE: https://www.w3schools.com/howto/howto_js_filter_elements.asp
-  How TO - Filter Elements
+  Title: How TO - Filter Elements
+
+  Description: Filter content elements by their ID-s
 */
 .container {
   overflow: hidden;
@@ -16,7 +18,7 @@
 }
 
 /* Style the buttons */
-.btn {
+.content-control-button {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -25,12 +27,12 @@
 }
 
 /* Add a light grey background on mouse-over */
-.btn:hover {
+.content-control-button:hover {
   background-color: #ddd;
 }
 
 /* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
+.content-control-button.active {
+  background-color: #666667;
   color: white;
 }

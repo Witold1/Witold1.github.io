@@ -1,6 +1,8 @@
 /*
   SOURCE: https://www.w3schools.com/howto/howto_js_filter_elements.asp
-  How TO - Filter Elements
+  Title: How TO - Filter Elements
+
+  Description: Filter content elements by their ID-s
 */
 filterSelection("all")
 function filterSelection(c) {
@@ -40,10 +42,10 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("content-control-buttons");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+var ContentControlButtonContainer = document.getElementById("content-control-buttons");
+var ContentControlButtons = ContentControlButtonContainer.getElementsByClassName("ContentControlButton");
+for (var i = 0; i < ContentControlButtons.length; i++) {
+  ContentControlButtons[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";

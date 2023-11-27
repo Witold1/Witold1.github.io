@@ -1,8 +1,9 @@
-## Project
-**Website gallery. Witold's Data visualization products.**
+## [/witold1.github.io](https://witold1.github.io/) [gallery and website]
+**Website gallery. Witold's Data visualization products and artifacts.**
 
 <p align="center">
   <img src="./assets/preview-animated-scrolling.gif" title="Website display scrolling animation" at="Scrolling Animation (Accessed: Oct/23)">
+<sup>Website scrolling animation (Accessed: Oct/2023)</sup>
 </p>
 
 **Website brief functions**
@@ -14,7 +15,38 @@
 3. [Content slideshows](https://www.w3schools.com/howto/howto_js_slideshow.asp)
   * ↔️ Slide to see next
 
-* Hosted with [`GitHub Pages`](https://pages.github.com/). Media artifacts stored to dedicated 3rd party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif, compressed .jpeg instead of original high quality .png).
+* Hosted with [`GitHub Pages`](https://pages.github.com/). Most media artifacts stored to dedicated 3rd party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif, compressed .jpeg instead of original high quality .png, lower-resolution image previews before one enlarges them).
+
+**Speed and Accessibility scoring report(s)**
+  <details>
+      <summary>👉 Click to see reports</summary>
+      <ol>
+        <li>
+          <a href="https://www.webpagetest.org/result/231127_AiDcWS_FQ5/">webpagetest.org - Webpage Performance Test</a>
+        </li>
+        <li>
+          <a href="https://pagespeed.web.dev/analysis/https-witold1-github-io/vulb6fr7b9?form_factor=mobile">webpagetest - Mobile</a>
+          </li>
+        <li>
+          <a href="https://pagespeed.web.dev/analysis/https-witold1-github-io/vulb6fr7b9?form_factor=desktop">pagespeed.web.dev - Desktop</a>
+        </li>
+        <li>
+          <a href="https://gtmetrix.com/reports/witold1.github.io/bYKenGvp/">gtmetrix.com Performance</a>
+        </li>
+        <li>
+          <a href="https://search.google.com/test/mobile-friendly/result?id=fE4aMKkD8zj8fHdnEfDuNA">search.google.com/test - Mobile Friendly Test</a>
+        </li>
+        <li>
+          <a href="https://tools.pingdom.com/#63033065afc00000">Pingdom - Website Speed Test</a>
+        </li>
+        <li>
+          <a href="https://www.debugbear.com/test/website-speed/zvek6Bbc/overview">DebugBear - Page Speed Report</a>
+        </li>
+      </ol>
+      <br>
+      <sup>If you have got interested in web performance topic, check <a href="https://www.sergeychernyshev.com/">Sergey Chernyshev's blog on Web Performance</a> to read more :)</sup>
+      <br>
+  </details>
 
 **Website Reference(s)**
 1. [Nicolas Rapp Design Studio's gallery](https://nicolasrapp.com/studio/)
@@ -46,4 +78,4 @@ Ask me every time before use this project and/or outputs of this project. This p
 * [choosealicense.com -> I don’t want to choose a license.](https://choosealicense.com/no-permission/)
 * [What can I assume if a publicly published project has no license?](https://opensource.stackexchange.com/questions/1720/what-can-i-assume-if-a-publicly-published-project-has-no-license)
 
-<div><img src="123https://visitor-badge.laobi.icu/badge?page_id=witold1.github.io" alt="visitor badge"/></div>
+<div><img src="https://visitor-badge.laobi.icu/badge?page_id=witold1.github.io" alt="visitor badge"/></div>

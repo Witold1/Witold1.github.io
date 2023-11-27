@@ -22,9 +22,9 @@
 			<a href="#contact">Contact</a>
 			<a href="#about">About</a>
 			-->
-			<a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right"></a>
-			<a href="https://github.com/witold1/" class="fa fa-github" style="float: right"></a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right" aria-label="Linkedin" alt="linkedin link: linkedin.com/in/vital-yevtushenko/"></a>
+			<a href="https://github.com/witold1/" class="fa fa-github" style="float: right" aria-label="Twitter" alt="github link/ github.com/witold1" ></a>
+			<a href="javascript:void(0);" aria-label="Responsive top navigation" class="icon" onclick="myFunction()">
 		    <i class="fa fa-bars"></i>
 		  </a>
     </div>
@@ -34,17 +34,17 @@
 			<!-- Page Content Title -->
 			<h1>Data and information visualization pond ⛵</h1>
 			<!-- Page Content Suptitle -->
-			<p>💡 Click image to enlarge and see in better quality. 💡 Check `github` for raw codes and documentations.<br>💡 Check `LinkedIn` for detailed descriptions of every chart.</p>
+			<p>💡 Click image to enlarge in better quality.<br>💡 Check `github` for raw code.<br></p>
 
 			<!-- Gallery Content Control Buttons -->
 			<div id="content-control-buttons">
-			  <button class="btn active" onclick="filterSelection('all')">Show all</button>
-			  <button class="btn" onclick="filterSelection('General')">General</button>
-			  <button class="btn" onclick="filterSelection('Population-Charts')">Population Charts</button>
-				<button class="btn" onclick="filterSelection('Road-Networks')">Road Networks</button>
-			  <button class="btn" onclick="filterSelection('3D-LiDAR')">3D/LiDAR</button>
-			  <button class="btn" onclick="filterSelection('Geography-Terrain')">Geography/Terrain</button>
-				<!-- <button class="btn" onclick="filterSelection('Asia')">Asia</button> -->
+			  <button class="content-control-button active" onclick="filterSelection('all')">Show all</button>
+			  <button class="content-control-button" onclick="filterSelection('General')">General Topic</button>
+			  <button class="content-control-button" onclick="filterSelection('Population-Charts')">Population Charts</button>
+				<button class="content-control-button" onclick="filterSelection('Road-Networks')">Road Networks</button>
+			  <button class="content-control-button" onclick="filterSelection('3D-LiDAR')">3D/LiDAR</button>
+			  <button class="content-control-button" onclick="filterSelection('Geography-Terrain')">Geography/Terrain</button>
+				<!-- <button class="content-control-button" onclick="filterSelection('Asia')">Asia</button> -->
 			</div>
 
 		</div>
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content Road-Networks Eastern-Europe Russia">
-					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇺 Road network of Western Russia 🛣️.">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇺 Road network of Western Russia 🛣️." poster="./assets/preload.gif" poster="./assets/preload.gif">
 						<source src="./assets/content/RoadNetwork-WesternRussia.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -81,7 +81,7 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 3</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🇦🇫 Afghanistan elevation, shaded terrain ⛰️ [1]">
+							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🇦🇫 Afghanistan elevation, shaded terrain ⛰️ [1]" poster="./assets/preload.gif">
 								<source src="./assets/content/Geography-Terrain/TerrainHillshade-Afghanistan.mp4" type="video/mp4">
 							</video>
 						</div>
@@ -131,9 +131,9 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content 3D-LiDAR South-America Brazil">
-					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Central São Paulo, Brazil 🇧🇷 [1m LiDAR, data from GeoSampa]">
-						<source src="./assets/content/3D-LiDAR-charts/LiDAR-SaoPaulo-City-Center-Brazil-Colored-Smaller.mp4" type="video/mp4">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Central São Paulo, Brazil 🇧🇷 [1m LiDAR, data from GeoSampa]" poster="./assets/preload.gif">
 						<source src="https://www.dropbox.com/scl/fi/veyc2okx8woij9qz8pv53/LiDAR-SaoPaulo-City-Center-Brazil-Colored-Smaller.mp4?rlkey=1dowfcsj7auj8clz5o9c9m2zf&raw=1" type="video/mp4">
+						<source src="./assets/content/3D-LiDAR-charts/LiDAR-SaoPaulo-City-Center-Brazil-Colored-Smaller.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Data-Visualization Population-Charts Eastern-Asia">
@@ -191,9 +191,9 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🌆 Downtown Cleveland, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Cleveland-Downtown-Ohio.mp4" type="video/mp4">
+							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🌆 Downtown Cleveland, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif">
 								<source src="https://www.dropbox.com/scl/fi/yvyl1jmta46bnt6u55qc8/LiDAR-Cleveland-Downtown-Ohio.mp4?rlkey=ihn4a5z1r9roh4shtoctghd4h&raw=1" type="video/mp4">
+								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Cleveland-Downtown-Ohio.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="mySlides fade">
@@ -235,9 +235,9 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏔️ Breckenridge, CO and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-								<source src="./assets/content/3D-LiDAR-Charts/LiDAR-Breckenridge-Ski-Resort-Colorado.mp4" type="video/mp4">
+							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏔️ Breckenridge, CO and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif">
 								<source src="https://www.dropbox.com/scl/fi/0ipmxtw4kh79j9surar0y/LiDAR-Breckenridge-Ski-Resort-Colorado.mp4?rlkey=d6w8tn0vb4lovajyok6epjjc0&raw=1" type="video/mp4">
+								<source src="./assets/content/3D-LiDAR-Charts/LiDAR-Breckenridge-Ski-Resort-Colorado.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="mySlides fade">
@@ -321,12 +321,12 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content Road-Networks Geography-Terrain Baltic-States">
-					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇱🇹🇱🇻🇪🇪 Baltic States Road Network and Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇱🇹🇱🇻🇪🇪 Baltic States Road Network and Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]" poster="./assets/preload.gif">
 						<source src="./assets/content/RoadNetwork-BalticStates.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Geography-Terrain Europe Romania">
-					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Romania elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇷🇴 Romania elevation, shaded terrain ⛰️.<br>[COP-DEM/Copernicus DEM]" poster="./assets/preload.gif">
 						<source src="./assets/content/Geography-Terrain/TerrainHillshade-Romania.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -416,9 +416,9 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Columbus, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Columbus-Downtown-Ohio.mp4" type="video/mp4">
+							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Columbus, OH, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif">
 								<source src="https://www.dropbox.com/scl/fi/tcng9jsd7elukqs3405s7/LiDAR-Columbus-Downtown-Ohio.mp4?rlkey=izwmcozzznr9qxi9huy16hgdp&raw=1" type="video/mp4">
+								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Columbus-Downtown-Ohio.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="mySlides fade">
@@ -436,9 +436,9 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" loading="lazy" alt="🏙️ Michigan State University campus in East Lansing, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Michigan-State-University-Lansing-Michigan.mp4" type="video/mp4">
+							<video controls muted autoplay loop id="myImg" loading="lazy" loading="lazy" alt="🏙️ Michigan State University campus in East Lansing, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif">
 								<source src="https://www.dropbox.com/scl/fi/og0e4qu79s5og402pgy08/LiDAR-Michigan-State-University-Lansing-Michigan.mp4?rlkey=svjm4u3pybemgj4wtarwtj65y&raw=1" type="video/mp4">
+								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Michigan-State-University-Lansing-Michigan.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="mySlides fade">
@@ -455,9 +455,9 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
-					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Detroit, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Detroit-Downtown-Michigan.mp4" type="video/mp4">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Detroit, MI, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif">
 						<source src="https://www.dropbox.com/scl/fi/wrskk04spij4u09do3pcw/LiDAR-Detroit-Downtown-Michigan.mp4?rlkey=q2xa7ln5w6wdjv36mbjmmnulo&raw=1" type="video/mp4">
+						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Detroit-Downtown-Michigan.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Data-Visualization Presentation General">
@@ -544,17 +544,17 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content Data-Visualization Geography-Terrain Baltic-States-Terrain">
-					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇱🇹🇱🇻🇪🇪 Baltic States Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇱🇹🇱🇻🇪🇪 Baltic States Hillshaded Elevation<br>[COP-DEM/Copernicus DEM]" poster="./assets/preload.gif">
 						<source src="./assets/content/Geography-Terrain/TerrainHillshaded-BalticStates.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Road-Networks France-Metropilitan-Roads">
-					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇫🇷 Road network of the European France 🛣️.">
+					<video controls muted autoplay loop id="myImg" loading="lazy" title="🇫🇷 Road network of the European France 🛣️." poster="./assets/preload.gif">
 						<source src="./assets/content/RoadNetwork-France.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Data-Visualization Geography-Terrain Ridge-Plot-Ferghana">
-					<img class="myImages" id="myImg" src="./assets/content/Geography-Terrain/Ridge-Plot-Ferghana-Valley.jpeg" loading="lazy" alt="🇺🇿 🇹🇯 🇰🇬 Fergana Valley elevation, ridge plot terrain chart ⛰️<br>[data from terradactile.sparkgeo.com]">
+					<img class="myImages" id="myImg" src="./assets/content/Geography-Terrain/Ridge-Plot-Ferghana-Valley_preview.jpeg" loading="lazy" alt="🇺🇿 🇹🇯 🇰🇬 Fergana Valley elevation, ridge plot terrain chart ⛰️<br>[data from terradactile.sparkgeo.com]">
 				</div>
 				<div class="gallery-filter-content Data-Visualization Population-Charts Western-Asia">
 					<div class="slideshow-container">
@@ -585,9 +585,9 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
-					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏔️ Nordic Valley, UT and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Nordic-Valley-Ski-Resort-Utah.mp4" type="video/mp4">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏔️ Nordic Valley, UT and its alpine resort, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif" poster="./assets/preload.gif">
 						<source src="https://www.dropbox.com/scl/fi/03byuy1m7lgvjf8s6pk9n/LiDAR-Nordic-Valley-Ski-Resort-Utah.mp4?rlkey=d3x42cv8g1udc16hi0lrf9dui&raw=1" type="video/mp4">
+						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Nordic-Valley-Ski-Resort-Utah.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Data-Visualization Population-Charts Southern-Asia">
@@ -645,9 +645,9 @@
 					<div class="slideshow-container">
 						<div class="mySlides fade">
 							<div class="slideshow-slide-number-text">1 / 2</div>
-							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Seattle, WA and its seaport, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Seattle-Downtown-Washington.mp4" type="video/mp4">
+							<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Downtown Seattle, WA and its seaport, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif" poster="./assets/preload.gif">
 								<source src="https://www.dropbox.com/scl/fi/8clylcd7zz5i5sixeufr0/LiDAR-Seattle-Downtown-Washington.mp4?rlkey=y06g0prs9ahr0j1tzigx283h8&raw=1" type="video/mp4">
+								<source src="./assets/content/3D-LiDAR-charts/LiDAR-Seattle-Downtown-Washington.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="mySlides fade">
@@ -663,9 +663,9 @@
 					</div>
 				</div>
 				<div class="gallery-filter-content 3D-LiDAR USA-Downtowns">
-					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Miami Beach, FL, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>">
-						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Miami-Beach-Florida.mp4" type="video/mp4">
+					<video controls muted autoplay loop id="myImg" loading="lazy" alt="🏙️ Miami Beach, FL, USA 🇺🇸<br>[1m LiDAR, data from USGS 3DEP (3D Elevation Program)]</br>" poster="./assets/preload.gif" poster="./assets/preload.gif">
 						<source src="https://www.dropbox.com/scl/fi/hil164tepn719wij91ftw/LiDAR-Miami-Beach-Florida.mp4?rlkey=e1ia5ky94cus2j2m1xv6irkf7&raw=1" type="video/mp4">
+						<source src="./assets/content/3D-LiDAR-charts/LiDAR-Miami-Beach-Florida.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="gallery-filter-content Data-Visualization General">
@@ -705,7 +705,7 @@
 		<div class="bottom-bar">
 			<title>Witold1's Data 💫</title>
 			<a href="https://visitorbadge.io/status?path=https://witold1.github.io/">
-				<img src="https://api.visitorbadge.io/api/visitors?path=https://witold1.github.io/&countColor=%23263759" alt="visitor badge"/>
+				<img src="https://api.visitorbadge.io/api/visitors?path=https://witold1.github.io/&countColor=%23263759" aria-label="Visitor Badge" alt="visitor badge"/>
 			</a>
 		</div>
 
@@ -713,9 +713,9 @@
 
 	<footer>
 		<script src="./assets/js/website-navitation-bar.js"></script>
+		<script src="./assets/js/gallery-filter-content.js"></script>
 		<script src="./assets/js/gallery-images-modal.js"></script>
 		<script src="./assets/js/gallery-images-slideshow.js"></script>
-		<script src="./assets/js/gallery-filter-content.js"></script>
 	</footer>
 
 </html>

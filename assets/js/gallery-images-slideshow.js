@@ -1,4 +1,10 @@
-// IMAGE SLIDER :
+/*
+  SOURCE: https://www.w3schools.com/howto/howto_js_slideshow.asp
+  Title: How TO - Slideshow
+
+  Description: Click-able Image slider / Slideshow / Carousel
+*/
+
 (function() {
 
   init(); //on page load - show first slide, hidethe rest
