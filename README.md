@@ -3,7 +3,9 @@
 
 <p align="center">
   <img src="./assets/preview-animated-scrolling.gif" title="Website display scrolling animation" at="Scrolling Animation (Accessed: Oct/23)">
+<br>
 <sup>Website scrolling animation (Accessed: Oct/2023)</sup>
+</br>
 </p>
 
 **Website brief functions**
@@ -15,7 +17,7 @@
 3. [Content slideshows](https://www.w3schools.com/howto/howto_js_slideshow.asp)
   * ↔️ Slide to see next
 
-* Hosted with [`GitHub Pages`](https://pages.github.com/). Most media artifacts stored to dedicated 3rd party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif, compressed .jpeg instead of original high quality .png, lower-resolution image previews before one enlarges them).
+* Hosted with [`GitHub Pages`](https://pages.github.com/). Most media artifacts stored to dedicated third party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif; compressed .jpeg instead of original high quality .png; lower-resolution image previews before user enlarges them). User analytics added via [GoatCounter](https://www.goatcounter.com/) ([\[1\]](https://github.com/orgs/community/discussions/31474), [\[2\]](https://github.com/orgs/community/discussions/31474); hosted via GoatCounter.com)
 
 **Speed and Accessibility scoring report(s)**
   <details>
@@ -44,7 +46,7 @@
         </li>
       </ol>
       <br>
-      <sup>If you have got interested in web performance topic, check <a href="https://www.sergeychernyshev.com/">Sergey Chernyshev's blog on Web Performance</a> to read more :)</sup>
+      <sup>If you have got interested in web performance topic, check <a href="https://www.sergeychernyshev.com/">Sergey Chernyshev's blog on Web Performance</a> to find more :)</sup>
       <br>
   </details>
 
@@ -67,7 +69,8 @@
 1. [Cédric Scherer' blog and gallery](https://www.cedricscherer.com/)
 1. [Ilya Kashnitsky' blog and gallery](https://ikashnitsky.phd/)
 1. [Open Table with Many Portfolios](https://docs.google.com/spreadsheets/d/1aLOpW2oQHw5r2vc70o8TiM5SJctR9TuH4a70d-ZtbXA/edit#gid=248793142)
-1. Badges with visitor counter: https://visitorbadge.io/ | https://visitor-badge.laobi.icu/
+
+* Badges with basic visitor counter: https://visitorbadge.io/ | https://visitor-badge.laobi.icu/
 
 ## 📌 Links
 > ⓦ Go to [Witold1.GitHub.IO](https://witold1.github.io/)
