@@ -43,7 +43,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current control button (highlight it)
 var ContentControlButtonContainer = document.getElementById("content-control-buttons");
-var ContentControlButtons = ContentControlButtonContainer.getElementsByClassName("ContentControlButton");
+var ContentControlButtons = ContentControlButtonContainer.getElementsByClassName("content-control-button");
 for (var i = 0; i < ContentControlButtons.length; i++) {
   ContentControlButtons[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");

@@ -17,7 +17,7 @@
 3. [Content slideshows](https://www.w3schools.com/howto/howto_js_slideshow.asp)
   * ↔️ Slide to see next
 
-* Hosted with [`GitHub Pages`](https://pages.github.com/). Most media artifacts stored to dedicated third party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif; compressed .jpeg instead of original high quality .png; lower-resolution image previews before user enlarges them). User analytics added via [GoatCounter](https://www.goatcounter.com/) ([\[1\]](https://github.com/orgs/community/discussions/31474), [\[2\]](https://github.com/orgs/community/discussions/31474); hosted via GoatCounter.com)
+* Hosted with [`GitHub Pages`](https://pages.github.com/). Most media artifacts stored to dedicated third party file-hosting. Content is relatively web-optimized (.mp4 instead of .gif; compressed .jpeg instead of original high quality .png; lower-resolution image previews before user enlarges them). User analytics added via [GoatCounter](https://www.goatcounter.com/) ([\[1\]](https://github.com/orgs/community/discussions/31474), [\[2\]](https://github.com/orgs/community/discussions/31474); [\[3\]](https://leportella.com/analytics2goatcounter/; [\[4\]](https://meta.stackexchange.com/questions/381793/replace-google-analytics-with-a-transparent-privacy-respecting-alternative)); hosted via GoatCounter.com)
 
 **Speed and Accessibility scoring report(s)**
   <details>
