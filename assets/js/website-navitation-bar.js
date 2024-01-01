@@ -14,3 +14,22 @@ function myFunction() {
     x.className = "top-navigation-bar";
   }
 }
+
+/*
+  SOURCE: https://stackoverflow.com/questions/24364626/html-css-div-panels
+  Title: Using CSS together with JavaScript to show content
+*/
+
+/* Toggle panel (block) with brief introduction (about) on click to avoid redirection */
+function onClickPanelShow() {
+  displaySetting = document.getElementById("panel").style.display
+
+  if (displaySetting == 'block') {
+    // clock is visible. hide it
+    document.getElementById("panel").style.display = 'none';
+  }
+  else {
+    // clock is hidden. show it
+    document.getElementById("panel").style.display = 'block';
+  }
+}

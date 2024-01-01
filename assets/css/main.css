@@ -119,14 +119,32 @@
 
 
 /*
-  3. Page Header [text and content filtering] mega-block
-    3.1. Page Header [text and content filtering] mega-block visual style
+  3. Page Structural Header [text and content filtering] mega-block
+    3.1. Page Structural Header [text and content filtering] mega-block visual style
 
-  Description: Page Header [text and content filtering] mega-block
+    3.2. Page on click About panel (block) [display panel (block) when click `about` navigation button]
+      SOURCE: https://www.w3schools.com/css/tryit.asp?filename=trycss_display_js
+      SOURCE: https://stackoverflow.com/questions/24364626/html-css-div-panels
+      SOURCE: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+  Description: Page Structural Header [text and content filtering] mega-block
 */
-.page-text-header {
+.page-main-content-header-block {
   text-align: left;
   padding: 32px;
+  background-color: #white;
+}
+
+#panel {
+  display: none;
+  padding: 32px;
+  box-shadow: 10px 5px 5px #C9C9C9;
+}
+
+#panel, .flip {
+  background-color: #white;
+  font-size: 16px;
+  margin: auto;
 }
 
 /*
@@ -142,7 +160,7 @@
   Description: Block Grid Layout change its structure,
               as well as images change their size according devise window size.
 */
-.row {
+.page-main-content-responsive {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
@@ -150,10 +168,11 @@
   /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  background-color : #white;
 }
 
-/* Create N, where N = 100 / max-width, equal column-responsives that sits next to each other */
-.column-responsive {
+/* Create N, where N = 100 / max-width, equal page-column-content-responsives that sits next to each other */
+.page-column-content-responsive {
   -ms-flex: 33%;
   /* IE10 */
   flex: 33%;
@@ -161,13 +180,13 @@
   padding: 0 4px;
 }
 
-.column-responsive img {
+.page-column-content-responsive img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
-.column-responsive video {
+.page-column-content-responsive video {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -175,7 +194,7 @@
 
 /* Responsive layout - makes two column-layout instead of three (or four) columns */
 @media screen and (max-width: 1400px) {
-  .column-responsive {
+  .page-column-content-responsive {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
@@ -184,7 +203,7 @@
 
 /* Responsive layout - makes columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column-responsive {
+  .page-column-content-responsive {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
