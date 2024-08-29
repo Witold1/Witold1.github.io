@@ -6,28 +6,29 @@
 	<script data-goatcounter="https://witold1.goatcounter.com/count"
       async src="//gc.zgo.at/count.js">
 	</script>
-  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../partial/assets/css/main.css" />
   <link rel="stylesheet" href="./assets/css/blog-main.css" />
 	<!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Witold's Data Consulting 💫</title>
-</head>
-
-<body>
 
 	<!-- Site Navigation Bar -->
 	<div class="top-navigation-bar" id="top-navigation">
-		<a class="active_page" href="#home">📊 <b>Witold's</b> Blog Project</a>
-		<a href="../index.html" style="float: right" alt="Portfolio Gallery link:">Portfolio Gallery</a>
-		<a href="./index.html" style="float: right" alt="Blog link:">Blog</a>
+		<a class="active_page" href="javascript:void(0);">📊 <b>Witold's</b> Blog Project</a>
+		<a href="../gallery/index.html" style="float: right" alt="Portfolio Gallery link:">Portfolio Gallery</a>
+		<a href="javascript:void(0);" style="float: right" alt="Blog link:">Blog</a>
 		<a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right" aria-label="Linkedin" alt="linkedin link: linkedin.com/in/vital-yevtushenko/"></a>
 		<a href="https://github.com/witold1/" class="fa fa-github" style="float: right" aria-label="Github" alt="github link: github.com/witold1/" ></a>
 		<a href="javascript:void(0);" class="flip" onclick="onClickPanelShow()" style="float: right" alt="about me block">About Me</a>
-    <a href="javascript:void(0);" aria-label="Responsive top navigation" class="icon" onclick="myFunction()">
-	    <i class="fa fa-bars"></i>
-	  </a>
+		<a href="javascript:void(0);" aria-label="Responsive top navigation" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
 	</div>
+
+</head>
+
+<body>
 
 	<!-- Hidden/Showen OnClick About Panel -->
 	<div id="panel">
@@ -39,16 +40,41 @@
   <!--  https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
   <div class="row" style="padding: 20px;">
 
-    <div class="leftcolumn">
+		<div class="leftcolumn">
+
+			<div class="card">
+
+				<h2><a href="./posts/project-surnames/post.html">Project "Surnames" - Indian Subcontinent</a></h2>
+				<h5>Visualizing surnames across the world [part 2], Mid 2024</h5>
+				<a href="./posts/project-surnames/post.html">
+					<div class="fakeimg" style="height:200px;">
+						Image preview
+					</div>
+				</a>
+				<p>This post explores the most common surnames across Indian Subcontinents through wordcloud visualisation. Data came from Forebears.io...</p>
+				<p><a href="./posts/project-surnames/post.html">See post...</a></p>
+			</div>
+
+			<div class="card">
+
+				<h2><a href="./posts/project-racing/post.html">Project "Racing" - IMSA 2024</a></h2>
+				<h5>Visualizing racing performance in american auto racing series, Early Summer 2024</h5>
+				<a href="./posts/project-racing/post.html">
+					<div class="fakeimg" style="height:200px;">
+						Image preview
+					</div>
+				</a>
+				<p>This post shows some auxilary info about races. Data came from...</p>
+				<p><a href="./posts/project-racing/post.html">See post...</a></p>
+			</div>
 
       <div class="card">
 
-        <h2><a href="./posts/project-surnames/post.html">Project "Surnames" - Indian Subcontinent</a></h2>
-        <h5>Title description, Mid 2024</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>||| filler |||</p>
-        <p><a href="./posts/project-surnames/post.html">See post...</a></p>
-      </div>
+				<h2>EXAMPLE TITLE HEADING</h2>
+				<h5>Example Title description, Month Date, Year</h5>
+				<div class="fakeimg" style="height:200px;">Image</div>
+				<p>Some text..</p>
+			</div>
 
     </div>
 
@@ -71,16 +97,16 @@
 
   </div>
 
-	<!-- Site Bottom Bar -->
-	<div class="bottom-bar" id="bottom-navigation">
-		<a href="../sitemap.html"><b>sitemap</a> |
-		© Copyright 2024 by Witold's Data Consulting, LLC. All rights reserved. Designed and developed by Witold's Data Consulting, LLC.
-	</div>
+	<script src="../partial/assets/js/website-navitation-bar.js"></script>
 
 </body>
 
 <footer>
-	<script src="../assets/js/website-navitation-bar.js"></script>
+	<!-- Site Bottom Bar -->
+	<div class="bottom-bar" id="bottom-navigation">
+		<a href="../sitemap.html">Sitemap</a>
+		<div>© Copyright 2024 by Witold's Data Consulting, LLC. All rights reserved. Designed and developed by Witold's Data Consulting, LLC.</div>
+	</div>
 </footer>
 
 </html>

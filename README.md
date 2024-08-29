@@ -2,7 +2,7 @@
 **Website gallery. Witold's Data visualization products and artifacts.**
 
 <p align="center">
-  <img src="./assets/preview-animated-scrolling.gif" title="Website display scrolling animation" at="Scrolling Animation (Accessed: Oct/23)">
+  <img src="./preview-animated-scrolling.gif" title="Website display scrolling animation" at="Scrolling Animation (Accessed: Oct/23)">
 <br>
 <sup>Website scrolling animation (Accessed: Oct/2023)</sup>
 </br>
