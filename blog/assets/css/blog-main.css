@@ -29,6 +29,13 @@ body {
   padding-left: 20px;
 }
 
+.leftcolumn a, .rightcolumn a {
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
@@ -39,8 +46,18 @@ body {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   margin-top: 20px;
+}
+
+.card h2, h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card .see-article {
+  text-decoration: underline;
+  -webkit-text-decoration: underline;
 }
 
 /* Clear floats after the columns */
@@ -58,10 +75,36 @@ body {
   margin-top: 20px;
 }
 
+.leftcolumn img {
+  object-fit: cover;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
+  .leftcolumn img {
+    object-fit: contain;
+  }
+}
+
+/* Block with all content of article */
+.article-content {
+}
+
+/* Title block in article */
+.article-title {
+  padding-left: 10px;
+}
+
+/* Text block in article */
+.article-text {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* Image block in article */
+.article-image {
 }

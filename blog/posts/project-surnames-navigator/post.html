@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Import no tracking of personal data web analytics -->
+      <script data-goatcounter="https://witold1.goatcounter.com/count"
+         async src="//gc.zgo.at/count.js"></script>
+      <!-- Import CSS styles -->
+      <link rel="stylesheet" href="../../../partial/assets/css/main.css" />
+      <link rel="stylesheet" href="../../assets/css/blog-main.css" />
+      <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Blog - Witold's Data Consulting 💫</title>
+      <!-- Site Navigation Bar -->
+      <div class="top-navigation-bar" id="top-navigation">
+         <a class="active_page" href="../../../index.html">📝 <b>Witold's</b> Blog Project</a>
+         <a href="../../../gallery/index.html" style="float: right" alt="Portfolio Gallery link:">Portfolio Gallery</a>
+         <a href="../../index.html" style="float: right" alt="Blog link:">Blog</a>
+         <a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right" aria-label="Linkedin" alt="linkedin link: linkedin.com/in/vital-yevtushenko/"></a>
+         <a href="https://github.com/witold1/" class="fa fa-github" style="float: right" aria-label="Github" alt="github link: github.com/witold1/" ></a>
+         <a href="javascript:void(0);" class="flip" onclick="onClickPanelShow()" style="float: right" alt="about me block">About Me</a>
+         <a href="javascript:void(0);" aria-label="Responsive top navigation" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </head>
+   <body>
+      <!-- Hidden/Showen OnClick About Panel -->
+      <div id="panel">
+         <h2> 👨‍💻 Brief introduction</h2>
+         <p>Hello, <a href="https://witold1.github.io/">Witold1</a> is here! You might recognize me from my involvement in various analytical projects, insightful blog comments, and captivating <a href="https://witold1.github.io/">DataViz products</a>. Below, you'll find a selection of <a href="https://github.com/witold1#-remarkable-projects">open projects</a> that I believe are worth sharing from my previous experiences.</p>
+         <p>If you're interested in collaborating on projects that require joint expertise or need recommendations regarding data sources and data processing, don't hesitate to reach out.</p>
+      </div>
+      <div style="padding-left: 10px; padding-top: 10px; ">
+         ☰ <a href="../../index.html">⚐ blog</a> » <a href="./post.html">⚑ this post</a>
+      </div>
+      <div id="article-content">
+         <div class="article-title" id="title">
+            <p>
+            <h1 style="margin: 0px; ">⛁ Project "Surnames" - navigator by regions</h1>
+            </p>
+            <p>
+               🔳 <em>version:</em> late-alpha public
+               <br>
+               🔳 <em>created:</em> September 2024
+            </p>
+         </div>
+         <div class="article-text">
+            <h2>Introduction</h2>
+            <p>
+               To ease the navigation between posts dedicated to regions here is some menu-alike product. Click to open.
+            </p>
+            <p>
+               Inspiration - menu from <a href="https://kontikimaps.com/how-old/cities?p=h-menu">kontikimaps.com/how-old</a>
+            </p>
+         </div>
+         <div class="article-image">
+            <!-- Image Gallery Grid -->
+            <div class="page-main-content-responsive">
+               <!-- Gallery page-column-content-responsive i -->
+               <div class="page-column-content-responsive">
+                  <div>
+                     <a href="../../posts/project-surnames-central-asia/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="../project-surnames-central-asia/figures/surnames_central-asia.svg" loading="lazy" alt="IMAGE WITH LINK. Centail Asia - Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan" style="border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Cental Asia</h2>
+                           <p style="margin-top: 5px;">
+                              🇰🇿 🇰🇬 🇹🇲 🇹🇯 🇺🇿<br>
+                              Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="../../posts/project-surnames-middle-east/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="./figures/surnames_middle-east.png" loading="lazy" alt="IMAGE WITH LINK. Middle East - Arabian peninsula, Levant, Egypt, Iraq, Iran, Turkiye, Afghanistan, Pakistan" style="border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Middle East</h2>
+                           <p style="margin-top: 5px;">
+                              Arabian peninsula, Levant, Egypt, Iraq, Iran, Turkiye, Afghanistan, Pakistan
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+1 -->
+               <div class="page-column-content-responsive">
+                  <div>
+                     <a href="../../posts/project-surnames-indian-subcontinent/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="../project-surnames-indian-subcontinent/figures/surnames_indian-subcontinent.svg" loading="lazy" alt="IMAGE WITH LINK. Indian Subcontinent - Bangladesh, Bhutan, India, Nepal, and Pakistan" style="background-color: #f2f3f4; border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Indian Subcontinent</h2>
+                           <p style="margin-top: 5px;">
+                              🇧🇩 🇧🇹 🇮🇳 🇳🇵 🇵🇰 🇱🇰<br>
+                              Bangladesh, Bhutan, India, Nepal, Pakistan, Sri Lanka
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="../../posts/project-surnames-iberian-peninsula/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="../project-surnames-iberian-peninsula/figures/surnames_iberian-peninsula.svg" loading="lazy" alt="IMAGE WITH LINK. Iberian Peninsula - Spain and Portugal" style="background-color: #f2f3f4; border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Iberian Peninsula</h2>
+                           <p style="margin-top: 5px;">
+                              🇪🇸 🇵🇹<br>
+                              Spain and Portugal
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+2 -->
+               <div class="page-column-content-responsive">
+                  <div>
+                     <a href="../../posts/project-surnames-balkan-peninsula/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="../project-surnames-balkan-peninsula/figures/surnames_balkan-peninsula.svg" loading="lazy" alt="IMAGE WITH LINK. Balkan Peninsula - Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo<sup>†</sup>, Montenegro, North Macedonia, Romania, Serbia, Slovenia, Greece" style="background-color: #f2f3f4; border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Balkan Peninsula</h2>
+                           <p style="margin-top: 5px;">
+                              🇦🇱 🇧🇦 🇧🇬 🇭🇷 🇽🇰 🇲🇪 🇲🇰 🇷🇴 🇷🇸 🇸🇮 🇬🇷 🇲🇩<br>
+                              Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo<sup>†</sup>, Montenegro, North Macedonia, Romania, Serbia, Slovenia, Greece, Moldova
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="../../posts/project-surnames-baltic-states/post.html" style="text-decoration:none; black: red; color: black; ">
+                        <img src="../project-surnames-baltic-states/figures/surnames_baltic-states.svg" loading="lazy" alt="IMAGE WITH LINK. Baltic States - Estonia, Latvia, and Lithuania" style="background-color: #f2f3f4; border: 2px solid silver; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 0px; margin-bottom: 5px; ">↳ Baltic States</h2>
+                           <p style="margin-top: 5px;">
+                              🇪🇪 🇱🇻 🇱🇹<br>
+                              Estonia, Latvia, and Lithuania (a.k.a. Baltic republics)
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="javascript:void(0);" style="text-decoration:none; black: red; color: black; ">
+                        <div style="text-align:center; ">
+                           <h2 style="background-color: silver; margin-top: 25px; margin-bottom: 5px; ">More regions upcoming soon</h2>
+                           <p>
+                              <...>
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="article-text">
+            <h2>FAQ</h2>
+            <div class="article-text">
+               <p dir="auto">
+                  <b style="display: inline; "></b> <a href="#methodology" rel="nofollow">Data sources</a> ▪️ <a href="#tools">Technical details</a> ▪️ <a href="#how-to" rel="nofollow">How TO - Read this product</a> ▪️
+               </p>
+            </div>
+         </div>
+         <div class="article-text">
+            <h2>Introduction</h2>
+            <p>
+               This post explores the most common surnames across the world through wordcloud visualisation.
+               Data came from Forebears.io.
+            </p>
+            <p>
+               This post is a wider sneak peek into side project I'm working on – exploring and learning the most common surnames across the parts of the world.
+               With Python and Matplotlib, I am visualising the data as word clouds, providing a fascinating and quite unique look the regional demopgraphic landscapes.
+            </p>
+            <p>
+               ||| filler - text about surnames, data viz, etc |||
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lorem nec felis maximus elementum a et ante. Pellentesque ultrices faucibus neque id fermentum. Donec elit risus, tincidunt vitae vehicula vitae, molestie non ex. Duis et elit a nisl scelerisque lacinia sit amet vitae nisl. Cras bibendum commodo orci eu tristique. Donec vestibulum ac enim vitae commodo. Duis quis posuere orci, tempus finibus justo. Nulla at ultricies ipsum. Sed efficitur eget tortor eget congue. Duis 	fermentum varius imperdiet. Aenean ante tellus, laoreet ac mollis vel, ultrices eu mauris. Morbi condimentum est sit amet neque sagittis, elementum varius neque faucibus. Suspendisse in quam at arcu pulvinar mollis eget vitae mi. Nunc egestas erat quis orci tincidunt scelerisque. Suspendisse efficitur nibh ut tellus posuere commodo.
+            </p>
+         </div>
+         <div class="article-text">
+            <h2 id="methodology">Methodology details</h2>
+            <details class="article-description-details" >
+               <summary><b>Click here</b> to read about methodology, data source, usage, and limitations</summary>
+               <ul>
+                  <li> Data Source & Dataset Description </li>
+                  <li> Data Format & Columns </li>
+                  <li> References & Sources </li>
+               </ul>
+               <div>
+                  <h3>Data Source & Dataset Description</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lorem nec felis maximus elementum a et ante. Pellentesque ultrices faucibus neque id fermentum. Donec elit risus, tincidunt vitae vehicula vitae, molestie non ex. Duis et elit a nisl scelerisque lacinia sit amet vitae nisl. Cras bibendum commodo orci eu tristique. Donec vestibulum ac enim vitae commodo. Duis quis posuere orci, tempus finibus justo. Nulla at ultricies ipsum. Sed efficitur eget tortor eget congue. Duis 	fermentum varius imperdiet. Aenean ante tellus, laoreet ac mollis vel, ultrices eu mauris. Morbi condimentum est sit amet neque sagittis, elementum varius neque faucibus. Suspendisse in quam at arcu pulvinar mollis eget vitae mi. Nunc egestas erat quis orci tincidunt scelerisque. Suspendisse efficitur nibh ut tellus posuere commodo.
+                  </p>
+               </div>
+               <div>
+                  <h3>Data Format & Columns</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lorem nec felis maximus elementum a et ante. Pellentesque ultrices faucibus neque id fermentum. Donec elit risus, tincidunt vitae vehicula vitae, molestie non ex. Duis et elit a nisl scelerisque lacinia sit amet vitae nisl. Cras bibendum commodo orci eu tristique. Donec vestibulum ac enim vitae commodo. Duis quis posuere orci, tempus finibus justo. Nulla at ultricies ipsum. Sed efficitur eget tortor eget congue. Duis 	fermentum varius imperdiet. Aenean ante tellus, laoreet ac mollis vel, ultrices eu mauris. Morbi condimentum est sit amet neque sagittis, elementum varius neque faucibus. Suspendisse in quam at arcu pulvinar mollis eget vitae mi. Nunc egestas erat quis orci tincidunt scelerisque. Suspendisse efficitur nibh ut tellus posuere commodo.
+                  </p>
+               </div>
+               <div>
+                  <h3>References & Sources</h3>
+                  <p style="text-align:center">
+                     Fig. <a href="https://www.reddit.com/r/MapPorn/comments/6rbarf/most_common_surnames_in_the_italian_regions_3508/">most common surnames in the Italian Regions [3508 × 4086]</a> by @medhelan
+                  </p>
+                  <p style="text-align:center">
+                     <img class="myImages" id="myImg" src="https://i.redd.it/id6wvw9zxhdz.jpg" width="70%" height="70%" loading="lazy" alt="Top 25 Surnames | National Geographic National Geographic magazine, by Oliver Uberti and Mina Liu, 2011">
+                  </p>
+                  <p style="text-align:center">
+                     Fig. <a href="https://flowingdata.com/2011/01/27/map-united-states-of-surnames/">Top 25 Surnames | National Geographic magazine</a>, by Oliver Uberti and Mina Liu-Derian (design team at NGM), James Cheshire, Paul Longley, and Pablo Mateos (research from UCL Geography), 2011
+                  </p>
+                  <p style="text-align:center">
+                     & https://minaderian.com/#/surnames-natgeo/<br>
+                     & https://flowingdata.com/2011/01/27/map-united-states-of-surnames/ <br>
+                     & https://mapdesign.icaci.org/2014/02/mapcarte-55365-whats-in-a-surname-by-oliver-uberti-and-mina-liu-2011/ <br>
+                     & https://www.reddit.com/r/MapPorn/comments/1fhw48n/us_surname_distribution_by_region_color_coded_by/ <br>
+                     & https://www.reddit.com/r/MapPorn/comments/r8seo/national_geographic_map_of_us_surnames_3214x2096/ <br>
+                     & https://www.nationalgeographic.de/geschichte-und-kultur/kultur-die-herkunft-der-amerikaner <br>
+                     & https://jcheshire.com/featured-maps/whats-in-a-surname/ reviews and extensions by James Cheshire <br>
+                  </p>
+                  <p style="text-align:center">
+                     <img class="myImages" id="myImg" src="https://images.squarespace-cdn.com/content/v1/555a763de4b04d1c654ace9f/1432089051506-2QA4OPDMPKTF6LMNB2TY/surnames.jpg?format=2500w" width="70%" height="70%" loading="lazy" alt="Reference - common surnames in the Italian Regions [3508 × 4086], by @medhelan"
+                        style="border: 2px solid silver; ">
+                  </p>
+               </div>
+               <hr>
+            </details>
+         </div>
+         <div class="article-text">
+            <h2 id="tools">Technical details</h2>
+            <details class="article-description-details" >
+               <summary><b>Click here</b> to read about current ingestion pipeline, tools, and improvement steps </summary>
+               <div style="text-align:center; ">
+                  <p>
+                     Fig. <b>Processing pipeline scheme</b>
+                  </p>
+                  <img class="myImages" id="myImg" src="./figures/Pipeline_preview.jpeg" width="70%" height="70%" loading="lazy" alt="🛠️ Processing pipeline scheme, image"
+                     style="border: 2px solid silver; ">
+               </div>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lorem nec felis maximus elementum a et ante. Pellentesque ultrices faucibus neque id fermentum. Donec elit risus, tincidunt vitae vehicula vitae, molestie non ex. Duis et elit a nisl scelerisque lacinia sit amet vitae nisl. Cras bibendum commodo orci eu tristique. Donec vestibulum ac enim vitae commodo. Duis quis posuere orci, tempus finibus justo. Nulla at ultricies ipsum. Sed efficitur eget tortor eget congue. Duis 	fermentum varius imperdiet. Aenean ante tellus, laoreet ac mollis vel, ultrices eu mauris. Morbi condimentum est sit amet neque sagittis, elementum varius neque faucibus. Suspendisse in quam at arcu pulvinar mollis eget vitae mi. Nunc egestas erat quis orci tincidunt scelerisque. Suspendisse efficitur nibh ut tellus posuere commodo.
+                  </p>
+                  <p>
+                     ||| raster vs vector ||| two methods of merging sub-regional country images |||
+                  </p>
+               </div>
+               <hr>
+            </details>
+         </div>
+         <div class="article-text">
+            <h2 id="how-to">How TO - Read this product</h2>
+            <details class="article-description-details" >
+               <summary><b>Click here</b> to read about current ingestion pipeline, tools, and improvement steps </summary>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lorem nec felis maximus elementum a et ante. Pellentesque ultrices faucibus neque id fermentum. Donec elit risus, tincidunt vitae vehicula vitae, molestie non ex. Duis et elit a nisl scelerisque lacinia sit amet vitae nisl. Cras bibendum commodo orci eu tristique. Donec vestibulum ac enim vitae commodo. Duis quis posuere orci, tempus finibus justo. Nulla at ultricies ipsum. Sed efficitur eget tortor eget congue. Duis 	fermentum varius imperdiet. Aenean ante tellus, laoreet ac mollis vel, ultrices eu mauris. Morbi condimentum est sit amet neque sagittis, elementum varius neque faucibus. Suspendisse in quam at arcu pulvinar mollis eget vitae mi. Nunc egestas erat quis orci tincidunt scelerisque. Suspendisse efficitur nibh ut tellus posuere commodo.
+                  </p>
+                  <p style="text-align:center">
+                     Fig. <a href="https://gallery.pyecharts.org/#/WordCloud/wordcloud_diamond">Interactive wordcloud example</a> from from ApacheECharts package
+                  </p>
+                  <p style="text-align:center">
+                     <img class="myImages" id="myImg" src="./figures/wordcloud_example.jpeg" width="70%" height="70%" loading="lazy" alt="Word -> Size = Frequency. Interactive wordcloud example"
+                        style="border: 2px solid silver; ">
+                  </p>
+                  <p>
+                  <li>https://domo-support.domo.com/s/article/360042925094</li>
+                  <li>https://flowingdata.com/charttype/word-cloud/ *** </li>
+                  <li>https://chartexpo.com/charts/word-cloud</li>
+                  </p>
+                  <div class="article-text">
+                     <p>
+                        Here is a historical article, from 2015 but now-archived, with dataset description - "Accuracy of Surname Statistics on Forebears" (https://forebears.io/news/accuracy-of-surname-statistics-on-forebears)
+                     </p>
+                     <p>
+                        <q>
+                        Additional sources: familysearch.org (https://www.familysearch.org/en/wiki/Europe) & its' "Naming_Customs" block (f.e., https://www.familysearch.org/en/wiki/Albania_Naming_Customs or https://www.familysearch.org/en/wiki/North_Macedonia_Naming_Customs)
+                        & ancestry.com (https://www.ancestry.com/name-origin?surname=popa)
+                        </q>
+                     </p>
+                  </div>
+               </div>
+            </details>
+         </div>
+         <div class="article-text">
+            <p>
+               <mark>NOTE:</mark> If you have a product where you may need to understand customers much better, please consider <a href="https://forebears.io/onograph/"><em>OnoGraph <sup>: Forebears</sup></em></a> API.
+               <br>
+               The OnoGraph is a suite of services that predict characteristics of a person from their name. It can predict nationality, gender and location (where they live). Services for language and ethnicity are in development.
+               The services are built on the largest private database of living people, encompassing over 4.25 billion people (as of July 2020).
+               OnoGraph's results are the most accurate of any comparable service; and it recognizes around 40 million more names than the nearest comparable service. <a href="https://forebears.io/onograph/documentation"><em>See: OnoGraph Documentation, Introduction to OnoGraph</em></a>
+            </p>
+         </div>
+         <p style="text-align:right">
+            <a href="#"><mark>Back to top ⇪</mark></a>
+         </p>
+      </div>
+      <!-- Trigger modal images -->
+      <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+         <div id="caption"></div>
+      </div>
+      <!-- Import JS scripts -->
+      <script src="../../../partial/assets/js/website-navitation-bar.js"></script>
+      <script src="../../../partial/assets/js/gallery-filter-content.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-modal.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-slideshow.js"></script>
+   </body>
+   <footer>
+      <!-- Site Bottom Bar -->
+      <div class="bottom-bar" id="bottom-navigation">
+         <a href="../../../sitemap.html">Sitemap</a>
+         <div>© Copyright 2024 by Witold's Data Consulting, LLC. All rights reserved. Designed and developed by Witold's Data Consulting, LLC.</div>
+      </div>
+   </footer>
+</html>
