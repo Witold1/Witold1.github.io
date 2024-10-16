@@ -1,0 +1,1005 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="822" height="1848">
+<style>@font-face{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;src:url("data:application/font-woff;charset=utf-8;base64,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")format("woff");}</style>
+<style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
+<rect width="100%" height="100%" fill="white" />
+<text transform="translate(79,1597)" font-size="157" style="fill:(128, 128, 0)">Awad</text>
+<text transform="translate(124,1017)" font-size="122" style="fill:(128, 128, 0)">Al Najjar</text>
+<text transform="translate(189,861)" font-size="117" style="fill:(128, 128, 0)">El Masry</text>
+<text transform="translate(287,433)" font-size="113" style="fill:(128, 128, 0)">Odeh</text>
+<text transform="translate(340,727)" font-size="111" style="fill:(128, 128, 0)">Hamdan</text>
+<text transform="translate(103,1465)" font-size="104" style="fill:(128, 128, 0)">Saleh</text>
+<text transform="translate(225,637)" font-size="100" style="fill:(128, 128, 0)">Al Khatib</text>
+<text transform="translate(337,1137)" font-size="100" style="fill:(128, 128, 0)">Shaheen</text>
+<text transform="translate(319,332)" font-size="100" style="fill:(128, 128, 0)">Mansour</text>
+<text transform="translate(346,524)" font-size="96" style="fill:(128, 128, 0)">Mousa</text>
+<text transform="translate(269,1348)" font-size="96" style="fill:(128, 128, 0)">Ahmed</text>
+<text transform="translate(411,1217)" font-size="94" style="fill:(128, 128, 0)">Yassin</text>
+<text transform="translate(318,258)" font-size="89" style="fill:(128, 128, 0)">Hamad</text>
+<text transform="translate(468,794)" font-size="87" style="fill:(128, 128, 0)">Salama</text>
+<text transform="translate(406,1416)" font-size="86" style="fill:(128, 128, 0)">Eisaa</text>
+<text transform="translate(144,921)" font-size="79" style="fill:(128, 128, 0)">Dawood</text>
+<text transform="translate(92,1663)" font-size="78" style="fill:(128, 128, 0)">Salah</text>
+<text transform="translate(403,1272)" font-size="71" style="fill:(128, 128, 0)">Hussein</text>
+<text transform="translate(422,917)" font-size="71" style="fill:(128, 128, 0)">Hassan</text>
+<text transform="translate(161,1508)" font-size="55" style="fill:(128, 128, 0)">Abdullah</text>
+<text transform="translate(580,456)" font-size="55" style="fill:(128, 128, 0)">Hammad</text>
+<text transform="translate(182,769)" font-size="54" style="fill:(128, 128, 0)">Suleiman</text>
+<text transform="translate(167,1058)" font-size="53" style="fill:(128, 128, 0)">Shehadeh</text>
+<text transform="translate(408,1455)" font-size="50" style="fill:(128, 128, 0)">El Shaer</text>
+<text transform="translate(550,385)" font-size="49" style="fill:(128, 128, 0)">Abed</text>
+<text transform="translate(470,1555)" font-size="49" style="fill:(128, 128, 0)">Taha</text>
+<text transform="translate(174,1384)" font-size="48" style="fill:(128, 128, 0)">Zaaroub</text>
+<text transform="translate(459,1502)" font-size="48" style="fill:(128, 128, 0)">Ashour</text>
+<text transform="translate(404,559)" font-size="48" style="fill:(128, 128, 0)">Nassar</text>
+<text transform="translate(594,1080)" font-size="45" style="fill:(128, 128, 0)">Hamouda</text>
+<text transform="translate(600,1311)" font-size="45" style="fill:(128, 128, 0)">Saad</text>
+<text transform="translate(574,558)" font-size="44" style="fill:(128, 128, 0)">Al Astal</text>
+<text transform="translate(332,192)" font-size="44" style="fill:(128, 128, 0)">Jaradat</text>
+<text transform="translate(583,1352)" font-size="44" style="fill:(128, 128, 0)">Ayad</text>
+<text transform="translate(702,512)" font-size="44" style="fill:(128, 128, 0)">Ali</text>
+<text transform="translate(419,467)" font-size="44" style="fill:(128, 128, 0)">Khalil</text>
+<text transform="translate(705,337)" font-size="44" style="fill:(128, 128, 0)">Amr</text>
+<text transform="translate(561,415)" font-size="40" style="fill:(128, 128, 0)">Basharat</text>
+<text transform="translate(235,559)" font-size="40" style="fill:(128, 128, 0)">Ibrahim</text>
+<text transform="translate(626,1054)" font-size="40" style="fill:(128, 128, 0)">Salem</text>
+<text transform="translate(300,823)" font-size="40" style="fill:(128, 128, 0)">Zaid</text>
+<text transform="translate(192,725)" font-size="40" style="fill:(128, 128, 0)">Jaber</text>
+<text transform="translate(62,1698)" font-size="40" style="fill:(128, 128, 0)">Alyan</text>
+<text transform="translate(202,684)" font-size="40" style="fill:(128, 128, 0)">Rabie</text>
+<text transform="translate(224,1093)" font-size="40" style="fill:(128, 128, 0)">Gabr</text>
+<text transform="translate(641,947)" font-size="40" style="fill:(128, 128, 0)">Obaid</text>
+<text transform="translate(482,1164)" font-size="34" style="fill:(128, 128, 0)">Mohamed</text>
+<text transform="translate(431,949)" font-size="33" style="fill:(128, 128, 0)">Omar</text>
+<text transform="translate(580,274)" font-size="33" style="fill:(128, 128, 0)">Musleh</text>
+<text transform="translate(410,658)" font-size="26" style="fill:(128, 128, 0)">Daraghmeh</text>
+<text transform="translate(670,377)" font-size="26" style="fill:(128, 128, 0)">Khatib</text>
+<text transform="translate(242,508)" font-size="26" style="fill:(128, 128, 0)">Hegazy</text>
+<text transform="translate(240,959)" font-size="26" style="fill:(128, 128, 0)">Ghanim</text>
+<text transform="translate(269,1004)" font-size="26" style="fill:(128, 128, 0)">Qasim</text>
+<text transform="translate(622,663)" font-size="26" style="fill:(128, 128, 0)">Bani Odeh</text>
+<text transform="translate(339,148)" font-size="26" style="fill:(128, 128, 0)">Ismail</text>
+<text transform="translate(252,481)" font-size="26" style="fill:(128, 128, 0)">Qadeeh</text>
+<text transform="translate(323,1621)" font-size="26" style="fill:(128, 128, 0)">Abou Ali</text>
+<text transform="translate(451,1576)" font-size="26" style="fill:(128, 128, 0)">Abu Bakr</text>
+<text transform="translate(509,580)" font-size="26" style="fill:(128, 128, 0)">Zidan</text>
+<text transform="translate(328,599)" font-size="26" style="fill:(128, 128, 0)">Hamed</text>
+<text transform="translate(361,1294)" font-size="26" style="fill:(128, 128, 0)">Salman</text>
+<text transform="translate(253,979)" font-size="26" style="fill:(128, 128, 0)">Jouda</text>
+<text transform="translate(671,477)" font-size="26" style="fill:(128, 128, 0)">Darwish</text>
+<text transform="translate(279,453)" font-size="25" style="fill:(128, 128, 0)">Dweikat</text>
+<text transform="translate(653,744)" font-size="22" style="fill:(128, 128, 0)">El Sherif</text>
+<text transform="translate(425,1075)" font-size="22" style="fill:(128, 128, 0)">Najjar</text>
+<text transform="translate(261,701)" font-size="22" style="fill:(128, 128, 0)">Sobeeh</text>
+<text transform="translate(230,810)" font-size="22" style="fill:(128, 128, 0)">Amer</text>
+<text transform="translate(503,1366)" font-size="22" style="fill:(128, 128, 0)">Nasser</text>
+<text transform="translate(179,1690)" font-size="22" style="fill:(128, 128, 0)">Badr</text>
+<text transform="translate(414,275)" font-size="21" style="fill:(128, 128, 0)">El Madhoun</text>
+<text transform="translate(393,207)" font-size="20" style="fill:(128, 128, 0)">Al Natsheh</text>
+<text transform="translate(67,1731)" font-size="20" style="fill:(128, 128, 0)">Matar</text>
+<text transform="translate(675,905)" font-size="20" style="fill:(128, 128, 0)">Barakat</text>
+<text transform="translate(300,838)" font-size="20" style="fill:(128, 128, 0)">Nasr</text>
+<text transform="translate(671,354)" font-size="20" style="fill:(128, 128, 0)">Mostafa</text>
+<text transform="translate(687,1152)" font-size="20" style="fill:(128, 128, 0)">Al Farra</text>
+<text transform="translate(539,1520)" font-size="20" style="fill:(128, 128, 0)">Khader</text>
+<text transform="translate(425,363)" font-size="20" style="fill:(128, 128, 0)">El Aga</text>
+<text transform="translate(320,791)" font-size="20" style="fill:(128, 128, 0)">Yousef</text>
+<text transform="translate(536,1471)" font-size="20" style="fill:(128, 128, 0)">Radwan</text>
+<text transform="translate(206,876)" font-size="20" style="fill:(128, 128, 0)">Abu Al-Rab</text>
+<text transform="translate(145,858)" font-size="20" style="fill:(128, 128, 0)">Siam</text>
+<text transform="translate(329,1266)" font-size="20" style="fill:(128, 128, 0)">Mari</text>
+<text transform="translate(347,1162)" font-size="20" style="fill:(128, 128, 0)">Hamid</text>
+<text transform="translate(270,1404)" font-size="20" style="fill:(128, 128, 0)">Osman</text>
+<text transform="translate(323,616)" font-size="20" style="fill:(128, 128, 0)">Samara</text>
+<text transform="translate(282,347)" font-size="20" style="fill:(128, 128, 0)">Al Sheikh</text>
+<text transform="translate(234,652)" font-size="20" style="fill:(128, 128, 0)">Abu Odeh</text>
+<text transform="translate(379,163)" font-size="20" style="fill:(128, 128, 0)">Nofal</text>
+<text transform="translate(341,1247)" font-size="20" style="fill:(128, 128, 0)">Sobh</text>
+<text transform="translate(593,355)" font-size="20" style="fill:(128, 128, 0)">Adwan</text>
+<text transform="translate(586,876)" font-size="20" style="fill:(128, 128, 0)">Abu Jazar</text>
+<text transform="translate(466,876)" font-size="18" style="fill:(128, 128, 0)">Al Jaabari</text>
+<text transform="translate(105,1481)" font-size="18" style="fill:(128, 128, 0)">Sabah</text>
+<text transform="translate(348,636)" font-size="18" style="fill:(128, 128, 0)">Saeed</text>
+<text transform="translate(455,1593)" font-size="18" style="fill:(128, 128, 0)">Khalaf</text>
+<text transform="translate(182,1398)" font-size="18" style="fill:(128, 128, 0)">Safi</text>
+<text transform="translate(294,1122)" font-size="18" style="fill:(128, 128, 0)">Ghannam</text>
+<text transform="translate(324,573)" font-size="18" style="fill:(128, 128, 0)">Sawafet</text>
+<text transform="translate(459,1053)" font-size="18" style="fill:(128, 128, 0)">Eid</text>
+<text transform="translate(543,975)" font-size="18" style="fill:(128, 128, 0)">Jamal</text>
+<text transform="translate(325,1638)" font-size="18" style="fill:(128, 128, 0)">Mahmoud</text>
+<text transform="translate(108,1031)" font-size="18" style="fill:(128, 128, 0)">Zayed</text>
+<text transform="translate(665,392)" font-size="18" style="fill:(128, 128, 0)">Younis</text>
+<text transform="translate(245,937)" font-size="18" style="fill:(128, 128, 0)">El Taweel</text>
+<text transform="translate(577,247)" font-size="18" style="fill:(128, 128, 0)">Hassouna</text>
+<text transform="translate(347,844)" font-size="18" style="fill:(128, 128, 0)">Assaf</text>
+<text transform="translate(629,508)" font-size="18" style="fill:(128, 128, 0)">Nazzal</text>
+<text transform="translate(420,1037)" font-size="18" style="fill:(128, 128, 0)">Jarrar</text>
+<text transform="translate(635,525)" font-size="17" style="fill:(128, 128, 0)">Abou Mostafa</text>
+<text transform="translate(614,610)" font-size="17" style="fill:(128, 128, 0)">Madi</text>
+<text transform="translate(699,1031)" font-size="17" style="fill:(128, 128, 0)">Shaat</text>
+<text transform="translate(320,858)" font-size="17" style="fill:(128, 128, 0)">Abu Taha</text>
+<text transform="translate(339,874)" font-size="17" style="fill:(128, 128, 0)">Hawtha</text>
+<text transform="translate(444,1516)" font-size="17" style="fill:(128, 128, 0)">Shalalda</text>
+<text transform="translate(491,1231)" font-size="17" style="fill:(128, 128, 0)">Salah El Din</text>
+<text transform="translate(635,852)" font-size="17" style="fill:(128, 128, 0)">Zaqout</text>
+<text transform="translate(549,1022)" font-size="17" style="fill:(128, 128, 0)">Salim</text>
+<text transform="translate(178,1344)" font-size="17" style="fill:(128, 128, 0)">Abu Daqah</text>
+<text transform="translate(460,1291)" font-size="17" style="fill:(128, 128, 0)">Shurrab</text>
+<text transform="translate(501,1059)" font-size="17" style="fill:(128, 128, 0)">Abdel Aal</text>
+<text transform="translate(245,527)" font-size="17" style="fill:(128, 128, 0)">Abou Omra</text>
+<text transform="translate(393,345)" font-size="17" style="fill:(128, 128, 0)">Mounaser</text>
+<text transform="translate(656,1230)" font-size="17" style="fill:(128, 128, 0)">Jabareen</text>
+<text transform="translate(213,843)" font-size="17" style="fill:(128, 128, 0)">Ramadan</text>
+<text transform="translate(243,1106)" font-size="17" style="fill:(128, 128, 0)">Shamasneh</text>
+<text transform="translate(216,1615)" font-size="17" style="fill:(128, 128, 0)">Ghaith</text>
+<text transform="translate(527,740)" font-size="17" style="fill:(128, 128, 0)">Rayan</text>
+<text transform="translate(273,1022)" font-size="17" style="fill:(128, 128, 0)">Muslim</text>
+<text transform="translate(735,705)" font-size="17" style="fill:(128, 128, 0)">Abdo</text>
+<text transform="translate(720,301)" font-size="17" style="fill:(128, 128, 0)">Azzam</text>
+<text transform="translate(514,345)" font-size="15" style="fill:(128, 128, 0)">Al-Qadi</text>
+<text transform="translate(202,1328)" font-size="15" style="fill:(128, 128, 0)">El Attar</text>
+<text transform="translate(597,470)" font-size="15" style="fill:(128, 128, 0)">Al Awadh</text>
+<text transform="translate(578,232)" font-size="15" style="fill:(128, 128, 0)">Attallah</text>
+<text transform="translate(719,881)" font-size="15" style="fill:(128, 128, 0)">Taqateq</text>
+<text transform="translate(638,1365)" font-size="15" style="fill:(128, 128, 0)">Baraka</text>
+<text transform="translate(149,837)" font-size="15" style="fill:(128, 128, 0)">Qabha</text>
+<text transform="translate(57,1652)" font-size="15" style="fill:(128, 128, 0)">Afaneh</text>
+<text transform="translate(741,848)" font-size="15" style="fill:(128, 128, 0)">Assi</text>
+<text transform="translate(605,1324)" font-size="15" style="fill:(128, 128, 0)">El Gamal</text>
+<text transform="translate(671,1164)" font-size="15" style="fill:(128, 128, 0)">Abu Aram</text>
+<text transform="translate(511,196)" font-size="15" style="fill:(128, 128, 0)">Hamail</text>
+<text transform="translate(537,950)" font-size="15" style="fill:(128, 128, 0)">El Kahlout</text>
+<text transform="translate(267,492)" font-size="14" style="fill:(128, 128, 0)">Abed Rabbo</text>
+<text transform="translate(541,930)" font-size="14" style="fill:(128, 128, 0)">Abu Deh</text>
+<text transform="translate(631,488)" font-size="14" style="fill:(128, 128, 0)">Elhamham</text>
+<text transform="translate(127,1709)" font-size="14" style="fill:(128, 128, 0)">Al Akkad</text>
+<text transform="translate(485,999)" font-size="14" style="fill:(128, 128, 0)">Fakih</text>
+<text transform="translate(619,579)" font-size="14" style="fill:(128, 128, 0)">Kandil</text>
+<text transform="translate(86,1448)" font-size="14" style="fill:(128, 128, 0)">Fayad</text>
+<text transform="translate(438,1466)" font-size="14" style="fill:(128, 128, 0)">Abdel Hadi</text>
+<text transform="translate(430,1404)" font-size="14" style="fill:(128, 128, 0)">Badwan</text>
+<text transform="translate(553,1300)" font-size="14" style="fill:(128, 128, 0)">Helis</text>
+<text transform="translate(724,569)" font-size="14" style="fill:(128, 128, 0)">Ayyash</text>
+<text transform="translate(612,740)" font-size="14" style="fill:(128, 128, 0)">Diab</text>
+<text transform="translate(339,123)" font-size="13" style="fill:(128, 128, 0)">Al Ashqar</text>
+<text transform="translate(99,1603)" font-size="13" style="fill:(128, 128, 0)">Jibrin</text>
+<text transform="translate(694,915)" font-size="13" style="fill:(128, 128, 0)">Abouwarda</text>
+<text transform="translate(47,1711)" font-size="13" style="fill:(128, 128, 0)">El Hajj</text>
+<text transform="translate(635,1283)" font-size="13" style="fill:(128, 128, 0)">Massoud</text>
+<text transform="translate(632,424)" font-size="12" style="fill:(128, 128, 0)">Al Kafarneh</text>
+<text transform="translate(238,1673)" font-size="12" style="fill:(128, 128, 0)">Abu Shrkh</text>
+<text transform="translate(221,1356)" font-size="11" style="fill:(128, 128, 0)">Abu Shamaleh</text>
+<text transform="translate(101,1388)" font-size="11" style="fill:(128, 128, 0)">El Amour</text>
+<text transform="translate(727,864)" font-size="11" style="fill:(128, 128, 0)">Rajabi</text>
+<text transform="translate(124,1411)" font-size="11" style="fill:(128, 128, 0)">Badawi</text>
+<text transform="translate(747,721)" font-size="11" style="fill:(128, 128, 0)">Masry</text>
+<text transform="translate(638,825)" font-size="11" style="fill:(128, 128, 0)">Haroub</text>
+<text transform="translate(617,976)" font-size="11" style="fill:(128, 128, 0)">Abu Samra</text>
+<text transform="translate(625,626)" font-size="11" style="fill:(128, 128, 0)">Aboaid</text>
+<text transform="translate(346,358)" font-size="11" style="fill:(128, 128, 0)">Qeshtah</text>
+<text transform="translate(327,1649)" font-size="11" style="fill:(128, 128, 0)">Zahran</text>
+<text transform="translate(347,1605)" font-size="11" style="fill:(128, 128, 0)">Gamhor</text>
+<text transform="translate(540,983)" font-size="11" style="fill:(128, 128, 0)">Jabari</text>
+<text transform="translate(466,927)" font-size="11" style="fill:(128, 128, 0)">Khalifa</text>
+<text transform="translate(543,992)" font-size="11" style="fill:(128, 128, 0)">Kanaan</text>
+<text transform="translate(284,1131)" font-size="11" style="fill:(128, 128, 0)">Natsheh</text>
+<text transform="translate(370,735)" font-size="11" style="fill:(128, 128, 0)">El Louh</text>
+<text transform="translate(197,983)" font-size="11" style="fill:(128, 128, 0)">Saqr</text>
+<text transform="translate(316,1146)" font-size="11" style="fill:(128, 128, 0)">Abu Obaid</text>
+<text transform="translate(732,309)" font-size="11" style="fill:(128, 128, 0)">Zkarneh</text>
+<text transform="translate(540,1078)" font-size="11" style="fill:(128, 128, 0)">Shaaban</text>
+<text transform="translate(552,1317)" font-size="11" style="fill:(128, 128, 0)">Muhanna</text>
+<text transform="translate(151,1617)" font-size="11" style="fill:(128, 128, 0)">Melhem</text>
+<text transform="translate(101,1672)" font-size="11" style="fill:(128, 128, 0)">El Halaby</text>
+<text transform="translate(587,1426)" font-size="11" style="fill:(128, 128, 0)">Abou Zeid</text>
+<text transform="translate(732,290)" font-size="11" style="fill:(128, 128, 0)">Mohsen</text>
+<text transform="translate(640,836)" font-size="11" style="fill:(128, 128, 0)">Hanani</text>
+<text transform="translate(47,1741)" font-size="11" style="fill:(128, 128, 0)">Yahya</text>
+<text transform="translate(283,1068)" font-size="11" style="fill:(128, 128, 0)">Abu Awad</text>
+<text transform="translate(540,1006)" font-size="11" style="fill:(128, 128, 0)">Jadallah</text>
+<text transform="translate(231,1419)" font-size="11" style="fill:(128, 128, 0)">Akl</text>
+<text transform="translate(478,1014)" font-size="11" style="fill:(128, 128, 0)">Rabayeh</text>
+<text transform="translate(589,566)" font-size="11" style="fill:(128, 128, 0)">Abou Hassan</text>
+<text transform="translate(482,983)" font-size="11" style="fill:(128, 128, 0)">Hamada</text>
+<text transform="translate(268,1542)" font-size="11" style="fill:(128, 128, 0)">Maslamah</text>
+<text transform="translate(458,1443)" font-size="11" style="fill:(128, 128, 0)">Abdeen</text>
+<text transform="translate(329,645)" font-size="11" style="fill:(128, 128, 0)">Abu Labdah</text>
+<text transform="translate(177,942)" font-size="11" style="fill:(128, 128, 0)">Jahalin</text>
+<text transform="translate(396,1145)" font-size="11" style="fill:(128, 128, 0)">Abu Hilal</text>
+<text transform="translate(208,1407)" font-size="11" style="fill:(128, 128, 0)">Bakr</text>
+<text transform="translate(541,1032)" font-size="11" style="fill:(128, 128, 0)">Alawneh</text>
+<text transform="translate(555,1325)" font-size="11" style="fill:(128, 128, 0)">Omran</text>
+<text transform="translate(445,1601)" font-size="11" style="fill:(128, 128, 0)">Hajjaj</text>
+<text transform="translate(739,998)" font-size="11" style="fill:(128, 128, 0)">Erekat</text>
+<text transform="translate(130,1376)" font-size="11" style="fill:(128, 128, 0)">Bashir</text>
+<text transform="translate(102,1717)" font-size="11" style="fill:(128, 128, 0)">Abou Omar</text>
+<text transform="translate(271,733)" font-size="11" style="fill:(128, 128, 0)">Salahat</text>
+<text transform="translate(187,692)" font-size="11" style="fill:(128, 128, 0)">Abou Farah</text>
+<text transform="translate(735,1011)" font-size="11" style="fill:(128, 128, 0)">Juma</text>
+<text transform="translate(296,660)" font-size="11" style="fill:(128, 128, 0)">Zaher</text>
+<text transform="translate(462,1025)" font-size="11" style="fill:(128, 128, 0)">Kamil</text>
+<text transform="translate(360,1228)" font-size="11" style="fill:(128, 128, 0)">Adais</text>
+<text transform="translate(545,1527)" font-size="10" style="fill:(128, 128, 0)">Abou Hammad</text>
+<text transform="translate(724,580)" font-size="10" style="fill:(128, 128, 0)">Halaik</text>
+<text transform="translate(614,1185)" font-size="10" style="fill:(128, 128, 0)">Khattab</text>
+<text transform="translate(568,817)" font-size="10" style="fill:(128, 128, 0)">El Haddad</text>
+<text transform="translate(163,1068)" font-size="10" style="fill:(128, 128, 0)">Abdelkader</text>
+<text transform="translate(148,928)" font-size="9" style="fill:(128, 128, 0)">Al Ghoul</text>
+<text transform="translate(750,983)" font-size="9" style="fill:(128, 128, 0)">Said</text>
+<text transform="translate(310,1085)" font-size="9" style="fill:(128, 128, 0)">Badran</text>
+<text transform="translate(364,1475)" font-size="9" style="fill:(128, 128, 0)">Asaad</text>
+<text transform="translate(262,1474)" font-size="9" style="fill:(128, 128, 0)">Tmazeh</text>
+<text transform="translate(330,734)" font-size="9" style="fill:(128, 128, 0)">Mekdad</text>
+<text transform="translate(157,810)" font-size="9" style="fill:(128, 128, 0)">Qawasmeh</text>
+<text transform="translate(107,1585)" font-size="9" style="fill:(128, 128, 0)">Al Hindi</text>
+<text transform="translate(383,441)" font-size="9" style="fill:(128, 128, 0)">Asfour</text>
+<text transform="translate(438,773)" font-size="9" style="fill:(128, 128, 0)">Abu Jarad</text>
+<text transform="translate(312,720)" font-size="9" style="fill:(128, 128, 0)">Ayesh</text>
+<text transform="translate(344,580)" font-size="9" style="fill:(128, 128, 0)">Nasrallah</text>
+<text transform="translate(531,841)" font-size="9" style="fill:(128, 128, 0)">Debabseh</text>
+<text transform="translate(382,1387)" font-size="9" style="fill:(128, 128, 0)">Rajoub</text>
+<text transform="translate(359,365)" font-size="9" style="fill:(128, 128, 0)">Ghonaim</text>
+<text transform="translate(151,1604)" font-size="9" style="fill:(128, 128, 0)">El Helou</text>
+<text transform="translate(251,1296)" font-size="9" style="fill:(128, 128, 0)">Kallab</text>
+<text transform="translate(497,973)" font-size="9" style="fill:(128, 128, 0)">Shabir</text>
+<text transform="translate(436,150)" font-size="9" style="fill:(128, 128, 0)">Choucair</text>
+<text transform="translate(294,1391)" font-size="9" style="fill:(128, 128, 0)">Abou Taema</text>
+<text transform="translate(512,396)" font-size="9" style="fill:(128, 128, 0)">Zioud</text>
+<text transform="translate(181,955)" font-size="9" style="fill:(128, 128, 0)">Ziadeh</text>
+<text transform="translate(403,1474)" font-size="9" style="fill:(128, 128, 0)">Abdul Rahman</text>
+<text transform="translate(261,1119)" font-size="9" style="fill:(128, 128, 0)">Shraim</text>
+<text transform="translate(279,536)" font-size="9" style="fill:(128, 128, 0)">Al Nahhal</text>
+<text transform="translate(494,1403)" font-size="9" style="fill:(128, 128, 0)">Arafat</text>
+<text transform="translate(359,1089)" font-size="9" style="fill:(128, 128, 0)">Dhereh</text>
+<text transform="translate(704,1251)" font-size="9" style="fill:(128, 128, 0)">Farouk</text>
+<text transform="translate(445,1229)" font-size="9" style="fill:(128, 128, 0)">Ragab</text>
+<text transform="translate(145,1363)" font-size="9" style="fill:(128, 128, 0)">Abu Arra</text>
+<text transform="translate(540,1068)" font-size="9" style="fill:(128, 128, 0)">Abusnina</text>
+<text transform="translate(731,424)" font-size="9" style="fill:(128, 128, 0)">Nabhan</text>
+<text transform="translate(381,1215)" font-size="9" style="fill:(128, 128, 0)">El Ghalban</text>
+<text transform="translate(361,1170)" font-size="9" style="fill:(128, 128, 0)">Al Qawasmeh</text>
+<text transform="translate(619,689)" font-size="9" style="fill:(128, 128, 0)">Yacoub</text>
+<text transform="translate(301,1272)" font-size="9" style="fill:(128, 128, 0)">Harb</text>
+<text transform="translate(747,674)" font-size="9" style="fill:(128, 128, 0)">Allan</text>
+<text transform="translate(288,313)" font-size="9" style="fill:(128, 128, 0)">Ghoban</text>
+<text transform="translate(450,415)" font-size="9" style="fill:(128, 128, 0)">Al Bayouk</text>
+<text transform="translate(746,813)" font-size="9" style="fill:(128, 128, 0)">Faroun</text>
+<text transform="translate(374,275)" font-size="9" style="fill:(128, 128, 0)">Barbakh</text>
+<text transform="translate(611,764)" font-size="9" style="fill:(128, 128, 0)">Al Sultan</text>
+<text transform="translate(463,441)" font-size="9" style="fill:(128, 128, 0)">Sarsour</text>
+<text transform="translate(579,218)" font-size="9" style="fill:(128, 128, 0)">Al Atrash</text>
+<text transform="translate(682,923)" font-size="9" style="fill:(128, 128, 0)">Fares</text>
+<text transform="translate(213,1026)" font-size="9" style="fill:(128, 128, 0)">Maarouf</text>
+<text transform="translate(134,1043)" font-size="9" style="fill:(128, 128, 0)">Khadour</text>
+<text transform="translate(456,1423)" font-size="9" style="fill:(128, 128, 0)">Hammadah</text>
+<text transform="translate(522,203)" font-size="9" style="fill:(128, 128, 0)">Dheir</text>
+<text transform="translate(188,1671)" font-size="9" style="fill:(128, 128, 0)">Wahdan</text>
+<text transform="translate(540,1426)" font-size="9" style="fill:(128, 128, 0)">Khamaisah</text>
+<text transform="translate(557,1281)" font-size="9" style="fill:(128, 128, 0)">Hassanein</text>
+<text transform="translate(324,1273)" font-size="9" style="fill:(128, 128, 0)">Al Khalidi</text>
+<text transform="translate(465,1102)" font-size="9" style="fill:(128, 128, 0)">Habib</text>
+<text transform="translate(234,1310)" font-size="9" style="fill:(128, 128, 0)">Al Shawwa</text>
+<text transform="translate(319,1452)" font-size="9" style="fill:(128, 128, 0)">Sarhan</text>
+<text transform="translate(393,1552)" font-size="9" style="fill:(128, 128, 0)">Faraj</text>
+<text transform="translate(399,1181)" font-size="9" style="fill:(128, 128, 0)">Labd</text>
+<text transform="translate(392,1206)" font-size="9" style="fill:(128, 128, 0)">El Sakka</text>
+<text transform="translate(69,1631)" font-size="9" style="fill:(128, 128, 0)">Rehan</text>
+<text transform="translate(683,594)" font-size="9" style="fill:(128, 128, 0)">Ammar</text>
+<text transform="translate(258,433)" font-size="9" style="fill:(128, 128, 0)">Dalloul</text>
+<text transform="translate(420,737)" font-size="9" style="fill:(128, 128, 0)">Al Buhaisi</text>
+<text transform="translate(468,821)" font-size="9" style="fill:(128, 128, 0)">Awadallah</text>
+<text transform="translate(509,181)" font-size="9" style="fill:(128, 128, 0)">Hamidat</text>
+<text transform="translate(247,795)" font-size="9" style="fill:(128, 128, 0)">El Banna</text>
+<text transform="translate(410,975)" font-size="9" style="fill:(128, 128, 0)">Al-Bazour</text>
+<text transform="translate(731,386)" font-size="9" style="fill:(128, 128, 0)">Abu Shanab</text>
+<text transform="translate(740,683)" font-size="9" style="fill:(128, 128, 0)">Sweety</text>
+<text transform="translate(159,798)" font-size="9" style="fill:(128, 128, 0)">Abu Musa</text>
+<text transform="translate(556,490)" font-size="9" style="fill:(128, 128, 0)">Al Maslamah</text>
+<text transform="translate(556,1337)" font-size="9" style="fill:(128, 128, 0)">Samour</text>
+<text transform="translate(440,157)" font-size="9" style="fill:(128, 128, 0)">El Zaaneen</text>
+<text transform="translate(76,1496)" font-size="9" style="fill:(128, 128, 0)">Aslim</text>
+<text transform="translate(515,1205)" font-size="9" style="fill:(128, 128, 0)">Kaabneh</text>
+<text transform="translate(512,360)" font-size="9" style="fill:(128, 128, 0)">Zeidat</text>
+<text transform="translate(464,1332)" font-size="9" style="fill:(128, 128, 0)">Shalaby</text>
+<text transform="translate(698,274)" font-size="8" style="fill:(128, 128, 0)">Abu Shaaban</text>
+<text transform="translate(549,275)" font-size="8" style="fill:(128, 128, 0)">Kouar</text>
+<text transform="translate(739,826)" font-size="7" style="fill:(128, 128, 0)">Faraj Allah</text>
+<text transform="translate(582,1552)" font-size="7" style="fill:(128, 128, 0)">Mahamid</text>
+<text transform="translate(436,746)" font-size="7" style="fill:(128, 128, 0)">Abu Zahra</text>
+<text transform="translate(191,967)" font-size="7" style="fill:(128, 128, 0)">El Sayed</text>
+<text transform="translate(404,687)" font-size="7" style="fill:(128, 128, 0)">Al Shurafa</text>
+<text transform="translate(617,551)" font-size="7" style="fill:(128, 128, 0)">Ghazal</text>
+<text transform="translate(759,634)" font-size="7" style="fill:(128, 128, 0)">Saadah</text>
+<text transform="translate(651,494)" font-size="7" style="fill:(128, 128, 0)">Jawabreh</text>
+<text transform="translate(426,1056)" font-size="7" style="fill:(128, 128, 0)">Fakha</text>
+<text transform="translate(621,1156)" font-size="7" style="fill:(128, 128, 0)">Al Akhras</text>
+<text transform="translate(155,822)" font-size="7" style="fill:(128, 128, 0)">Abou Jamea</text>
+<text transform="translate(214,1635)" font-size="7" style="fill:(128, 128, 0)">Al Sweiti</text>
+<text transform="translate(664,1122)" font-size="7" style="fill:(128, 128, 0)">Al Arja</text>
+<text transform="translate(343,1517)" font-size="7" style="fill:(128, 128, 0)">Abu Assi</text>
+<text transform="translate(74,1510)" font-size="7" style="fill:(128, 128, 0)">Aboisha</text>
+<text transform="translate(753,1087)" font-size="7" style="fill:(128, 128, 0)">Rashid</text>
+<text transform="translate(544,1385)" font-size="7" style="fill:(128, 128, 0)">Al Manasir</text>
+<text transform="translate(370,1022)" font-size="7" style="fill:(128, 128, 0)">Marar</text>
+<text transform="translate(265,1282)" font-size="7" style="fill:(128, 128, 0)">Tardih</text>
+<text transform="translate(380,535)" font-size="7" style="fill:(128, 128, 0)">Farhat</text>
+<text transform="translate(251,826)" font-size="7" style="fill:(128, 128, 0)">Al Yaziji</text>
+<text transform="translate(378,1403)" font-size="7" style="fill:(128, 128, 0)">Shreit</text>
+<text transform="translate(381,1361)" font-size="7" style="fill:(128, 128, 0)">Al Saadi</text>
+<text transform="translate(430,1369)" font-size="7" style="fill:(128, 128, 0)">Al Qassas</text>
+<text transform="translate(668,580)" font-size="7" style="fill:(128, 128, 0)">Al Nabahin</text>
+<text transform="translate(523,1584)" font-size="7" style="fill:(128, 128, 0)">Abou Aida</text>
+<text transform="translate(618,1002)" font-size="7" style="fill:(128, 128, 0)">Abbas</text>
+<text transform="translate(654,862)" font-size="7" style="fill:(128, 128, 0)">Abu Hadid</text>
+<text transform="translate(621,339)" font-size="7" style="fill:(128, 128, 0)">Abu Rayan</text>
+<text transform="translate(86,1433)" font-size="7" style="fill:(128, 128, 0)">Kittaneh</text>
+<text transform="translate(182,1074)" font-size="7" style="fill:(128, 128, 0)">Moustahy</text>
+<text transform="translate(174,1428)" font-size="7" style="fill:(128, 128, 0)">Deeb</text>
+<text transform="translate(302,272)" font-size="7" style="fill:(128, 128, 0)">Drajm</text>
+<text transform="translate(759,1115)" font-size="7" style="fill:(128, 128, 0)">Sheikh</text>
+<text transform="translate(129,1049)" font-size="7" style="fill:(128, 128, 0)">Abou El Kheir</text>
+<text transform="translate(518,602)" font-size="7" style="fill:(128, 128, 0)">Abu Hussein</text>
+<text transform="translate(398,1538)" font-size="7" style="fill:(128, 128, 0)">Alwan</text>
+<text transform="translate(244,1000)" font-size="7" style="fill:(128, 128, 0)">Haddad</text>
+<text transform="translate(700,1237)" font-size="7" style="fill:(128, 128, 0)">Al Abbadleh</text>
+<text transform="translate(751,410)" font-size="7" style="fill:(128, 128, 0)">Moheisen</text>
+<text transform="translate(758,943)" font-size="7" style="fill:(128, 128, 0)">Qeshta</text>
+<text transform="translate(616,964)" font-size="7" style="fill:(128, 128, 0)">Khudair</text>
+<text transform="translate(210,1474)" font-size="7" style="fill:(128, 128, 0)">Al Faqih</text>
+<text transform="translate(610,1461)" font-size="7" style="fill:(128, 128, 0)">Abu Sultan</text>
+<text transform="translate(624,531)" font-size="7" style="fill:(128, 128, 0)">Al Harb</text>
+<text transform="translate(264,1411)" font-size="7" style="fill:(128, 128, 0)">Abu Zayed</text>
+<text transform="translate(491,752)" font-size="7" style="fill:(128, 128, 0)">Abou Reda</text>
+<text transform="translate(356,829)" font-size="7" style="fill:(128, 128, 0)">Abou Elan</text>
+<text transform="translate(445,1210)" font-size="7" style="fill:(128, 128, 0)">Attieh</text>
+<text transform="translate(401,1191)" font-size="7" style="fill:(128, 128, 0)">Brahma</text>
+<text transform="translate(303,1565)" font-size="7" style="fill:(128, 128, 0)">Oweida</text>
+<text transform="translate(332,775)" font-size="7" style="fill:(128, 128, 0)">Abou Khalil</text>
+<text transform="translate(210,733)" font-size="7" style="fill:(128, 128, 0)">Al Qadrah</text>
+<text transform="translate(490,1386)" font-size="7" style="fill:(128, 128, 0)">Gharib</text>
+<text transform="translate(227,1427)" font-size="7" style="fill:(128, 128, 0)">Khaled</text>
+<text transform="translate(261,566)" font-size="7" style="fill:(128, 128, 0)">Salhab</text>
+<text transform="translate(699,1004)" font-size="7" style="fill:(128, 128, 0)">Dahir</text>
+<text transform="translate(676,1176)" font-size="7" style="fill:(128, 128, 0)">Shteh</text>
+<text transform="translate(423,1377)" font-size="7" style="fill:(128, 128, 0)">Abu Saleh</text>
+<text transform="translate(311,381)" font-size="7" style="fill:(128, 128, 0)">Tafesh</text>
+<text transform="translate(556,660)" font-size="7" style="fill:(128, 128, 0)">Mahtseb</text>
+<text transform="translate(518,511)" font-size="7" style="fill:(128, 128, 0)">Abu Salem</text>
+<text transform="translate(58,1660)" font-size="7" style="fill:(128, 128, 0)">Al ARaj</text>
+<text transform="translate(588,391)" font-size="7" style="fill:(128, 128, 0)">Abu Safieh</text>
+<text transform="translate(636,300)" font-size="7" style="fill:(128, 128, 0)">Nairat</text>
+<text transform="translate(457,1431)" font-size="7" style="fill:(128, 128, 0)">Kahil</text>
+<text transform="translate(298,1608)" font-size="7" style="fill:(128, 128, 0)">Najm</text>
+<text transform="translate(622,1163)" font-size="7" style="fill:(128, 128, 0)">Al Atawneh</text>
+<text transform="translate(342,107)" font-size="7" style="fill:(128, 128, 0)">Al Qarnawi</text>
+<text transform="translate(157,1014)" font-size="7" style="fill:(128, 128, 0)">Zuban</text>
+<text transform="translate(512,763)" font-size="7" style="fill:(128, 128, 0)">Jendia</text>
+<text transform="translate(492,314)" font-size="7" style="fill:(128, 128, 0)">Al Ashi</text>
+<text transform="translate(597,1121)" font-size="7" style="fill:(128, 128, 0)">Hamidah</text>
+<text transform="translate(286,324)" font-size="7" style="fill:(128, 128, 0)">Hawamdeh</text>
+<text transform="translate(419,369)" font-size="7" style="fill:(128, 128, 0)">Barhoum</text>
+<text transform="translate(304,389)" font-size="7" style="fill:(128, 128, 0)">Abuayash</text>
+<text transform="translate(444,1551)" font-size="7" style="fill:(128, 128, 0)">Qweider</text>
+<text transform="translate(512,405)" font-size="7" style="fill:(128, 128, 0)">Haurin</text>
+<text transform="translate(275,575)" font-size="7" style="fill:(128, 128, 0)">Qaraan</text>
+<text transform="translate(570,1306)" font-size="7" style="fill:(128, 128, 0)">Qaysieh</text>
+<text transform="translate(58,1618)" font-size="7" style="fill:(128, 128, 0)">Maali</text>
+<text transform="translate(220,1450)" font-size="7" style="fill:(128, 128, 0)">Daghmash</text>
+<text transform="translate(463,779)" font-size="7" style="fill:(128, 128, 0)">Ghazzawneh</text>
+<text transform="translate(289,985)" font-size="7" style="fill:(128, 128, 0)">Abu Stah</text>
+<text transform="translate(745,1017)" font-size="7" style="fill:(128, 128, 0)">Sorour</text>
+<text transform="translate(610,1385)" font-size="7" style="fill:(128, 128, 0)">Barham</text>
+<text transform="translate(329,156)" font-size="7" style="fill:(128, 128, 0)">Abu Shawish</text>
+<text transform="translate(718,531)" font-size="7" style="fill:(128, 128, 0)">Al Bashiti</text>
+<text transform="translate(745,801)" font-size="7" style="fill:(128, 128, 0)">Moutair</text>
+<text transform="translate(639,644)" font-size="7" style="fill:(128, 128, 0)">Al Adham</text>
+<text transform="translate(311,1355)" font-size="7" style="fill:(128, 128, 0)">Abu Sobha</text>
+<text transform="translate(353,129)" font-size="7" style="fill:(128, 128, 0)">Al Jabour</text>
+<text transform="translate(444,1535)" font-size="7" style="fill:(128, 128, 0)">Qafeesh</text>
+<text transform="translate(451,1184)" font-size="7" style="fill:(128, 128, 0)">Abdel Gawad</text>
+<text transform="translate(435,763)" font-size="7" style="fill:(128, 128, 0)">Abu Hatab</text>
+<text transform="translate(613,1021)" font-size="7" style="fill:(128, 128, 0)">Al Rajabi</text>
+<text transform="translate(686,620)" font-size="7" style="fill:(128, 128, 0)">Nemer</text>
+<text transform="translate(253,459)" font-size="7" style="fill:(128, 128, 0)">Abou Elrab</text>
+<text transform="translate(746,971)" font-size="7" style="fill:(128, 128, 0)">Abu Omar</text>
+<text transform="translate(168,760)" font-size="7" style="fill:(128, 128, 0)">Baroud</text>
+<text transform="translate(307,409)" font-size="7" style="fill:(128, 128, 0)">Hashash</text>
+<text transform="translate(129,1417)" font-size="7" style="fill:(128, 128, 0)">Abdel Razek</text>
+<text transform="translate(113,1575)" font-size="7" style="fill:(128, 128, 0)">Khalili</text>
+<text transform="translate(196,1002)" font-size="7" style="fill:(128, 128, 0)">Al-Qara</text>
+<text transform="translate(539,1042)" font-size="7" style="fill:(128, 128, 0)">Shweiki</text>
+<text transform="translate(603,780)" font-size="7" style="fill:(128, 128, 0)">Jibril</text>
+<text transform="translate(754,1133)" font-size="7" style="fill:(128, 128, 0)">Farwana</text>
+<text transform="translate(232,1680)" font-size="7" style="fill:(128, 128, 0)">Haraz Allah</text>
+<text transform="translate(528,1142)" font-size="6" style="fill:(128, 128, 0)">Nasser Al Din</text>
+<text transform="translate(366,930)" font-size="6" style="fill:(128, 128, 0)">El Omry</text>
+<text transform="translate(286,625)" font-size="6" style="fill:(128, 128, 0)">Dweik</text>
+<text transform="translate(470,1366)" font-size="6" style="fill:(128, 128, 0)">Shamlakh</text>
+<text transform="translate(706,263)" font-size="6" style="fill:(128, 128, 0)">Sammarh</text>
+<text transform="translate(156,1433)" font-size="6" style="fill:(128, 128, 0)">Farah</text>
+<text transform="translate(472,338)" font-size="6" style="fill:(128, 128, 0)">Sheikh Eid</text>
+<text transform="translate(277,597)" font-size="6" style="fill:(128, 128, 0)">Abuseef</text>
+<text transform="translate(702,1256)" font-size="6" style="fill:(128, 128, 0)">Abu Amsha</text>
+<text transform="translate(641,615)" font-size="6" style="fill:(128, 128, 0)">Mubarak</text>
+<text transform="translate(479,1278)" font-size="6" style="fill:(128, 128, 0)">Abou Ghaly</text>
+<text transform="translate(411,663)" font-size="6" style="fill:(128, 128, 0)">Al Shalaldeh</text>
+<text transform="translate(644,1237)" font-size="6" style="fill:(128, 128, 0)">Alqam</text>
+<text transform="translate(262,817)" font-size="6" style="fill:(128, 128, 0)">Idris</text>
+<text transform="translate(555,431)" font-size="6" style="fill:(128, 128, 0)">Hanoun</text>
+<text transform="translate(695,959)" font-size="6" style="fill:(128, 128, 0)">Tayeh</text>
+<text transform="translate(379,1367)" font-size="6" style="fill:(128, 128, 0)">Ghneimat</text>
+<text transform="translate(749,1037)" font-size="6" style="fill:(128, 128, 0)">Qalalouh</text>
+<text transform="translate(220,1434)" font-size="6" style="fill:(128, 128, 0)">Eamalih</text>
+<text transform="translate(308,1089)" font-size="5" style="fill:(128, 128, 0)">El Maghraby</text>
+<text transform="translate(677,530)" font-size="5" style="fill:(128, 128, 0)">Abu Turki</text>
+<text transform="translate(619,936)" font-size="5" style="fill:(128, 128, 0)">Zahedah</text>
+<text transform="translate(436,140)" font-size="5" style="fill:(128, 128, 0)">Abu Tair</text>
+<text transform="translate(747,1180)" font-size="5" style="fill:(128, 128, 0)">Shahwan</text>
+<text transform="translate(276,358)" font-size="5" style="fill:(128, 128, 0)">Amarna</text>
+<text transform="translate(598,845)" font-size="5" style="fill:(128, 128, 0)">Muammar</text>
+<text transform="translate(265,1436)" font-size="5" style="fill:(128, 128, 0)">Abu Salah</text>
+<text transform="translate(480,1453)" font-size="5" style="fill:(128, 128, 0)">Alhor</text>
+<text transform="translate(162,786)" font-size="5" style="fill:(128, 128, 0)">Abou Haseira</text>
+<text transform="translate(437,922)" font-size="5" style="fill:(128, 128, 0)">Shawahane</text>
+<text transform="translate(66,1607)" font-size="5" style="fill:(128, 128, 0)">Humaidan</text>
+<text transform="translate(228,1685)" font-size="5" style="fill:(128, 128, 0)">Thabet</text>
+<text transform="translate(485,1471)" font-size="5" style="fill:(128, 128, 0)">Barghouthi</text>
+<text transform="translate(578,1199)" font-size="5" style="fill:(128, 128, 0)">Moutour</text>
+<text transform="translate(748,1190)" font-size="5" style="fill:(128, 128, 0)">Jaafar</text>
+<text transform="translate(681,600)" font-size="5" style="fill:(128, 128, 0)">Hamamreh</text>
+<text transform="translate(399,457)" font-size="5" style="fill:(128, 128, 0)">Abusada</text>
+<text transform="translate(579,637)" font-size="5" style="fill:(128, 128, 0)">Al Wahidi</text>
+<text transform="translate(551,935)" font-size="5" style="fill:(128, 128, 0)">Daraib</text>
+<text transform="translate(425,641)" font-size="5" style="fill:(128, 128, 0)">Al Mashharawi</text>
+<text transform="translate(374,1258)" font-size="5" style="fill:(128, 128, 0)">Abdel Aziz</text>
+<text transform="translate(162,802)" font-size="5" style="fill:(128, 128, 0)">Ashteh</text>
+<text transform="translate(448,472)" font-size="5" style="fill:(128, 128, 0)">Murad</text>
+<text transform="translate(747,1157)" font-size="5" style="fill:(128, 128, 0)">Al Muhtasib</text>
+<text transform="translate(473,529)" font-size="5" style="fill:(128, 128, 0)">Fatafet</text>
+<text transform="translate(760,899)" font-size="5" style="fill:(128, 128, 0)">Al Asi</text>
+<text transform="translate(347,1320)" font-size="5" style="fill:(128, 128, 0)">Aqra</text>
+<text transform="translate(474,1559)" font-size="5" style="fill:(128, 128, 0)">Al Safadi</text>
+<text transform="translate(462,164)" font-size="5" style="fill:(128, 128, 0)">Abu Halima</text>
+<text transform="translate(482,956)" font-size="5" style="fill:(128, 128, 0)">Halawa</text>
+<text transform="translate(587,1540)" font-size="5" style="fill:(128, 128, 0)">Al Bilbisi</text>
+<text transform="translate(749,1024)" font-size="5" style="fill:(128, 128, 0)">Abu Hamadah</text>
+<text transform="translate(608,1043)" font-size="5" style="fill:(128, 128, 0)">Shalouf</text>
+<text transform="translate(629,1118)" font-size="5" style="fill:(128, 128, 0)">Haji</text>
+<text transform="translate(391,1566)" font-size="5" style="fill:(128, 128, 0)">Al Mujaydah</text>
+<text transform="translate(415,1122)" font-size="5" style="fill:(128, 128, 0)">Brik</text>
+<text transform="translate(694,717)" font-size="5" style="fill:(128, 128, 0)">El Shafei</text>
+<text transform="translate(199,646)" font-size="5" style="fill:(128, 128, 0)">El Maghary</text>
+<text transform="translate(749,833)" font-size="5" style="fill:(128, 128, 0)">Abu Rahma</text>
+<text transform="translate(768,923)" font-size="5" style="fill:(128, 128, 0)">Naeem</text>
+<text transform="translate(424,1429)" font-size="5" style="fill:(128, 128, 0)">Al Batsh</text>
+<text transform="translate(617,980)" font-size="5" style="fill:(128, 128, 0)">Abu Arqoub</text>
+<text transform="translate(74,1532)" font-size="5" style="fill:(128, 128, 0)">Al Homs</text>
+<text transform="translate(752,584)" font-size="5" style="fill:(128, 128, 0)">Abdel Nabi</text>
+<text transform="translate(582,303)" font-size="5" style="fill:(128, 128, 0)">Atrash</text>
+<text transform="translate(561,1186)" font-size="5" style="fill:(128, 128, 0)">Akhil</text>
+<text transform="translate(625,1192)" font-size="5" style="fill:(128, 128, 0)">Al Aaydi</text>
+<text transform="translate(704,1261)" font-size="5" style="fill:(128, 128, 0)">El Hissy</text>
+<text transform="translate(431,563)" font-size="5" style="fill:(128, 128, 0)">Abu Khater</text>
+<text transform="translate(621,594)" font-size="5" style="fill:(128, 128, 0)">Al Dahdouh</text>
+<text transform="translate(499,947)" font-size="5" style="fill:(128, 128, 0)">Abu Zeina</text>
+<text transform="translate(529,1260)" font-size="5" style="fill:(128, 128, 0)">Samoudy</text>
+<text transform="translate(135,1635)" font-size="5" style="fill:(128, 128, 0)">Attawneh</text>
+<text transform="translate(295,1571)" font-size="5" style="fill:(128, 128, 0)">Zain El Din</text>
+<text transform="translate(635,1142)" font-size="5" style="fill:(128, 128, 0)">Abu Khousa</text>
+<text transform="translate(283,1420)" font-size="5" style="fill:(128, 128, 0)">Radi</text>
+<text transform="translate(296,294)" font-size="5" style="fill:(128, 128, 0)">Al-Kurd</text>
+<text transform="translate(578,628)" font-size="5" style="fill:(128, 128, 0)">Suwaidan</text>
+<text transform="translate(448,1610)" font-size="5" style="fill:(128, 128, 0)">Thawabteh</text>
+<text transform="translate(275,584)" font-size="5" style="fill:(128, 128, 0)">Abu Rabee</text>
+<text transform="translate(246,984)" font-size="5" style="fill:(128, 128, 0)">Jafra</text>
+<text transform="translate(578,1560)" font-size="5" style="fill:(128, 128, 0)">El Assar</text>
+<text transform="translate(450,527)" font-size="5" style="fill:(128, 128, 0)">Weshah</text>
+<text transform="translate(252,848)" font-size="5" style="fill:(128, 128, 0)">Al Abayat</text>
+<text transform="translate(403,317)" font-size="5" style="fill:(128, 128, 0)">Arar</text>
+<text transform="translate(582,308)" font-size="5" style="fill:(128, 128, 0)">Tawil</text>
+<text transform="translate(397,774)" font-size="5" style="fill:(128, 128, 0)">Hamarsheh</text>
+<text transform="translate(765,656)" font-size="5" style="fill:(128, 128, 0)">Sawan</text>
+<text transform="translate(753,689)" font-size="5" style="fill:(128, 128, 0)">Abu Nasser</text>
+<text transform="translate(530,364)" font-size="5" style="fill:(128, 128, 0)">Jneid</text>
+<text transform="translate(498,1295)" font-size="5" style="fill:(128, 128, 0)">Jubran</text>
+<text transform="translate(243,624)" font-size="5" style="fill:(128, 128, 0)">Hajjah</text>
+<text transform="translate(205,624)" font-size="5" style="fill:(128, 128, 0)">Sultan</text>
+<text transform="translate(189,931)" font-size="5" style="fill:(128, 128, 0)">Zamara</text>
+<text transform="translate(115,1452)" font-size="5" style="fill:(128, 128, 0)">El Shami</text>
+<text transform="translate(315,1248)" font-size="5" style="fill:(128, 128, 0)">Farihat</text>
+<text transform="translate(174,1403)" font-size="5" style="fill:(128, 128, 0)">Noagha</text>
+<text transform="translate(756,342)" font-size="5" style="fill:(128, 128, 0)">Al Farouk</text>
+<text transform="translate(699,967)" font-size="5" style="fill:(128, 128, 0)">Sawalha</text>
+<text transform="translate(214,826)" font-size="5" style="fill:(128, 128, 0)">Abdel Latif</text>
+<text transform="translate(377,946)" font-size="5" style="fill:(128, 128, 0)">Jargon</text>
+<text transform="translate(430,1046)" font-size="5" style="fill:(128, 128, 0)">Skeik</text>
+<text transform="translate(363,702)" font-size="5" style="fill:(128, 128, 0)">Al Ajlah</text>
+<text transform="translate(322,1655)" font-size="5" style="fill:(128, 128, 0)">Abou Awad</text>
+<text transform="translate(240,634)" font-size="5" style="fill:(128, 128, 0)">Abou Said</text>
+<text transform="translate(601,891)" font-size="5" style="fill:(128, 128, 0)">Saker</text>
+<text transform="translate(598,850)" font-size="5" style="fill:(128, 128, 0)">Bardaih</text>
+<text transform="translate(609,1472)" font-size="5" style="fill:(128, 128, 0)">Al Sumairi</text>
+<text transform="translate(358,665)" font-size="5" style="fill:(128, 128, 0)">Bani Fadl</text>
+<text transform="translate(390,1573)" font-size="5" style="fill:(128, 128, 0)">Al Shobaki</text>
+<text transform="translate(312,370)" font-size="5" style="fill:(128, 128, 0)">Tanina</text>
+<text transform="translate(412,1629)" font-size="5" style="fill:(128, 128, 0)">Tawam</text>
+<text transform="translate(166,775)" font-size="5" style="fill:(128, 128, 0)">Sayed Ahmed</text>
+<text transform="translate(359,657)" font-size="5" style="fill:(128, 128, 0)">El Nazal</text>
+<text transform="translate(365,710)" font-size="5" style="fill:(128, 128, 0)">Shehab</text>
+<text transform="translate(277,605)" font-size="5" style="fill:(128, 128, 0)">Jafal</text>
+<text transform="translate(307,1259)" font-size="5" style="fill:(128, 128, 0)">Al Aqra</text>
+<text transform="translate(588,1532)" font-size="5" style="fill:(128, 128, 0)">Shawamra</text>
+<text transform="translate(242,485)" font-size="5" style="fill:(128, 128, 0)">Alawi</text>
+<text transform="translate(430,1352)" font-size="5" style="fill:(128, 128, 0)">Al Rubaie</text>
+<text transform="translate(757,1044)" font-size="5" style="fill:(128, 128, 0)">Al Qaisi</text>
+<text transform="translate(546,265)" font-size="5" style="fill:(128, 128, 0)">Aleamaluh</text>
+<text transform="translate(626,539)" font-size="5" style="fill:(128, 128, 0)">Ayoub</text>
+<text transform="translate(125,931)" font-size="5" style="fill:(128, 128, 0)">Sobihat</text>
+<text transform="translate(596,828)" font-size="5" style="fill:(128, 128, 0)">Omry</text>
+<text transform="translate(628,474)" font-size="5" style="fill:(128, 128, 0)">Taleb</text>
+<text transform="translate(756,1093)" font-size="5" style="fill:(128, 128, 0)">Shteiwi</text>
+<text transform="translate(576,745)" font-size="5" style="fill:(128, 128, 0)">Ridat</text>
+<text transform="translate(599,821)" font-size="5" style="fill:(128, 128, 0)">Melitat</text>
+<text transform="translate(145,1004)" font-size="5" style="fill:(128, 128, 0)">Al Sharafi</text>
+<text transform="translate(559,646)" font-size="5" style="fill:(128, 128, 0)">Al Ajrami</text>
+<text transform="translate(647,1030)" font-size="5" style="fill:(128, 128, 0)">Shalash</text>
+<text transform="translate(123,955)" font-size="5" style="fill:(128, 128, 0)">Kassab</text>
+<text transform="translate(511,425)" font-size="5" style="fill:(128, 128, 0)">Atatra</text>
+<text transform="translate(503,663)" font-size="5" style="fill:(128, 128, 0)">Al Amassi</text>
+<text transform="translate(253,1597)" font-size="5" style="fill:(128, 128, 0)">Abou Elia</text>
+<text transform="translate(505,1392)" font-size="5" style="fill:(128, 128, 0)">Ady</text>
+<text transform="translate(613,1243)" font-size="5" style="fill:(128, 128, 0)">Abu Ras</text>
+<text transform="translate(553,1351)" font-size="5" style="fill:(128, 128, 0)">Abu Salim</text>
+<text transform="translate(733,852)" font-size="5" style="fill:(128, 128, 0)">Al Mabhouh</text>
+<text transform="translate(154,1541)" font-size="5" style="fill:(128, 128, 0)">Sayara</text>
+<text transform="translate(704,801)" font-size="5" style="fill:(128, 128, 0)">Ashtewy</text>
+<text transform="translate(494,1031)" font-size="5" style="fill:(128, 128, 0)">Hassaneh</text>
+<text transform="translate(684,605)" font-size="5" style="fill:(128, 128, 0)">Raddad</text>
+<text transform="translate(191,1698)" font-size="5" style="fill:(128, 128, 0)">Harizat</text>
+<text transform="translate(604,802)" font-size="5" style="fill:(128, 128, 0)">Sidr</text>
+<text transform="translate(218,1440)" font-size="5" style="fill:(128, 128, 0)">Abu Sarhan</text>
+<text transform="translate(658,1383)" font-size="5" style="fill:(128, 128, 0)">Shawar</text>
+<text transform="translate(372,1094)" font-size="5" style="fill:(128, 128, 0)">Al Amoudi</text>
+<text transform="translate(753,280)" font-size="5" style="fill:(128, 128, 0)">Arshid</text>
+<text transform="translate(341,620)" font-size="5" style="fill:(128, 128, 0)">El Mahareek</text>
+<text transform="translate(514,530)" font-size="5" style="fill:(128, 128, 0)">Tabassi</text>
+<text transform="translate(446,603)" font-size="5" style="fill:(128, 128, 0)">Dick</text>
+<text transform="translate(613,1231)" font-size="5" style="fill:(128, 128, 0)">Sweilem</text>
+<text transform="translate(55,1635)" font-size="5" style="fill:(128, 128, 0)">Abu Qubaitah</text>
+<text transform="translate(665,1376)" font-size="5" style="fill:(128, 128, 0)">Zalloum</text>
+<text transform="translate(629,1451)" font-size="5" style="fill:(128, 128, 0)">Sherif</text>
+<text transform="translate(765,1099)" font-size="5" style="fill:(128, 128, 0)">Amira</text>
+<text transform="translate(385,1352)" font-size="5" style="fill:(128, 128, 0)">Al Shamasneh</text>
+<text transform="translate(158,901)" font-size="5" style="fill:(128, 128, 0)">Atmiza</text>
+<text transform="translate(564,687)" font-size="5" style="fill:(128, 128, 0)">Haniyeh</text>
+<text transform="translate(756,1123)" font-size="5" style="fill:(128, 128, 0)">Al-Barim</text>
+<text transform="translate(112,969)" font-size="5" style="fill:(128, 128, 0)">Massad</text>
+<text transform="translate(45,1720)" font-size="5" style="fill:(128, 128, 0)">Bassah</text>
+<text transform="translate(380,1263)" font-size="5" style="fill:(128, 128, 0)">Musabeh</text>
+<text transform="translate(369,1439)" font-size="5" style="fill:(128, 128, 0)">Khawaja</text>
+<text transform="translate(745,1169)" font-size="5" style="fill:(128, 128, 0)">Abu Shaar</text>
+<text transform="translate(684,570)" font-size="5" style="fill:(128, 128, 0)">Hassoun</text>
+<text transform="translate(427,1443)" font-size="5" style="fill:(128, 128, 0)">Ajour</text>
+<text transform="translate(358,724)" font-size="5" style="fill:(128, 128, 0)">Dardouna</text>
+<text transform="translate(609,252)" font-size="5" style="fill:(128, 128, 0)">Al-Karaki</text>
+<text transform="translate(566,775)" font-size="5" style="fill:(128, 128, 0)">Murtaja</text>
+<text transform="translate(308,458)" font-size="5" style="fill:(128, 128, 0)">Moqbel</text>
+<text transform="translate(604,752)" font-size="5" style="fill:(128, 128, 0)">Shaabneh</text>
+<text transform="translate(78,1474)" font-size="5" style="fill:(128, 128, 0)">Amtir</text>
+<text transform="translate(236,773)" font-size="5" style="fill:(128, 128, 0)">Abu Hamad</text>
+<text transform="translate(289,615)" font-size="5" style="fill:(128, 128, 0)">Shatat</text>
+<text transform="translate(491,627)" font-size="5" style="fill:(128, 128, 0)">Bahr</text>
+<text transform="translate(406,1277)" font-size="5" style="fill:(128, 128, 0)">Al Shawamrah</text>
+<text transform="translate(578,608)" font-size="5" style="fill:(128, 128, 0)">Abu Rizk</text>
+<text transform="translate(559,1343)" font-size="5" style="fill:(128, 128, 0)">Rizigat</text>
+<text transform="translate(254,441)" font-size="5" style="fill:(128, 128, 0)">Sahwail</text>
+<text transform="translate(293,1532)" font-size="5" style="fill:(128, 128, 0)">Mahaher</text>
+<text transform="translate(367,225)" font-size="5" style="fill:(128, 128, 0)">El Shamaly</text>
+<text transform="translate(362,675)" font-size="5" style="fill:(128, 128, 0)">Redaydeh</text>
+<text transform="translate(384,264)" font-size="5" style="fill:(128, 128, 0)">Shabaneh</text>
+<text transform="translate(460,316)" font-size="5" style="fill:(128, 128, 0)">Mahdi</text>
+<text transform="translate(375,1374)" font-size="5" style="fill:(128, 128, 0)">Abou Ragab</text>
+<text transform="translate(272,387)" font-size="5" style="fill:(128, 128, 0)">Zghir</text>
+<text transform="translate(590,1261)" font-size="5" style="fill:(128, 128, 0)">Hassouneh</text>
+<text transform="translate(261,420)" font-size="5" style="fill:(128, 128, 0)">Abu Yousef</text>
+<text transform="translate(225,831)" font-size="5" style="fill:(128, 128, 0)">Abu Sweirh</text>
+<text transform="translate(385,295)" font-size="5" style="fill:(128, 128, 0)">Mujahid</text>
+<text transform="translate(142,1495)" font-size="5" style="fill:(128, 128, 0)">Doudin</text>
+<text transform="translate(504,906)" font-size="5" style="fill:(128, 128, 0)">Al Shanti</text>
+<text transform="translate(664,246)" font-size="5" style="fill:(128, 128, 0)">Taraire</text>
+<text transform="translate(90,1416)" font-size="5" style="fill:(128, 128, 0)">Eaysah</text>
+<text transform="translate(174,862)" font-size="5" style="fill:(128, 128, 0)">El Kanoa</text>
+<text transform="translate(483,961)" font-size="5" style="fill:(128, 128, 0)">Titi</text>
+<text transform="translate(674,1316)" font-size="5" style="fill:(128, 128, 0)">Abu Snaimah</text>
+<text transform="translate(481,344)" font-size="5" style="fill:(128, 128, 0)">Shakarneh</text>
+<text transform="translate(577,598)" font-size="5" style="fill:(128, 128, 0)">Burgan</text>
+<text transform="translate(695,692)" font-size="5" style="fill:(128, 128, 0)">Shamali</text>
+<text transform="translate(92,1396)" font-size="5" style="fill:(128, 128, 0)">Sunoub</text>
+<text transform="translate(291,759)" font-size="5" style="fill:(128, 128, 0)">Abu Mohsen</text>
+<text transform="translate(184,1643)" font-size="5" style="fill:(128, 128, 0)">Hendi</text>
+<text transform="translate(324,942)" font-size="5" style="fill:(128, 128, 0)">Abu Anza</text>
+<text transform="translate(551,956)" font-size="5" style="fill:(128, 128, 0)">Sabaneh</text>
+<text transform="translate(524,1321)" font-size="5" style="fill:(128, 128, 0)">Wafi</text>
+<text transform="translate(387,1559)" font-size="5" style="fill:(128, 128, 0)">Groub</text>
+<text transform="translate(318,707)" font-size="5" style="fill:(128, 128, 0)">Shaqoura</text>
+<text transform="translate(183,708)" font-size="5" style="fill:(128, 128, 0)">Mahareq</text>
+<text transform="translate(308,1284)" font-size="5" style="fill:(128, 128, 0)">Aljafra</text>
+<text transform="translate(381,447)" font-size="5" style="fill:(128, 128, 0)">El Hassanat</text>
+<text transform="translate(110,980)" font-size="5" style="fill:(128, 128, 0)">Haj Ali</text>
+<text transform="translate(623,992)" font-size="5" style="fill:(128, 128, 0)">El Tal</text>
+<text transform="translate(347,1592)" font-size="5" style="fill:(128, 128, 0)">Abou Lahya</text>
+<text transform="translate(285,329)" font-size="5" style="fill:(128, 128, 0)">Abou Elkass</text>
+<text transform="translate(642,389)" font-size="5" style="fill:(128, 128, 0)">Marabeh</text>
+<text transform="translate(673,336)" font-size="5" style="fill:(128, 128, 0)">El Khodary</text>
+<text transform="translate(141,862)" font-size="5" style="fill:(128, 128, 0)">Muhammer</text>
+<text transform="translate(628,1207)" font-size="5" style="fill:(128, 128, 0)">Abou Aoun</text>
+<text transform="translate(450,1616)" font-size="5" style="fill:(128, 128, 0)">Badir</text>
+<text transform="translate(338,533)" font-size="5" style="fill:(128, 128, 0)">Mokat</text>
+<text transform="translate(64,1583)" font-size="5" style="fill:(128, 128, 0)">Jaabeh</text>
+<text transform="translate(449,1386)" font-size="5" style="fill:(128, 128, 0)">Rizk</text>
+<text transform="translate(77,1517)" font-size="5" style="fill:(128, 128, 0)">Abu Hamid</text>
+<text transform="translate(619,954)" font-size="5" style="fill:(128, 128, 0)">Al Hayek</text>
+<text transform="translate(172,841)" font-size="5" style="fill:(128, 128, 0)">Darawshe</text>
+<text transform="translate(315,1489)" font-size="5" style="fill:(128, 128, 0)">Qabajah</text>
+<text transform="translate(646,1439)" font-size="5" style="fill:(128, 128, 0)">Tim</text>
+<text transform="translate(753,397)" font-size="5" style="fill:(128, 128, 0)">Al Talbani</text>
+<text transform="translate(270,1448)" font-size="5" style="fill:(128, 128, 0)">Alsous</text>
+<text transform="translate(294,1577)" font-size="5" style="fill:(128, 128, 0)">Abouhneya</text>
+<text transform="translate(699,697)" font-size="5" style="fill:(128, 128, 0)">Mishal</text>
+<text transform="translate(708,1267)" font-size="5" style="fill:(128, 128, 0)">Hamdouna</text>
+<text transform="translate(118,1566)" font-size="5" style="fill:(128, 128, 0)">Harsha</text>
+<text transform="translate(80,1463)" font-size="5" style="fill:(128, 128, 0)">Sharona</text>
+<text transform="translate(600,1367)" font-size="5" style="fill:(128, 128, 0)">Zaatarah</text>
+<text transform="translate(112,1623)" font-size="5" style="fill:(128, 128, 0)">Baaloucheh</text>
+<text transform="translate(756,591)" font-size="5" style="fill:(128, 128, 0)">Fannoun</text>
+<text transform="translate(297,901)" font-size="5" style="fill:(128, 128, 0)">Shadid</text>
+<text transform="translate(193,992)" font-size="5" style="fill:(128, 128, 0)">Tamraz</text>
+<text transform="translate(535,529)" font-size="5" style="fill:(128, 128, 0)">Abdelhak</text>
+<text transform="translate(701,1274)" font-size="5" style="fill:(128, 128, 0)">Badah</text>
+<text transform="translate(154,1388)" font-size="5" style="fill:(128, 128, 0)">Al Raqib</text>
+<text transform="translate(696,255)" font-size="5" style="fill:(128, 128, 0)">Dahlan</text>
+<text transform="translate(317,1073)" font-size="5" style="fill:(128, 128, 0)">Yaghi</text>
+<text transform="translate(130,906)" font-size="5" style="fill:(128, 128, 0)">Glad</text>
+<text transform="translate(331,624)" font-size="5" style="fill:(128, 128, 0)">Danna</text>
+<text transform="translate(117,1589)" font-size="5" style="fill:(128, 128, 0)">Al Bardawil</text>
+<text transform="translate(349,429)" font-size="5" style="fill:(128, 128, 0)">Asmar</text>
+<text transform="translate(375,412)" font-size="5" style="fill:(128, 128, 0)">Abu Naja</text>
+<text transform="translate(416,1105)" font-size="5" style="fill:(128, 128, 0)">Ayayed</text>
+<text transform="translate(574,338)" font-size="5" style="fill:(128, 128, 0)">Abu Rumailah</text>
+<text transform="translate(379,1393)" font-size="5" style="fill:(128, 128, 0)">El Sherbaty</text>
+<text transform="translate(84,1735)" font-size="5" style="fill:(128, 128, 0)">Al Hawarin</text>
+<text transform="translate(603,770)" font-size="5" style="fill:(128, 128, 0)">Al Saidi</text>
+<text transform="translate(134,1610)" font-size="5" style="fill:(128, 128, 0)">Bazar</text>
+<text transform="translate(456,1191)" font-size="5" style="fill:(128, 128, 0)">Sharaf</text>
+<text transform="translate(209,1586)" font-size="5" style="fill:(128, 128, 0)">Aboamer</text>
+<text transform="translate(674,1183)" font-size="5" style="fill:(128, 128, 0)">Oweidat</text>
+<text transform="translate(438,751)" font-size="5" style="fill:(128, 128, 0)">Abu Muaylak</text>
+<text transform="translate(718,1109)" font-size="5" style="fill:(128, 128, 0)">Mizeed</text>
+<text transform="translate(519,349)" font-size="5" style="fill:(128, 128, 0)">Dawabsha</text>
+<text transform="translate(753,891)" font-size="5" style="fill:(128, 128, 0)">Abou Nada</text>
+<text transform="translate(349,1522)" font-size="5" style="fill:(128, 128, 0)">Al Maqid</text>
+<text transform="translate(216,847)" font-size="5" style="fill:(128, 128, 0)">Abu Hashem</text>
+<text transform="translate(311,399)" font-size="5" style="fill:(128, 128, 0)">Al Tapan</text>
+<text transform="translate(596,1100)" font-size="5" style="fill:(128, 128, 0)">Al-Zair</text>
+<text transform="translate(283,1026)" font-size="5" style="fill:(128, 128, 0)">Al Ghandour</text>
+<text transform="translate(359,716)" font-size="5" style="fill:(128, 128, 0)">Shehaber</text>
+<text transform="translate(294,1616)" font-size="5" style="fill:(128, 128, 0)">Arzieqat</text>
+<text transform="translate(753,1052)" font-size="5" style="fill:(128, 128, 0)">Al Source</text>
+<text transform="translate(533,294)" font-size="5" style="fill:(128, 128, 0)">Dar Sheikh</text>
+<text transform="translate(661,1001)" font-size="5" style="fill:(128, 128, 0)">Azar</text>
+<text transform="translate(479,1003)" font-size="5" style="fill:(128, 128, 0)">El Harazine</text>
+<text transform="translate(149,1514)" font-size="5" style="fill:(128, 128, 0)">El-Dalu</text>
+<text transform="translate(330,1401)" font-size="5" style="fill:(128, 128, 0)">Tahayneh</text>
+<text transform="translate(264,408)" font-size="5" style="fill:(128, 128, 0)">Aweys</text>
+<text transform="translate(365,1625)" font-size="5" style="fill:(128, 128, 0)">Al Malalha</text>
+<text transform="translate(351,1553)" font-size="5" style="fill:(128, 128, 0)">Nafie</text>
+<text transform="translate(444,1199)" font-size="5" style="fill:(128, 128, 0)">Saq Allah</text>
+<text transform="translate(79,1486)" font-size="5" style="fill:(128, 128, 0)">Bani Jaber</text>
+<text transform="translate(425,1152)" font-size="5" style="fill:(128, 128, 0)">Assalia</text>
+<text transform="translate(265,1547)" font-size="5" style="fill:(128, 128, 0)">Zanoun</text>
+<text transform="translate(700,986)" font-size="5" style="fill:(128, 128, 0)">Aboita</text>
+<text transform="translate(562,705)" font-size="5" style="fill:(128, 128, 0)">Al Heih</text>
+<text transform="translate(419,499)" font-size="5" style="fill:(128, 128, 0)">Qasrawi</text>
+<text transform="translate(645,1256)" font-size="5" style="fill:(128, 128, 0)">Khoury</text>
+<text transform="translate(346,1583)" font-size="5" style="fill:(128, 128, 0)">Al Habash</text>
+<text transform="translate(496,1021)" font-size="5" style="fill:(128, 128, 0)">Al Dweik</text>
+<text transform="translate(52,1668)" font-size="5" style="fill:(128, 128, 0)">Jarad</text>
+<text transform="translate(448,609)" font-size="5" style="fill:(128, 128, 0)">Slimih</text>
+<text transform="translate(750,639)" font-size="5" style="fill:(128, 128, 0)">Al Shweiki</text>
+<text transform="translate(489,596)" font-size="5" style="fill:(128, 128, 0)">Wady</text>
+<text transform="translate(573,1364)" font-size="5" style="fill:(128, 128, 0)">Kahla</text>
+<text transform="translate(301,301)" font-size="5" style="fill:(128, 128, 0)">Aoeoe</text>
+<text transform="translate(76,1523)" font-size="5" style="fill:(128, 128, 0)">Fakhoury</text>
+<text transform="translate(66,1567)" font-size="5" style="fill:(128, 128, 0)">Turkman</text>
+<text transform="translate(231,1332)" font-size="5" style="fill:(128, 128, 0)">Abu Issa</text>
+<text transform="translate(194,1080)" font-size="5" style="fill:(128, 128, 0)">Al Mutawaq</text>
+<text transform="translate(410,948)" font-size="5" style="fill:(128, 128, 0)">Aboiseh</text>
+<text transform="translate(551,421)" font-size="5" style="fill:(128, 128, 0)">Abou Roumi</text>
+<text transform="translate(526,1403)" font-size="5" style="fill:(128, 128, 0)">Lafi</text>
+<text transform="translate(759,621)" font-size="5" style="fill:(128, 128, 0)">Akila</text>
+<text transform="translate(252,857)" font-size="5" style="fill:(128, 128, 0)">Arfa</text>
+<text transform="translate(265,942)" font-size="5" style="fill:(128, 128, 0)">Abou El Aish</text>
+<text transform="translate(477,226)" font-size="5" style="fill:(128, 128, 0)">Abou Harb</text>
+<text transform="translate(41,1748)" font-size="5" style="fill:(128, 128, 0)">Al Fayoumi</text>
+<text transform="translate(737,709)" font-size="5" style="fill:(128, 128, 0)">Al Majdalawi</text>
+<text transform="translate(429,1022)" font-size="5" style="fill:(128, 128, 0)">Abou Elta</text>
+<text transform="translate(552,1285)" font-size="5" style="fill:(128, 128, 0)">Abu Qweider</text>
+<text transform="translate(638,306)" font-size="5" style="fill:(128, 128, 0)">Dandees</text>
+<text transform="translate(248,1314)" font-size="5" style="fill:(128, 128, 0)">El Tarabin</text>
+<text transform="translate(710,887)" font-size="5" style="fill:(128, 128, 0)">Abu Sharar</text>
+<text transform="translate(496,1599)" font-size="5" style="fill:(128, 128, 0)">Maatan</text>
+<text transform="translate(756,353)" font-size="5" style="fill:(128, 128, 0)">Masharqah</text>
+<text transform="translate(584,1142)" font-size="5" style="fill:(128, 128, 0)">El Soufi</text>
+<text transform="translate(644,474)" font-size="5" style="fill:(128, 128, 0)">Halahla</text>
+<text transform="translate(691,641)" font-size="5" style="fill:(128, 128, 0)">Abu Saada</text>
+<text transform="translate(77,1500)" font-size="5" style="fill:(128, 128, 0)">Alswafiri</text>
+<text transform="translate(660,840)" font-size="5" style="fill:(128, 128, 0)">Abu Abed</text>
+<text transform="translate(390,1607)" font-size="5" style="fill:(128, 128, 0)">Qaze</text>
+<text transform="translate(336,797)" font-size="5" style="fill:(128, 128, 0)">Aliwa</text>
+<text transform="translate(745,987)" font-size="5" style="fill:(128, 128, 0)">Abu Shehadeh</text>
+<text transform="translate(765,743)" font-size="5" style="fill:(128, 128, 0)">Alami</text>
+<text transform="translate(550,284)" font-size="5" style="fill:(128, 128, 0)">Qadan</text>
+<text transform="translate(140,1487)" font-size="5" style="fill:(128, 128, 0)">Wadi</text>
+<text transform="translate(728,762)" font-size="5" style="fill:(128, 128, 0)">Al Shalaby</text>
+<text transform="translate(503,1524)" font-size="5" style="fill:(128, 128, 0)">El Raey</text>
+<text transform="translate(200,639)" font-size="5" style="fill:(128, 128, 0)">Abu Sido</text>
+<text transform="translate(577,618)" font-size="5" style="fill:(128, 128, 0)">Zeitoun</text>
+<text transform="translate(461,1145)" font-size="5" style="fill:(128, 128, 0)">Dawas</text>
+<text transform="translate(180,1635)" font-size="5" style="fill:(128, 128, 0)">Halabieh</text>
+<text transform="translate(246,1068)" font-size="5" style="fill:(128, 128, 0)">Khalayfah</text>
+<text transform="translate(585,1567)" font-size="5" style="fill:(128, 128, 0)">Sedqah</text>
+<text transform="translate(533,845)" font-size="5" style="fill:(128, 128, 0)">Ali Ahmed</text>
+<text transform="translate(120,940)" font-size="5" style="fill:(128, 128, 0)">El Henawy</text>
+<text transform="translate(624,1147)" font-size="5" style="fill:(128, 128, 0)">Abu Mandil</text>
+<text transform="translate(657,513)" font-size="5" style="fill:(128, 128, 0)">Malihat</text>
+<text transform="translate(531,818)" font-size="5" style="fill:(128, 128, 0)">Shoman</text>
+<text transform="translate(577,206)" font-size="5" style="fill:(128, 128, 0)">Al-Rifi</text>
+<text transform="translate(694,709)" font-size="5" style="fill:(128, 128, 0)">Al Aklouk</text>
+<text transform="translate(186,701)" font-size="5" style="fill:(128, 128, 0)">Tamimi</text>
+<text transform="translate(474,1079)" font-size="5" style="fill:(128, 128, 0)">Abu Namous</text>
+<text transform="translate(500,641)" font-size="5" style="fill:(128, 128, 0)">Al Shaarawi</text>
+<text transform="translate(398,926)" font-size="5" style="fill:(128, 128, 0)">Shakhshir</text>
+<text transform="translate(271,589)" font-size="5" style="fill:(128, 128, 0)">Abu Senineh</text>
+<text transform="translate(582,1204)" font-size="5" style="fill:(128, 128, 0)">Abu Shakra</text>
+<text transform="translate(591,1506)" font-size="5" style="fill:(128, 128, 0)">Al Tamimi</text>
+<text transform="translate(753,1029)" font-size="4" style="fill:(128, 128, 0)">Abou Ghalyoun</text>
+<text transform="translate(147,1425)" font-size="4" style="fill:(128, 128, 0)">Mukhaimer</text>
+<text transform="translate(322,1150)" font-size="4" style="fill:(128, 128, 0)">Haj Mohamed</text>
+<text transform="translate(594,535)" font-size="4" style="fill:(128, 128, 0)">Harbawi</text>
+<text transform="translate(159,1396)" font-size="4" style="fill:(128, 128, 0)">Abou Elian</text>
+<text transform="translate(515,500)" font-size="4" style="fill:(128, 128, 0)">Haboush</text>
+<text transform="translate(339,257)" font-size="4" style="fill:(128, 128, 0)">Al Zain</text>
+<text transform="translate(255,780)" font-size="4" style="fill:(128, 128, 0)">Tobasi</text>
+<text transform="translate(395,910)" font-size="4" style="fill:(128, 128, 0)">Saif</text>
+<text transform="translate(635,1443)" font-size="4" style="fill:(128, 128, 0)">El Hawajry</text>
+<text transform="translate(752,1106)" font-size="4" style="fill:(128, 128, 0)">Jamous</text>
+<text transform="translate(415,1112)" font-size="4" style="fill:(128, 128, 0)">Almutawir</text>
+<text transform="translate(400,566)" font-size="4" style="fill:(128, 128, 0)">Yamin</text>
+<text transform="translate(517,1591)" font-size="4" style="fill:(128, 128, 0)">Armelat</text>
+<text transform="translate(329,1026)" font-size="4" style="fill:(128, 128, 0)">Abu Jiaab</text>
+<text transform="translate(689,626)" font-size="4" style="fill:(128, 128, 0)">Al Dreemli</text>
+<text transform="translate(406,1464)" font-size="4" style="fill:(128, 128, 0)">Al Owaisat</text>
+<text transform="translate(320,666)" font-size="4" style="fill:(128, 128, 0)">Abdel Fattah</text>
+<text transform="translate(381,1424)" font-size="4" style="fill:(128, 128, 0)">Alama</text>
+<text transform="translate(702,812)" font-size="4" style="fill:(128, 128, 0)">Karaki</text>
+<text transform="translate(272,1109)" font-size="4" style="fill:(128, 128, 0)">Atta</text>
+<text transform="translate(141,1055)" font-size="4" style="fill:(128, 128, 0)">Al Sawarkh</text>
+<text transform="translate(292,1490)" font-size="4" style="fill:(128, 128, 0)">Sidem</text>
+<text transform="translate(421,432)" font-size="4" style="fill:(128, 128, 0)">Awaisah</text>
+<text transform="translate(259,1572)" font-size="4" style="fill:(128, 128, 0)">Salmi</text>
+<text transform="translate(286,1334)" font-size="4" style="fill:(128, 128, 0)">Tabash</text>
+<text transform="translate(227,563)" font-size="4" style="fill:(128, 128, 0)">Abou El Hossain</text>
+<text transform="translate(576,463)" font-size="4" style="fill:(128, 128, 0)">Jalaytah</text>
+<text transform="translate(654,814)" font-size="4" style="fill:(128, 128, 0)">Abu Hashish</text>
+<text transform="translate(761,928)" font-size="4" style="fill:(128, 128, 0)">Abu Jaber</text>
+<text transform="translate(287,1340)" font-size="4" style="fill:(128, 128, 0)">Harfoush</text>
+<text transform="translate(237,1300)" font-size="4" style="fill:(128, 128, 0)">Al Mohammed Al Jaabeh</text>
+<text transform="translate(711,1189)" font-size="4" style="fill:(128, 128, 0)">Hamoud</text>
+<text transform="translate(347,893)" font-size="4" style="fill:(128, 128, 0)">Mashaki</text>
+<text transform="translate(428,780)" font-size="4" style="fill:(128, 128, 0)">Kharouf</text>
+<text transform="translate(65,1573)" font-size="4" style="fill:(128, 128, 0)">Abu Osbah</text>
+<text transform="translate(571,475)" font-size="4" style="fill:(128, 128, 0)">Agbar</text>
+<text transform="translate(212,629)" font-size="4" style="fill:(128, 128, 0)">Sharbat</text>
+<text transform="translate(374,1458)" font-size="4" style="fill:(128, 128, 0)">Hamra</text>
+<text transform="translate(755,517)" font-size="4" style="fill:(128, 128, 0)">Abu Shkheidam</text>
+<text transform="translate(480,1036)" font-size="4" style="fill:(128, 128, 0)">Totah</text>
+<text transform="translate(324,174)" font-size="4" style="fill:(128, 128, 0)">Al Gharabli</text>
+<text transform="translate(376,206)" font-size="4" style="fill:(128, 128, 0)">Al Omar</text>
+<text transform="translate(207,615)" font-size="4" style="fill:(128, 128, 0)">Al-Kurdi</text>
+<text transform="translate(63,1591)" font-size="4" style="fill:(128, 128, 0)">Lahouh</text>
+<text transform="translate(534,830)" font-size="4" style="fill:(128, 128, 0)">Abougabel</text>
+<text transform="translate(295,547)" font-size="4" style="fill:(128, 128, 0)">Shafei</text>
+<text transform="translate(715,1114)" font-size="4" style="fill:(128, 128, 0)">Al Hallaq</text>
+<text transform="translate(754,1138)" font-size="4" style="fill:(128, 128, 0)">Awlad Mohamed</text>
+<text transform="translate(308,464)" font-size="4" style="fill:(128, 128, 0)">Abu Sbeih</text>
+<text transform="translate(121,984)" font-size="4" style="fill:(128, 128, 0)">Bhais</text>
+<text transform="translate(527,207)" font-size="4" style="fill:(128, 128, 0)">Shalalfou</text>
+<text transform="translate(268,1454)" font-size="4" style="fill:(128, 128, 0)">Abou El Rous</text>
+<text transform="translate(561,563)" font-size="4" style="fill:(128, 128, 0)">Abu Shallouf</text>
+<text transform="translate(347,98)" font-size="4" style="fill:(128, 128, 0)">Abu Ramadan</text>
+<text transform="translate(349,856)" font-size="4" style="fill:(128, 128, 0)">Hashih</text>
+<text transform="translate(240,737)" font-size="4" style="fill:(128, 128, 0)">Shawahin</text>
+<text transform="translate(279,368)" font-size="4" style="fill:(128, 128, 0)">Aslan</text>
+<text transform="translate(105,1003)" font-size="4" style="fill:(128, 128, 0)">El Kilany</text>
+<text transform="translate(88,1640)" font-size="4" style="fill:(128, 128, 0)">El Baz</text>
+<text transform="translate(492,1370)" font-size="4" style="fill:(128, 128, 0)">Nairoukh</text>
+<text transform="translate(657,252)" font-size="4" style="fill:(128, 128, 0)">El Sawalha</text>
+<text transform="translate(699,1015)" font-size="4" style="fill:(128, 128, 0)">Hishlamoun</text>
+<text transform="translate(322,842)" font-size="4" style="fill:(128, 128, 0)">Jabbara</text>
+<text transform="translate(218,601)" font-size="4" style="fill:(128, 128, 0)">Al Bakri</text>
+<text transform="translate(375,1015)" font-size="4" style="fill:(128, 128, 0)">Ajaj</text>
+<text transform="translate(437,997)" font-size="4" style="fill:(128, 128, 0)">Abu Draaz</text>
+<text transform="translate(401,466)" font-size="4" style="fill:(128, 128, 0)">Alnawajah</text>
+<text transform="translate(116,962)" font-size="4" style="fill:(128, 128, 0)">Zohara</text>
+<text transform="translate(564,784)" font-size="4" style="fill:(128, 128, 0)">El Azza</text>
+<text transform="translate(671,691)" font-size="4" style="fill:(128, 128, 0)">Nasra</text>
+<text transform="translate(690,1323)" font-size="4" style="fill:(128, 128, 0)">Abou Cheb</text>
+<text transform="translate(195,1535)" font-size="4" style="fill:(128, 128, 0)">Banat</text>
+<text transform="translate(480,484)" font-size="4" style="fill:(128, 128, 0)">Abu Riala</text>
+<text transform="translate(205,1086)" font-size="4" style="fill:(128, 128, 0)">Al Faliat</text>
+<text transform="translate(208,608)" font-size="4" style="fill:(128, 128, 0)">Abu Rajailah</text>
+<text transform="translate(540,666)" font-size="4" style="fill:(128, 128, 0)">Abayat</text>
+<text transform="translate(699,978)" font-size="4" style="fill:(128, 128, 0)">Al Soussi</text>
+<text transform="translate(47,1696)" font-size="4" style="fill:(128, 128, 0)">Ashkar</text>
+<text transform="translate(383,1268)" font-size="4" style="fill:(128, 128, 0)">Al Sawirki</text>
+<text transform="translate(580,296)" font-size="4" style="fill:(128, 128, 0)">Samhan</text>
+<text transform="translate(226,548)" font-size="4" style="fill:(128, 128, 0)">Talahmeh</text>
+<text transform="translate(578,316)" font-size="4" style="fill:(128, 128, 0)">Al Faqawi</text>
+<text transform="translate(567,764)" font-size="4" style="fill:(128, 128, 0)">Abdel Wahab</text>
+<text transform="translate(150,1519)" font-size="4" style="fill:(128, 128, 0)">El Nemer</text>
+<text transform="translate(439,873)" font-size="4" style="fill:(128, 128, 0)">Harez</text>
+<text transform="translate(152,995)" font-size="4" style="fill:(128, 128, 0)">El Belaawy</text>
+<text transform="translate(189,717)" font-size="4" style="fill:(128, 128, 0)">Jolani</text>
+<text transform="translate(535,1104)" font-size="4" style="fill:(128, 128, 0)">Abdel Dayem</text>
+<text transform="translate(451,1525)" font-size="4" style="fill:(128, 128, 0)">Al Asali</text>
+<text transform="translate(517,411)" font-size="4" style="fill:(128, 128, 0)">Al Batran</text>
+<text transform="translate(476,372)" font-size="4" style="fill:(128, 128, 0)">Alwahsh</text>
+<text transform="translate(213,592)" font-size="4" style="fill:(128, 128, 0)">El Gharabawy</text>
+<text transform="translate(428,708)" font-size="4" style="fill:(128, 128, 0)">Abu Kwik</text>
+<text transform="translate(419,1132)" font-size="4" style="fill:(128, 128, 0)">Batat</text>
+<text transform="translate(463,836)" font-size="4" style="fill:(128, 128, 0)">Tameh</text>
+<text transform="translate(537,1120)" font-size="4" style="fill:(128, 128, 0)">Al Jarjawi</text>
+<text transform="translate(187,869)" font-size="4" style="fill:(128, 128, 0)">Khasib</text>
+<text transform="translate(673,283)" font-size="4" style="fill:(128, 128, 0)">Bakir</text>
+<text transform="translate(77,1555)" font-size="4" style="fill:(128, 128, 0)">Mezher</text>
+<text transform="translate(638,859)" font-size="4" style="fill:(128, 128, 0)">Al Far</text>
+<text transform="translate(758,390)" font-size="4" style="fill:(128, 128, 0)">Al Bassiouni</text>
+<text transform="translate(237,1531)" font-size="4" style="fill:(128, 128, 0)">Trouh</text>
+<text transform="translate(233,1075)" font-size="4" style="fill:(128, 128, 0)">Alustadh</text>
+<text transform="translate(272,1622)" font-size="4" style="fill:(128, 128, 0)">Abeed</text>
+<text transform="translate(545,236)" font-size="4" style="fill:(128, 128, 0)">Abu Nahl</text>
+<text transform="translate(706,1288)" font-size="4" style="fill:(128, 128, 0)">Shabat</text>
+<text transform="translate(703,358)" font-size="4" style="fill:(128, 128, 0)">Abu Hijla</text>
+<text transform="translate(725,1123)" font-size="4" style="fill:(128, 128, 0)">Aleasa</text>
+<text transform="translate(295,1650)" font-size="4" style="fill:(128, 128, 0)">Asleih</text>
+<text transform="translate(521,1327)" font-size="4" style="fill:(128, 128, 0)">Khallet</text>
+<text transform="translate(226,1398)" font-size="4" style="fill:(128, 128, 0)">Abu Abbas Era</text>
+<text transform="translate(709,1204)" font-size="4" style="fill:(128, 128, 0)">Al Ghafri</text>
+<text transform="translate(511,365)" font-size="4" style="fill:(128, 128, 0)">Rabah</text>
+<text transform="translate(264,1426)" font-size="4" style="fill:(128, 128, 0)">Sheikh Ibrahim</text>
+<text transform="translate(626,865)" font-size="4" style="fill:(128, 128, 0)">Bakri</text>
+<text transform="translate(710,819)" font-size="4" style="fill:(128, 128, 0)">Juha</text>
+<text transform="translate(436,266)" font-size="4" style="fill:(128, 128, 0)">Massouda</text>
+<text transform="translate(481,1060)" font-size="4" style="fill:(128, 128, 0)">Al Abssi</text>
+<text transform="translate(482,572)" font-size="4" style="fill:(128, 128, 0)">Daghameen</text>
+<text transform="translate(724,611)" font-size="4" style="fill:(128, 128, 0)">Abou Latifa</text>
+<text transform="translate(526,803)" font-size="4" style="fill:(128, 128, 0)">Abu Kamil</text>
+<text transform="translate(615,1007)" font-size="4" style="fill:(128, 128, 0)">Al Barawi</text>
+<text transform="translate(223,1098)" font-size="4" style="fill:(128, 128, 0)">Rawajbeh</text>
+<text transform="translate(653,606)" font-size="4" style="fill:(128, 128, 0)">Abu Ajwa</text>
+<text transform="translate(669,1188)" font-size="4" style="fill:(128, 128, 0)">Al Khaynabah</text>
+<text transform="translate(153,1531)" font-size="4" style="fill:(128, 128, 0)">Abu Saqr</text>
+<text transform="translate(539,456)" font-size="4" style="fill:(128, 128, 0)">Hanaysheh</text>
+<text transform="translate(535,1132)" font-size="4" style="fill:(128, 128, 0)">Abu Matar</text>
+<text transform="translate(652,343)" font-size="4" style="fill:(128, 128, 0)">Dhamidi</text>
+<text transform="translate(320,672)" font-size="4" style="fill:(128, 128, 0)">Abou El Hija</text>
+<text transform="translate(164,1561)" font-size="4" style="fill:(128, 128, 0)">Rasnah</text>
+<text transform="translate(741,817)" font-size="4" style="fill:(128, 128, 0)">Abou El Qambez</text>
+<text transform="translate(538,1125)" font-size="4" style="fill:(128, 128, 0)">Qawareq</text>
+<text transform="translate(453,594)" font-size="4" style="fill:(128, 128, 0)">Al Amawi</text>
+<text transform="translate(605,649)" font-size="4" style="fill:(128, 128, 0)">Anjas</text>
+<text transform="translate(546,205)" font-size="4" style="fill:(128, 128, 0)">Abu Madin</text>
+<text transform="translate(348,1530)" font-size="4" style="fill:(128, 128, 0)">Bani Hassan</text>
+<text transform="translate(376,1432)" font-size="4" style="fill:(128, 128, 0)">Helou</text>
+<text transform="translate(381,401)" font-size="4" style="fill:(128, 128, 0)">Saabneh</text>
+<text transform="translate(632,1199)" font-size="4" style="fill:(128, 128, 0)">Earidah</text>
+<text transform="translate(185,1653)" font-size="4" style="fill:(128, 128, 0)">Haribat</text>
+<text transform="translate(383,1251)" font-size="4" style="fill:(128, 128, 0)">Abou Hamed</text>
+<text transform="translate(445,1487)" font-size="4" style="fill:(128, 128, 0)">Fahafsha</text>
+<text transform="translate(334,518)" font-size="4" style="fill:(128, 128, 0)">Al Turk</text>
+<text transform="translate(458,1253)" font-size="4" style="fill:(128, 128, 0)">Khater</text>
+<text transform="translate(370,1449)" font-size="4" style="fill:(128, 128, 0)">El Mallahi</text>
+<text transform="translate(697,702)" font-size="4" style="fill:(128, 128, 0)">Al Rajoub</text>
+<text transform="translate(188,1512)" font-size="4" style="fill:(128, 128, 0)">Al Rayes</text>
+<text transform="translate(671,1199)" font-size="4" style="fill:(128, 128, 0)">Ashkirat</text>
+<text transform="translate(331,458)" font-size="4" style="fill:(128, 128, 0)">El Daour</text>
+<text transform="translate(512,319)" font-size="4" style="fill:(128, 128, 0)">Thabteh</text>
+<text transform="translate(314,1500)" font-size="4" style="fill:(128, 128, 0)">Al Hawamdeh</text>
+<text transform="translate(722,486)" font-size="4" style="fill:(128, 128, 0)">Adaily</text>
+<text transform="translate(193,740)" font-size="4" style="fill:(128, 128, 0)">Abdul Karim</text>
+<text transform="translate(215,1621)" font-size="4" style="fill:(128, 128, 0)">Abu Tabikh</text>
+<text transform="translate(376,393)" font-size="4" style="fill:(128, 128, 0)">Jabbour</text>
+<text transform="translate(202,1601)" font-size="4" style="fill:(128, 128, 0)">Abraheh</text>
+<text transform="translate(108,992)" font-size="4" style="fill:(128, 128, 0)">Al Hourani</text>
+<text transform="translate(577,469)" font-size="4" style="fill:(128, 128, 0)">Aziz</text>
+<text transform="translate(668,669)" font-size="4" style="fill:(128, 128, 0)">Qadous</text>
+<text transform="translate(759,610)" font-size="4" style="fill:(128, 128, 0)">Abdel Ghani</text>
+<text transform="translate(606,1406)" font-size="4" style="fill:(128, 128, 0)">Helwa</text>
+<text transform="translate(674,1369)" font-size="4" style="fill:(128, 128, 0)">Karja</text>
+<text transform="translate(129,1721)" font-size="4" style="fill:(128, 128, 0)">Abdel Halim</text>
+<text transform="translate(416,243)" font-size="4" style="fill:(128, 128, 0)">Eawda</text>
+<text transform="translate(389,1241)" font-size="4" style="fill:(128, 128, 0)">Abu Mois</text>
+<text transform="translate(172,753)" font-size="4" style="fill:(128, 128, 0)">Awaisat</text>
+<text transform="translate(713,1279)" font-size="4" style="fill:(128, 128, 0)">Ghayzan</text>
+<text transform="translate(336,213)" font-size="4" style="fill:(128, 128, 0)">Khalayleh</text>
+<text transform="translate(697,991)" font-size="4" style="fill:(128, 128, 0)">Al Bardini</text>
+<text transform="translate(743,780)" font-size="4" style="fill:(128, 128, 0)">Hegaz</text>
+<text transform="translate(451,1541)" font-size="4" style="fill:(128, 128, 0)">Zubaidat</text>
+<text transform="translate(385,1063)" font-size="4" style="fill:(128, 128, 0)">El Tlaa</text>
+<text transform="translate(553,330)" font-size="4" style="fill:(128, 128, 0)">Al Bateh</text>
+<text transform="translate(680,649)" font-size="4" style="fill:(128, 128, 0)">Abu Mahadi</text>
+<text transform="translate(196,892)" font-size="4" style="fill:(128, 128, 0)">Al Rantisi</text>
+<text transform="translate(295,1135)" font-size="4" style="fill:(128, 128, 0)">Al Sheikh Khalil</text>
+<text transform="translate(103,1010)" font-size="4" style="fill:(128, 128, 0)">Qusayeh</text>
+<text transform="translate(378,937)" font-size="4" style="fill:(128, 128, 0)">Zahed</text>
+<text transform="translate(621,924)" font-size="4" style="fill:(128, 128, 0)">Al Areer</text>
+<text transform="translate(326,577)" font-size="4" style="fill:(128, 128, 0)">Alloush</text>
+<text transform="translate(649,1221)" font-size="4" style="fill:(128, 128, 0)">Qarja</text>
+<text transform="translate(694,722)" font-size="4" style="fill:(128, 128, 0)">Al Muqaddamah</text>
+<text transform="translate(744,501)" font-size="4" style="fill:(128, 128, 0)">Qdh</text>
+<text transform="translate(391,789)" font-size="4" style="fill:(128, 128, 0)">Saadi</text>
+<text transform="translate(638,289)" font-size="4" style="fill:(128, 128, 0)">Hantouli</text>
+<text transform="translate(419,939)" font-size="4" style="fill:(128, 128, 0)">Amour</text>
+<text transform="translate(571,1177)" font-size="4" style="fill:(128, 128, 0)">Baerat</text>
+<text transform="translate(402,1558)" font-size="4" style="fill:(128, 128, 0)">Al Zaqzouq</text>
+<text transform="translate(429,789)" font-size="4" style="fill:(128, 128, 0)">Zuhair</text>
+<text transform="translate(191,1520)" font-size="4" style="fill:(128, 128, 0)">Dajneh</text>
+<text transform="translate(492,603)" font-size="4" style="fill:(128, 128, 0)">Msmah</text>
+<text transform="translate(613,929)" font-size="4" style="fill:(128, 128, 0)">Abdul Ghafoor</text>
+<text transform="translate(579,750)" font-size="4" style="fill:(128, 128, 0)">Dabour</text>
+<text transform="translate(457,326)" font-size="4" style="fill:(128, 128, 0)">El Moubayed</text>
+<text transform="translate(454,1357)" font-size="4" style="fill:(128, 128, 0)">Al Asmar</text>
+<text transform="translate(485,634)" font-size="4" style="fill:(128, 128, 0)">Al Rayyan</text>
+<text transform="translate(495,1071)" font-size="4" style="fill:(128, 128, 0)">Hilal</text>
+<text transform="translate(365,998)" font-size="4" style="fill:(128, 128, 0)">Al Qurm</text>
+<text transform="translate(276,1377)" font-size="4" style="fill:(128, 128, 0)">Qaoud</text>
+<text transform="translate(517,170)" font-size="4" style="fill:(128, 128, 0)">Zaqzouq</text>
+<text transform="translate(208,774)" font-size="4" style="fill:(128, 128, 0)">Al Thawabteh</text>
+<text transform="translate(180,814)" font-size="4" style="fill:(128, 128, 0)">Kawazbeh</text>
+<text transform="translate(519,1213)" font-size="4" style="fill:(128, 128, 0)">Rahal</text>
+<text transform="translate(439,884)" font-size="4" style="fill:(128, 128, 0)">Naji</text>
+<text transform="translate(242,1005)" font-size="4" style="fill:(128, 128, 0)">Abou Hamoud</text>
+<text transform="translate(379,1180)" font-size="4" style="fill:(128, 128, 0)">Mutawea</text>
+<text transform="translate(157,906)" font-size="4" style="fill:(128, 128, 0)">Shabieta</text>
+<text transform="translate(439,1004)" font-size="4" style="fill:(128, 128, 0)">Mardawi</text>
+<text transform="translate(427,572)" font-size="4" style="fill:(128, 128, 0)">Slaimeh</text>
+<text transform="translate(542,448)" font-size="4" style="fill:(128, 128, 0)">Eidah</text>
+<text transform="translate(609,855)" font-size="4" style="fill:(128, 128, 0)">Halabi</text>
+<text transform="translate(220,701)" font-size="4" style="fill:(128, 128, 0)">Al Daghma</text>
+<text transform="translate(606,696)" font-size="4" style="fill:(128, 128, 0)">Faqih</text>
+<text transform="translate(334,1106)" font-size="4" style="fill:(128, 128, 0)">Beni Shamsa</text>
+<text transform="translate(702,301)" font-size="4" style="fill:(128, 128, 0)">Benora</text>
+<text transform="translate(357,1355)" font-size="4" style="fill:(128, 128, 0)">Al Othamneh</text>
+<text transform="translate(677,909)" font-size="4" style="fill:(128, 128, 0)">Shallah</text>
+<text transform="translate(252,448)" font-size="4" style="fill:(128, 128, 0)">Al Qishawi</text>
+<text transform="translate(334,972)" font-size="4" style="fill:(128, 128, 0)">El Zaro</text>
+<text transform="translate(234,1513)" font-size="4" style="fill:(128, 128, 0)">Ziara</text>
+<text transform="translate(574,890)" font-size="4" style="fill:(128, 128, 0)">El Kahwagi</text>
+<text transform="translate(663,1389)" font-size="4" style="fill:(128, 128, 0)">Jarada</text>
+<text transform="translate(566,1191)" font-size="4" style="fill:(128, 128, 0)">Al Hamaydeh</text>
+<text transform="translate(570,1216)" font-size="4" style="fill:(128, 128, 0)">Bulbul</text>
+<text transform="translate(489,1377)" font-size="4" style="fill:(128, 128, 0)">Abu Mughaseeb</text>
+<text transform="translate(741,1204)" font-size="4" style="fill:(128, 128, 0)">Al Qaraan</text>
+<text transform="translate(767,912)" font-size="4" style="fill:(128, 128, 0)">Sarmeh</text>
+<text transform="translate(481,477)" font-size="4" style="fill:(128, 128, 0)">Al Scafi</text>
+<text transform="translate(83,1455)" font-size="4" style="fill:(128, 128, 0)">Al Shawaf</text>
+<text transform="translate(347,1545)" font-size="4" style="fill:(128, 128, 0)">El Dabbary</text>
+<text transform="translate(471,1224)" font-size="4" style="fill:(128, 128, 0)">Nakhla</text>
+<text transform="translate(222,1465)" font-size="4" style="fill:(128, 128, 0)">Nasir</text>
+<text transform="translate(574,768)" font-size="4" style="fill:(128, 128, 0)">Attaya</text>
+<text transform="translate(289,1276)" font-size="4" style="fill:(128, 128, 0)">Abou El Gedian</text>
+<text transform="translate(191,1540)" font-size="4" style="fill:(128, 128, 0)">Qanan</text>
+<text transform="translate(92,1476)" font-size="4" style="fill:(128, 128, 0)">Darraj</text>
+<text transform="translate(369,476)" font-size="4" style="fill:(128, 128, 0)">Anaya</text>
+<text transform="translate(565,711)" font-size="4" style="fill:(128, 128, 0)">Sabra</text>
+<text transform="translate(513,416)" font-size="4" style="fill:(128, 128, 0)">El Natour</text>
+</svg>

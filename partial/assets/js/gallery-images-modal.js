@@ -23,7 +23,7 @@ for (var i = 0; i < images.length; i++) {
   // and attach our click listener for this image.
   img.onclick = function(evt) {
     modal.style.display = "block";
-    modalImg.src = this.src.replace("_preview.jpeg", ".jpeg");
+    modalImg.src = this.src.replace("_preview", "");
     captionText.innerHTML = this.alt;
   }
 }
