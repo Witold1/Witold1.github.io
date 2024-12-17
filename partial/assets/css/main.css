@@ -144,8 +144,8 @@
 */
 .page-main-content-header-block {
   text-align: left;
-  padding: 32px;
-  background-color: #white;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 #panel {
@@ -393,7 +393,7 @@
 .slideshow-slide-number-text {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 8px 4px;
   position: absolute;
   top: 1%;
 }
