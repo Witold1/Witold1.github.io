@@ -24,6 +24,9 @@
   padding: 12px 16px;
   background-color: white; /*#f1f1f1; */
   cursor: pointer;
+  color: black;
+  -webkit-appearance: none;
+  text-decoration: none;
 }
 
 /* Add a light grey background on mouse-over */
@@ -35,4 +38,6 @@
 .content-control-button.active {
   background-color: #666667;
   color: white;
+  -webkit-appearance: none;
+  text-decoration: none;
 }
