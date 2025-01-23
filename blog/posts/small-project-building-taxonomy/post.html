@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import no tracking of personal data web analytics -->
+    <script data-goatcounter="https://witold1.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+    <!-- Import CSS styles -->
+    <link rel="stylesheet" href="../../../partial/assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/blog-main.css" />
+    <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+    <link rel="icon" href="data:image/svg+xml,
+      <svg
+      xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+      <text y=%22.9em%22 font-size=%2290%22>🇼</text>
+      </svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blogpost - Witold's Data Consulting 💫</title>
+    <!-- Site Navigation Bar -->
+    <div class="top-navigation-bar" id="top-navigation"></div>
+  </head>
+  <body>
+    <!-- Hidden/Showen OnClick About Panel -->
+    <div id="panel"></div>
+    <div class="blog-navigation">
+      ☰
+      <a href="../../index.html">⚐ blog</a> »
+      <a href="./post.html">⚑ this post</a>
+    </div>
+    <div class="article-content">
+      <div class="article-title" id="title">
+        <p>
+        <h1 style="margin: 0px; padding-bottom:0px; ">🏢 Building taxonomy</h1>
+        </p>
+        <p style="margin: 0px; margin-top: -1em; ">
+          •
+          <em>version:</em> public •
+          <em>created:</em> Nov 2024
+        </p>
+      </div>
+      <hr>
+      <div class="article-image">
+        <p style="text-align:center; margin-bottom:5px; ">
+          Fig 1.
+          <b>Simplified building taxonomy of selected cities.</b>
+          <br>⇱
+          <b>Click</b> preview image to start animation in better quality
+        </p>
+        <div style="text-align:center; ">
+          <video controls muted loop width="98%" height="98%" loading="lazy"
+            style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; "
+            title="Simplified building taxonomy of selected cities (animation, .mp4 | created with ezgif.com)"
+            poster="./figures/building-taxanomy-collage_preview.jpeg">
+            <source src="https://i.imgur.com/vvYNPWp.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <hr>
+      <div class="article-text">
+        <h2 id="introduction">Introduction</h2>
+        <p>Plot a simplified taxonomies of building across selected cities using PyData, QuackOSM and Metaflow.</p>
+        <blockquote >
+          <span>
+            <p>
+              <b>
+              <a href="https://30daymapchallenge.com/">#30DayMapChallenge | Day 3: Polygons | 2024</a>
+              </b> (see:
+              <a href="https://github.com/tjukanovt/30DayMapChallenge">"30DayMapChallenge" official Github repo ⎋</a>)
+            </p>
+            <p>
+              Recently I saw a post by Daniel Gorokhov who illustrated building taxonomy of "interesting buildings" in Milano, Italy, Stockholm, Sweden and Amsterdam, Nethedlands. Here is my extension for that post, with some more cities, mostly in USA, but also in Europe.
+            </p>
+            <p>
+              Chart type is
+              <a href="https://en.wikipedia.org/wiki/Small_multiple">"small multiple" (a.k.a. "grid chart")</a>. How was it made? I run a script that loaded all mapped buildings within city area and counted exterior vertices (nodes) for all of them. Still, I did not explicitly count inner polygons, like courtyards or patios. Then, I took one hundred of buildings with the most nodes to plot them.
+            </p>
+            <ol>
+              <li style="list-style-type: '① '; "> Yet, it happened that under current methodology, quite often, "interesting" buildings are repetitive because of construction nature (for example - neighborhoods of apartment buildings or high-rise housing projects; industrial structures, like water treatment ponds, fuel storages, dockside cranes)</li>
+              <li style="list-style-type: '② '; "> Besides, as was expected, some of "the actual most complex" building structures aren't mapped well, they will require more detailed and case-by-case processing to handle relationships, connections, and "multi-buildings" instead of such gallop-ish approach (for example, see
+                <a href="https://www.openstreetmap.org/way/25312625#map=19/25.781138/-80.187221">Kaseya Center arena ⎋</a> and
+                <a href="https://earth.google.com/web/@25.78149345,-80.18719689,19.98112743a,514.14530267d,35y,-83.33923011h,56.26180406t,0r">its' eastern covered walkaways and sub-buildings ⎋</a> in Miami, FL)
+              </li>
+            </ol>
+            <p>
+            <li style="list-style-type: ''; ">--</li>
+            <li style="list-style-type: ''; ">Made with #Python</li>
+            <li style="list-style-type: ''; ">Data: #OSM, #OpenStreetMap retrieved with
+              <a href="https://kraina-ai.github.io/quackosm/0.12.0/examples/advanced_examples/osm_extracts/#query-osm-extract-by-name">QuackOSM ⎋</a>.
+            <li style="list-style-type: ''; ">#dataviz #datavisualization</li>
+            </p>
+          </span>
+        </blockquote >
+        <p>
+          <b style="display: inline; ">Inspiration: </b>
+          <a href="https://www.linkedin.com/posts/daniel-gorokhov_30daymapchallenge-geospatial-maps-activity-7259234326775521280-melE?utm_source=share&utm_medium=member_desktop">"building taxonomy of Milano, Stockholm and Amsterdam" ⎋</a> by
+          <a href="https://thisisdaniel.co/">Daniel Gorokhov ⎋</a>
+        </p>
+        <p>
+          <b style="display: inline; ">Futher works: </b>
+          <a href="https://kamilraczycki.com/blog/City-Summit">"Visualizing a building shapes taxonomy - The City Summit 🏙️🗻 project" ⎋</a> by
+          <a href="https://kamilraczycki.com/">Kamil Raczycki ⎋</a>
+        </p>
+      </div>
+      <hr>
+      <div class="article-text">
+        <h3 id="how-to">🏗️ How-to: Make this product</h3>
+        <!--
+          prism scripts https://github.com/PrismJS/prism-themes?tab=readme-ov-file
+          -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" defer></script>
+        <!--
+          prism themes
+          https://github.com/PrismJS/prism-themes?tab=readme-ov-file
+          https://www.jsdelivr.com/package/npm/prism-themes
+          -->
+        <link href="https://cdn.jsdelivr.net/npm/prism-themes/themes/prism-atom-dark.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.css">
+        <link rel="stylesheet" href="../../assets/css/codeblock.css" />
+        <div>
+          <details class="article-description-details" >
+            <summary>
+              <mark>★
+              <b>Click here</b> to see code snippets.
+              </mark>
+            </summary>
+            <p style="text-align:center; margin-bottom:5px; ">
+              Fig. 1
+              <b>Processing graph (DAG).</b>
+            </p>
+            <div style="text-align:center; ">
+              <img class="myImages" id="myImg" src="./figures/dag.svg" width="100%" height="100%" loading="lazy"
+                alt="🛠️ Processing graph (DAG).
+                <br>Made with Metaflow by Netflix."
+                style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+            </div>
+            <hr>
+            <div>
+              <div>
+                <h3>imports (a.k.a. dependencies)</h3>
+                <div class="codeblock" >
+                  <figcaption class="codeblock-toolbar">
+                    <span class="codeblock-lang">python</span>
+                  </figcaption>
+                  <pre class="language-python line-numbers" style="margin-top: 0px; top: 1px; border-radius: 0;"  >
+																								<code>
+                          import metaflow
+                          from metaflow import FlowSpec, Parameter, JSONType, step, NBRunner, pypi
+
+                          import quackosm as qosm
+
+                          import time
+                          import datetime
+
+                          import numpy as np
+                          import geopandas as gpd
+                          import matplotlib
+                          import matplotlib.pyplot as plt
+                        </code>
+																							</pre>
+                </div>
+              </div>
+              <hr>
+              <div>
+                <h3>define auxilary functions (a.k.a. utils)</h3>
+                <div class="codeblock" >
+                  <figcaption class="codeblock-toolbar">
+                    <span class="codeblock-lang">python</span>
+                  </figcaption>
+                  <pre class="language-python line-numbers" style="margin-top: 0px; top: 1px; border-radius: 0;"  >
+																									<code>
+                          def _func_count_vertices(row_index, row_values_series):
+                              """
+                                  * https://gis.stackexchange.com/questions/328884/counting-number-of-vertices-in-geopandas
+                                  * https://gis.stackexchange.com/questions/388606/counting-vertices-and-adding-it-as-number-to-column-using-shapely
+                              """
+                              geometry = row_values_series.geometry
+                              geom_type = geometry.geom_type
+
+                              n_vertices = 0
+                              #try:
+                              if geom_type == "Polygon":
+                                  n_vertices = len(geometry.exterior.coords)
+                              elif geom_type == "MultiPolygon":
+                                  for inner_geometry in list(geometry.geoms):
+                                      n_vertices += len(inner_geometry.exterior.coords)
+                              else:
+                                  None
+                                  #print("- Other type of geometry: ", geom_type, row_index)
+                              #except:
+                                  #print("- There was unexpected error with row: ", row_index)
+
+                              return n_vertices
+                        </code>
+																								</pre>
+                </div>
+              </div>
+              <hr>
+              <div>
+                <h3>define pipeline (a.k.a flow)</h3>
+                <div class="codeblock" >
+                  <figcaption class="codeblock-toolbar">
+                    <span class="codeblock-lang">python</span>
+                  </figcaption>
+                  <pre class="language-python line-numbers" style="margin-top: 0px; top: 1px; border-radius: 0;"  >
+																										<code>
+                          class QuackOSM_Flow(FlowSpec):
+                              """
+                              A flow where Metaflow parses OSM, process raw data, and plot a chart.
+                              """
+                              osm_place_name = Parameter(name='osm_place_name', help='Name of place in OSM databse', default="Detroit, Michigan, USA")
+                              osm_tags_filter = Parameter(name='osm_tags_filter', help='OSMnx tags to extract geometries', default={'building': True}, type=JSONType)
+
+                              @step
+                              def start(self):
+                                  """
+                                  This is the 'start' step. All flows must have a step named 'start' that
+                                  is the first step in the flow.
+
+                                  """
+                                  self.next(self.get_place_polygon)
+
+                              @step
+                              def get_place_polygon(self):
+                                  """
+                                  Get and load
+                                  """
+
+                                  print(f" - EXTRACT - polygon - {self.osm_place_name}")
+                                  self.area_geometry = qosm.geocode_to_geometry(self.osm_place_name)
+
+                                  self.next(self.get_features_from_place)
+
+                              @step
+                              def get_features_from_place(self):
+                                  """
+                                  Get and load
+                                  """
+
+                                  print(f" - EXTRACT - features - {self.osm_tags_filter}")
+                                  self.features_df = qosm.convert_geometry_to_geodataframe(self.area_geometry,
+                                                                                           tags_filter=self.osm_tags_filter,
+                                                                                           verbosity_mode="verbose")
+                                  print(f"* num of features: {len(self.features_df)}")
+
+                                  self.next(self.preprocess_features)
+
+                              @step
+                              def preprocess_features(self):
+                                  """
+                                  Preprocessing
+                                  """
+
+                                  print(f" - PROCESSING - computation - `func_count_vertices`")
+                                  vertices_counter_aux = []
+                                  for row_index, row_values_series in self.features_df.iterrows():
+                                      vertices_counter_aux.append(_func_count_vertices(row_index, row_values_series))
+                                      #break
+                                  filter_indexes = np.array(vertices_counter_aux).argsort()[-100:]
+                                  self.top_100_interesting_buildings = self.features_df.iloc[filter_indexes]
+
+                                  self.next(self.plot_chart)
+
+
+                              @step
+                              def plot_chart(self):
+                                  """
+                                  Plot artifact
+                                  """
+                                  import highlight_text
+
+                                  print(f" - PLOT - plot chart")
+                                  FONTSIZE = 16;
+                                  N_OBJECTS = len(self.top_100_interesting_buildings)
+                                  NCOLS = 10;
+                                  NROWS = N_OBJECTS // NCOLS + 1 if N_OBJECTS % NCOLS else N_OBJECTS // NCOLS ;
+                                  fig, axes = plt.subplots(nrows=NROWS, ncols=NCOLS, figsize=(22, NROWS * 2), dpi=150, facecolor='#FFFFF0')
+                                  axes = axes.flatten()
+
+                                  for indx, (row_index, row_values_series) in enumerate(self.top_100_interesting_buildings.iterrows()):
+                                      geometry = row_values_series.geometry
+                                      geom_type = geometry.geom_type
+                                      if geom_type == "Polygon":
+                                          axes[indx].plot(*geometry.exterior.xy, alpha=0.98, color="black")
+                                      elif geom_type == "MultiPolygon":
+                                          # https://gis.stackexchange.com/questions/354184/showing-only-the-external-boundary-of-a-geopandas-dataframe
+                                          gds_to_plot = gpd.GeoSeries(geometry, crs=self.top_100_interesting_buildings.crs)
+                                          gds_to_plot.boundary.plot(alpha=0.98, color="black", ax=axes[indx])
+                                      else:
+                                          print(row[0], geom_type)
+
+                                      axes[indx].margins(x=0.00, y=0.00)
+
+                                  for axis in axes:
+                                      axis.axis("off")
+
+                                  highlight_text.fig_text(fig=fig, s="
+																											<Building taxonomy of>",
+                                                      x=0.5, y=1.00, fontsize=round(FONTSIZE * 5),
+                                                      highlight_textprops=[{"fontweight": "bold"},],
+                                                      ha='center', va="top")
+                                  highlight_text.fig_text(fig=fig, s=f"<{', '.join(self.osm_place_name.split(', ')[0:2])}>",
+                                                          x=0.5, y=0.935, fontsize=round(FONTSIZE * 3),
+                                                          highlight_textprops=[{"fontweight": "bold", "color": "black", "alpha": 0.95,}],
+                                                          ha='center', va="top")
+                                  highlight_text.fig_text(fig=fig, s="Made with pure python by Witold1.github.io • Sources: OSM • Retrieved: Nov 2024 • #30DayMapChallenge, Day 3: Polygons",
+                                                          x=0.5, y=0.07, fontsize=round(FONTSIZE),
+                                                          color="black",
+                                                          ha='center', va="top")
+
+                                  fig.savefig(f"img/Building taxonomy of {self.osm_place_name}.svg", format='svg', bbox_inches='tight', dpi=150, pad_inches=1.5)
+                                  fig.savefig(f"img/Building taxonomy of {self.osm_place_name}.png", format='png', bbox_inches='tight', dpi=150, pad_inches=1.5)
+
+                                  self.next(self.end)
+
+                              @step
+                              def end(self):
+                                  """
+                                  This is the 'end' step. All flows must have an 'end' step, which is the
+                                  last step in the flow.
+
+                                  """
+                                  pass
+
+																											</code>
+																										</pre>
+                </div>
+              </div>
+              <hr>
+              <div>
+                <h3>run pipeline (<a href="https://docs.metaflow.org/api/runner#nbrunner">in notebook cell ⎋</a>)
+                </h3>
+                <div class="codeblock" >
+                  <figcaption class="codeblock-toolbar">
+                    <span class="codeblock-lang">python</span>
+                  </figcaption>
+                  <pre class="language-python line-numbers" style="margin-top: 0px; top: 1px; border-radius: 0;"  >
+																												<code>
+                          cities_list_test = ['Detroit, Michigan, USA', 'Miami, Florida', 'Seattle, Washington',
+                                             'Cleveland, Ohio', 'Pittsburgh, Pennsylvania', 'Indianapolis, Indiana, USA',
+                                             'Philadelphia, Pennsylvania, United States', 'Baltimore, Maryland',
+                                             'Paris, France', 'Moscow, Russia'
+                                            ]
+                          for place in cities_list_test:
+                             run = NBRunner(QuackOSM_Flow, pylint=False).nbrun(osm_place_name=place,
+                                                                           osm_tags_filter={'building': True})
+                        </code>
+																											</pre>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </details>
+        </div>
+      </div>
+      <hr>
+      <div class="article-text">
+        <p dir="auto">
+          <b style="display: inline;">Media presence:</b>
+          <br />
+          <a href="https://www.linkedin.com/posts/vital-yevtushenko_30daymapchallenge-python-osm-activity-7261763492032991234-c244?utm_source=share&utm_medium=member_desktop">LinkedIn post ⎋</a> •
+          <a href="https://www.kaggle.com/code/witold1/building-taxonomy-visualization-of-urban-shapes">
+            <svg version="1.1" baseProfile="full" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <svg fill="#20BEFF" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                <title>Kaggle icon</title>
+                <path
+                  d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"
+                  ></path>
+                </g>
+              </svg>
+            </svg>
+            kaggle notebook ⎋
+          </a>
+          • <a href="https://imgur.com/a/post-building-taxonomy-of-rK4hLzF">imgur storage ⎋</a> •
+          <a href="https://nastengraph.substack.com/i/151770350/data-visualization-picks">"Data Visualization Picks / Nov 17, 2024" by BI Bites 🍪 ⎋</a>
+          <sub> weekly news of dataviz and BI</sub>
+        </p>
+      </div>
+      <div class="article-text">
+        <p dir="auto">
+          <b style="display: inline; ">Table of Content:</b>
+          <br>
+          <a href="#introduction" rel="nofollow">Introduction</a> •
+        </p>
+      </div>
+      <hr>
+      <div class="article-text">
+         <p>
+            <b>★ How to cite this work</b>
+            <br>
+            <blockquote ><span>
+              Visualization "Building taxonomy" (2024), Vitaliy Y from Witold's Data Consulting
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;<i><a href="https://witold1.github.io/blog/posts/small-project-building-taxonomy/post">https://witold1.github.io/blog/posts/small-project-building-taxonomy/post</a></i>
+            </span></blockquote>
+         </p>
+      </div>
+      <div>
+        <p style="text-align: right">
+          <a href="#">
+          <mark>
+          <b>Back to top ⇪</b>
+          </mark>
+          </a>
+        </p>
+      </div>
+    </div>
+    <!-- Trigger modal images -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <!-- Import JS scripts -->
+    <script src="../../../partial/assets/js/website-navitation-bar.js"></script>
+    <script src="../../../partial/assets/js/gallery-images-modal.js"></script>
+    <script src="../../../partial/assets/js/gallery-images-slideshow.js"></script>
+    <script src="../../assets/js/prismjs-custom-toolbar-copy-buttom.js"></script>
+  </body>
+  <footer>
+    <!-- Site Bottom Bar -->
+    <div class="bottom-bar" id="bottom-navigation"></div>
+    <script src="../../../partial/assets/js/sharable-header-footer.js"></script>
+  </footer>
+</html>

@@ -5,7 +5,6 @@
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-
   var x = document.getElementById("top-navigation");
 
   if (x.className === "top-navigation-bar") {
@@ -22,14 +21,13 @@ function myFunction() {
 
 /* Toggle panel (block) with brief introduction (about) on click to avoid redirection */
 function onClickPanelShow() {
-  displaySetting = document.getElementById("panel").style.display
+  displaySetting = document.getElementById("panel").style.display;
 
-  if (displaySetting == 'block') {
+  if (displaySetting == "block") {
     // clock is visible. hide it
-    document.getElementById("panel").style.display = 'none';
-  }
-  else {
+    document.getElementById("panel").style.display = "none";
+  } else {
     // clock is hidden. show it
-    document.getElementById("panel").style.display = 'block';
+    document.getElementById("panel").style.display = "block";
   }
 }

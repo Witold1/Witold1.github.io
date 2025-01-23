@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Import no tracking of personal data web analytics -->
+      <script data-goatcounter="https://witold1.goatcounter.com/count"
+         async src="//gc.zgo.at/count.js"></script>
+      <!-- Import CSS styles -->
+      <link rel="stylesheet" href="../../../partial/assets/css/main.css" />
+      <link rel="stylesheet" href="../../assets/css/blog-main.css" />
+      <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Blogpost - Witold's Data Consulting 💫</title>
+      <!-- Site Navigation Bar -->
+      <div class="top-navigation-bar" id="top-navigation"></div>
+   </head>
+   <body>
+      <!-- Hidden/Showen OnClick About Panel -->
+      <div id="panel"></div>
+      <div class="blog-navigation">
+         ☰ <a href="../../index.html">⚐ blog</a> » <a href="./post.html">⚑ this post</a>
+      </div>
+      <div class="article-content">
+         <div class="article-title" id="title">
+            <p>
+              <h1 style="margin: 0px; padding-bottom:0px; ">Forenames <i>of</i> the World</h1>
+            </p>
+            <p style="margin: 0px; margin-top: -1em; ">
+              • <em>version:</em> data quality experiment • <em>created:</em> Mid-2024
+            </p>
+         </div>
+         <hr>
+         <div class="article-text">
+            <h2>Introduction</h2>
+            <p>
+               This post is a spin-off from my <a href="../posts/project-surnames-navigator/post.html">Project "Surnames of the world"</a>, that explores the most common forenames across the <b>various regions of the world</b> through wordcloud visualisation.
+               Political boundaries shown according to their <a href="https://www.naturalearthdata.com/about/disputed-boundaries-policy">"de facto" status ⎋</a>. Data came from <a href="https://forebears.io/">Forebears.io ⎋</a>.
+            </p>
+         </div>
+         <hr>
+         <div class="article-text" id="charts-figures">
+            <h2>Charts and figures</h2>
+            <p>
+               ⇱ <b>Click</b> preview images to enlarge in better quality<br>
+               ⇔ <b>Swipe</b> &#10094; left or right &#10095; to see other image(s)<br>
+               ⛟ Some elements may display differently across platforms (desktop, smartphone, etc)<br>
+            </p>
+         </div>
+         <div class="article-image">
+            <p style="text-align:center; margin-bottom:5px; ">
+               Fig 1. <b><u>Forenames</u> of the World.</b>
+            </p>
+            <div class="slideshow-container" >
+              <div class="mySlides fade" style="text-align:center; ">
+                 <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">1 / 5</div>
+                 <img class="myImages" id="myImg" src="https://www.dropbox.com/scl/fi/owpvfjur06u81u16lmcf7/Balkan-Peninsula-forenames_merged_preview.jpeg?rlkey=liyy7n79ups3mm3whdfil4df7&st=i22fs8al&raw=1" width="99%" height="99%" loading="lazy"
+                    alt="Forenames of Balkan Peninsula"
+                    style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+              </div>
+              <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">2 / 5</div>
+                  <img class="myImages" id="myImg" src="https://www.dropbox.com/scl/fi/fnnbb5ygq3osynrojkr4q/Central-America-forenames_merged_preview.jpeg?rlkey=e84fzlb8r74gdillzgkg7yapz&st=7ikn5mce&raw=1" width="99%" height="99%" loading="lazy"
+                     alt="Forenames of Central America"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+              </div>
+              <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">3 / 5</div>
+                  <img class="myImages" id="myImg" src="https://www.dropbox.com/scl/fi/lyed16glty5vem2kyfy2k/Central-Asia-forenames_merged_preview.jpeg?rlkey=t9c6ttrzs968xgocn3qyd4ee2&st=6pixnosx&raw=1" width="99%" height="99%" loading="lazy"
+                     alt="Forenames of Central Asia"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+              </div>
+              <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">4 / 5</div>
+                  <img class="myImages" id="myImg" src="https://www.dropbox.com/scl/fi/k4vpwnveehdueydkh0qti/Indian-Subcontinent-forenames_merged_preview.jpeg?rlkey=zq4b048swzsuce7f6ys4595v5&st=84vo3kry&raw=1" width="99%" height="99%" loading="lazy"
+                     alt="Forenames of Indian Subcontinent"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+              </div>
+              <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">5 / 5</div>
+                  <img class="myImages" id="myImg" src="https://www.dropbox.com/scl/fi/htycwoiabefmdd6dpwj09/Middle-East-forenames_merged_preview.jpeg?rlkey=s08wyobl0tl8pa1ukelrtim80&st=0u56dzsc&raw=1" width="99%" height="99%" loading="lazy"
+                     alt="Forenames of Middle East"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+              </div>
+              <a class="prev" style="color:gray">&#10094;</a>
+              <a class="next" style="color:gray">&#10095;</a>
+              <div style="text-align:center; ">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </div>
+            </div>
+         </div>
+         <div class="article-text">
+            <p style="text-align:center; ">
+               Read more about local naming customs at Familysearch.org's wiki ⎋. Also, for some countries and regions you can find academic papers that explain how names were forming there.
+            </p>
+         </div>
+         <hr>
+         <div class="article-image">
+            <p style="text-align:center; margin-bottom:5px; ">
+               Fig 2. <b><u>Forenames</u> of the World, by country.</b>
+            </p>
+            <!-- Image Gallery Grid -->
+            <div class="page-main-content-responsive">
+               <!-- Gallery page-column-content-responsive i -->
+               <div class="page-column-content-responsive">
+                 <div >
+                    <img class="myImages" id="myImg" src="./figures/Balkan-Peninsula-forenames_merged.svg" loading="lazy" alt="Balkan Peninsula merged (raw vector, .svg)️">
+                    <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" > Balkan Peninsula</p>
+                 </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/Central-America-forenames_merged.svg" loading="lazy" alt="Central America merged (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" > Central America</p>
+                  </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+1 -->
+               <div class="page-column-content-responsive">
+                 <div >
+                    <img class="myImages" id="myImg" src="./figures/Central-Asia-forenames_merged.svg" loading="lazy" alt="Central Asia merged (raw vector, .svg)️">
+                    <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" > Central Asia</p>
+                 </div>
+                 <div >
+                    <img class="myImages" id="myImg" src="./figures/Indian-Subcontinent-forenames_merged.svg" loading="lazy" alt="Indian Subcontinent merged (raw vector, .svg)️">
+                    <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" > Indian Subcontinent</p>
+                 </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+2 -->
+               <div class="page-column-content-responsive">
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/Middle-East-forenames_merged.svg" loading="lazy" alt="Middle East (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" > Middle East</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="article-text">
+            <p>
+               <b>★ How to cite this work</b>
+               <br>
+               <blockquote ><span>
+                 Project "Surnames <i>of</i> " (2024), Vitaliy from Witold's Data Consulting
+                 <br>&nbsp;&nbsp;&nbsp;&nbsp;<i><a href="https://witold1.github.io/blog/posts/project-surnames-navigator/post">https://witold1.github.io/blog/posts/project-surnames-navigator/post</a></i>
+               </span></blockquote>
+            </p>
+         </div>
+         <hr>
+         <div class="article-text">
+            <p dir="auto">
+               <b style="display: inline; ">Table of Content:</b> <a href="#charts-figures" rel="nofollow">Charts and figures</a> • <a href="../project-surnames-navigator/post.html" rel="nofollow">To Surnames Navigator ↩</a> •
+            </p>
+         </div>
+         <div class="article-text">
+            <p dir="auto">
+               <b style="display: inline; ">Media presence:</b> <a href="https://www.linkedin.com/posts/vital-yevtushenko_python-matplotlib-dataviz-activity-7221960185865457665-w2vB?utm_source=share&utm_medium=member_desktop">LinkedIn post ⎋</a>  •
+            </p>
+         </div>
+         <div>
+            <p style="text-align: right">
+               <a href="#"><mark><b>Back to top ⇪</b></mark></a>
+             </p>
+         </div>
+      </div>
+      <!-- Trigger modal images -->
+      <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+         <div id="caption"></div>
+      </div>
+      <!-- Import JS scripts -->
+      <script src="../../../partial/assets/js/website-navitation-bar.js"></script>
+      <script src="../../../partial/assets/js/gallery-filter-content.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-modal.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-slideshow.js"></script>
+   </body>
+   <footer>
+      <!-- Site Bottom Bar -->
+      <div class="bottom-bar" id="bottom-navigation"></div>
+      <script src="../../../partial/assets/js/sharable-header-footer.js"></script>
+   </footer>
+</html>

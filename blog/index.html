@@ -1,112 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script data-goatcounter="https://witold1.goatcounter.com/count"
-      async src="//gc.zgo.at/count.js">
-	</script>
-  <link rel="stylesheet" href="../partial/assets/css/main.css" />
-  <link rel="stylesheet" href="./assets/css/blog-main.css" />
-	<!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Witold's Data Consulting 💫</title>
-
-	<!-- Site Navigation Bar -->
-	<div class="top-navigation-bar" id="top-navigation">
-		<a class="active_page" href="javascript:void(0);">📊 <b>Witold's</b> Blog Project</a>
-		<a href="../gallery/index.html" style="float: right" alt="Portfolio Gallery link:">Portfolio Gallery</a>
-		<a href="javascript:void(0);" style="float: right" alt="Blog link:">Blog</a>
-		<a href="https://www.linkedin.com/in/vital-yevtushenko/" class="fa fa-linkedin" style="float: right" aria-label="Linkedin" alt="linkedin link: linkedin.com/in/vital-yevtushenko/"></a>
-		<a href="https://github.com/witold1/" class="fa fa-github" style="float: right" aria-label="Github" alt="github link: github.com/witold1/" ></a>
-		<a href="javascript:void(0);" class="flip" onclick="onClickPanelShow()" style="float: right" alt="about me block">About Me</a>
-		<a href="javascript:void(0);" aria-label="Responsive top navigation" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
-
-</head>
-
-<body>
-
-	<!-- Hidden/Showen OnClick About Panel -->
-	<div id="panel">
-		<h2> 👨‍💻 Brief introduction</h2>
-		<p>Hello, <a href="https://witold1.github.io/">Witold1</a> is here! You might recognize me from my involvement in various analytical projects, insightful blog comments, and captivating <a href="https://witold1.github.io/">DataViz products</a>. Below, you'll find a selection of <a href="https://github.com/witold1#-remarkable-projects">open projects</a> that I believe are worth sharing from my previous experiences.</p>
-		<p>If you're interested in collaborating on projects that require joint expertise or need recommendations regarding data sources and data processing, don't hesitate to reach out.</p>
-	</div>
-
-  <!--  https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
-  <div class="row" style="padding: 20px;">
-
-		<div class="leftcolumn">
-
-			<div class="card">
-
-				<h2><a href="./posts/project-surnames/post.html">Project "Surnames" - Indian Subcontinent</a></h2>
-				<h5>Visualizing surnames across the world [part 2], Mid 2024</h5>
-				<a href="./posts/project-surnames/post.html">
-					<div class="fakeimg" style="height:200px;">
-						Image preview
-					</div>
-				</a>
-				<p>This post explores the most common surnames across Indian Subcontinents through wordcloud visualisation. Data came from Forebears.io...</p>
-				<p><a href="./posts/project-surnames/post.html">See post...</a></p>
-			</div>
-
-			<div class="card">
-
-				<h2><a href="./posts/project-racing/post.html">Project "Racing" - IMSA 2024</a></h2>
-				<h5>Visualizing racing performance in american auto racing series, Early Summer 2024</h5>
-				<a href="./posts/project-racing/post.html">
-					<div class="fakeimg" style="height:200px;">
-						Image preview
-					</div>
-				</a>
-				<p>This post shows some auxilary info about races. Data came from...</p>
-				<p><a href="./posts/project-racing/post.html">See post...</a></p>
-			</div>
-
-      <div class="card">
-
-				<h2>EXAMPLE TITLE HEADING</h2>
-				<h5>Example Title description, Month Date, Year</h5>
-				<div class="fakeimg" style="height:200px;">Image</div>
-				<p>Some text..</p>
-			</div>
-
-    </div>
-
-    <div class="rightcolumn">
-
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
-      </div>
-
-      <div class="card">
-        <h2>Example Card</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>||| filler |||</p>
-      </div>
-
-    </div>
-
-  </div>
-
-	<script src="../partial/assets/js/website-navitation-bar.js"></script>
-
-</body>
-
-<footer>
-	<!-- Site Bottom Bar -->
-	<div class="bottom-bar" id="bottom-navigation">
-		<a href="../sitemap.html">Sitemap</a>
-		<div>© Copyright 2024 by Witold's Data Consulting, LLC. All rights reserved. Designed and developed by Witold's Data Consulting, LLC.</div>
-	</div>
-</footer>
-
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Import no tracking of personal data web analytics -->
+        <script data-goatcounter="https://witold1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <!-- Import CSS styles -->
+        <link rel="stylesheet" href="../partial/assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/blog-main.css" />
+        <link rel="stylesheet" href="../gallery/assets/css/gallery-filter-content.css" />
+        <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <title>Blog - Witold's Data Consulting 💫</title>
+        <!-- Site Navigation Bar -->
+        <div class="top-navigation-bar" id="top-navigation"></div>
+    </head>
+    <body style="background: -webkit-radial-gradient(#ffffff, #eaeae9) fixed;">
+        <!-- Hidden/Showen OnClick About Panel -->
+        <div id="panel"></div>
+        <div class="blog-navigation">☰ <a href="../index.html">⚐ home</a> » <a href="./index.html">⚑ this page</a></div>
+        <!-- Gallery Content Control Buttons -->
+        <div class="blog-navigation auxilary" id="content-control-buttons">
+            <span><b>Filter</b></span>
+            <button class="content-control-button" style="font-size: 100%;" onclick="filterSelection('all')">All posts</button>
+            <button class="content-control-button active" style="font-size: 100%;" onclick="filterSelection('Main')">Major posts</button>
+        </div>
+        <!-- How TO - Blog Layout, from https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card gallery-filter-content Main">
+                    <h2><a href="./posts/small-project-building-taxonomy/post.html">🏢 Building taxonomy</a></h2>
+                    <a href="./posts/small-project-building-taxonomy/post.html">
+                        <div class="suptitle">Simplified building toxonomy of selected cities</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/small-project-building-taxonomy/figures/building-taxanomy-collage_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%; object-position: center;" />
+                        </div>
+                    </a>
+                    <div class="post-description">Utilizing OSM data with different APIs to plot minimalistic "small multiple" chart...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Main">
+                    <h2><a href="./posts/project-country-rulers/post.html">👑 "Rulers of The world", Kazakh Khanate</a></h2>
+                    <a href="./posts/project-country-rulers/post.html">
+                        <div class="suptitle">Rulers of Kazakh Khanate</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-country-rulers/figures/rullers_chart_kazakh-khanate-dark.png" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%; object-position: center;" />
+                        </div>
+                    </a>
+                    <div class="post-description">Creative visualisation of timelines when rulers, monarchs, and leaders reigned across the world.</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Main">
+                    <h2>
+                        <a href="./posts/project-forenames/post.html">🌐 Forenames <i>of</i> the World</a>
+                    </h2>
+                    <a href="./posts/project-forenames/post.html">
+                        <div class="suptitle">Visualizing forenames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-forenames/figures/preview_collage.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post experiments with the most common forenames across the world through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Main">
+                    <h2>
+                        <a href="./posts/project-surnames-navigator/post.html">⛁ Surnames <i>of</i> the world</a>
+                    </h2>
+                    <a href="./posts/project-surnames-navigator/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-navigator/figures/post-banner.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%; object-position: center;" />
+                        </div>
+                    </a>
+                    <div class="post-description">🧭 Main menu for navigation within countries and geographical regions of wordcloud visualisations from project "Surnames" 🗺️</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-central-europe/post.html">🌍 Surnames <i>of</i> Central Europe</a>
+                    </h2>
+                    <a href="./posts/project-surnames-balkan-peninsula/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-central-europe/figures/Central-Europe_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%; object-position: center;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Central Aurope through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-central-america/post.html">🌎 Surnames <i>of</i> Central America</a>
+                    </h2>
+                    <a href="./posts/project-surnames-central-america/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img
+                                src="./posts/project-surnames-central-america/figures/Central-America_merged_tight_rasters_preview.jpeg"
+                                loading="lazy"
+                                alt="Blogpost's preview banner"
+                                style="width: 100%; height: 100%; object-position: center;"
+                            />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Central America through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-balkan-peninsula/post.html">🌍 Surnames <i>of</i> Balkan Peninsula</a>
+                    </h2>
+                    <a href="./posts/project-surnames-balkan-peninsula/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img
+                                src="./posts/project-surnames-balkan-peninsula/figures/Balkan Peninsula_merged_tight_rasters_preview.jpeg"
+                                loading="lazy"
+                                alt="Blogpost's preview banner"
+                                style="width: 100%; height: 100%; object-position: center;"
+                            />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Balkan Peninsula through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-baltic-states/post.html">🌍 Surnames <i>of</i> Baltic States</a>
+                    </h2>
+                    <a href="./posts/project-surnames-baltic-states/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-baltic-states/figures/Baltic-States_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Baltic States through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-iberian-peninsula/post.html">🌍 Surnames <i>of</i> Iberian Peninsula</a>
+                    </h2>
+                    <a href="./posts/project-surnames-iberian-peninsula/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-iberian-peninsula/figures/Iberian-Peninsula_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Iberian Peninsula through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-indian-subcontinent/post.html">🌏 Surnames <i>of</i> Indian Subcontinent</a>
+                    </h2>
+                    <a href="./posts/project-surnames-indian-subcontinent/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-indian-subcontinent/figures/Indian-Subcontinent_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Indian Subcontinents through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-middle-east/post.html">🌍 Surnames <i>of</i> Middle East</a>
+                    </h2>
+                    <a href="./posts/project-surnames-middle-east/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-middle-east/figures/Middle-East_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Middle East through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+                <div class="card gallery-filter-content Auxilary">
+                    <h2>
+                        <a href="./posts/project-surnames-central-asia/post.html">🌍 Surnames <i>of</i> Central Asia</a>
+                    </h2>
+                    <a href="./posts/project-surnames-central-asia/post.html">
+                        <div class="suptitle">Visualizing surnames across the world</div>
+                        <div style="height: 300px;">
+                            <img src="./posts/project-surnames-central-asia/figures/Central-Asia_merged_preview.jpeg" loading="lazy" alt="Blogpost's preview banner" style="width: 100%; height: 100%;" />
+                        </div>
+                    </a>
+                    <div class="post-description">This post explores the most common surnames across Central Asia through wordcloud visualisation. Data came from Forebears.io...</div>
+                    <div>
+                        <div class="timestamp">2024</div>
+                        <div class="see-article"><a href="./posts/small-project-building-taxonomy/post.html">See more...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>🔥 Popular Post</h2>
+                    <a href="./posts/project-surnames-navigator/post.html">
+                        <div class="fakeimg">Project "Surnames"</div>
+                    </a>
+                    <br />
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061974001325076482?utm_source=share&utm_medium=member_desktop">
+                        <div class="fakeimg">Project "Parks and Parkings" ⎋</div>
+                    </a>
+                    <br />
+                    <a href="https://www.linkedin.com/embed/feed/update/urn:li:share:7199310708751097856">
+                        <div class="fakeimg">How countries use their land ⎋</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <h2><mark>Witold's Data</mark> Blog</h2>
+                    <div style="height: 300px;">
+                        <img src="https://www.svgrepo.com/show/85124/cat.svg" loading="lazy" alt="kotek, image [vector, .svg]" style="width: 100%; height: 100%; object-fit: contain;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../partial/assets/js/website-navitation-bar.js"></script>
+        <script src="../gallery/assets/js/gallery-filter-content.js"></script>
+        <script>
+            filterSelection("Main");
+        </script>
+    </body>
+    <footer>
+        <!-- Site Bottom Bar -->
+        <div class="bottom-bar" id="bottom-navigation"></div>
+        <script src="../partial/assets/js/sharable-header-footer.js"></script>
+    </footer>
 </html>

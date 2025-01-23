@@ -52,7 +52,7 @@
 
 **Website Reference(s)**
 1. [Nicolas Rapp Design Studio's gallery](https://nicolasrapp.com/studio/)
-1. [PythonMaps.com's gallery](https://www.pythonmaps.com/)
+1. [Adam Symington's PythonMaps.com gallery](https://www.pythonmaps.com/)
 1. [Emory Beck's MapHustle gallery](https://www.maphustle.co.nz/)
 1. [Perrin Remonte's gallery](https://www.perrinremonte.com/fraccueil)
 1. [Jean Luc Jucker's gallery](https://www.jeanlucjucker.net/home)
@@ -66,8 +66,9 @@
 1. [Craig Taylor's Mapzilla gallery and blog](https://mapzilla.co.uk/)
 1. [Jason Davies blog and gallery](https://www.jasondavies.com/)
 1. [Thomas Ansart's gallery](https://thomasansart.info/)
-1. [Cédric Scherer' blog and gallery](https://www.cedricscherer.com/)
-1. [Ilya Kashnitsky' blog and gallery](https://ikashnitsky.phd/)
+1. [Cédric Scherer's blog and gallery](https://www.cedricscherer.com/)
+1. [Ilya Kashnitsky's blog and gallery](https://ikashnitsky.phd/)
+1. [Martin Høyem's blog and gallery](https://otherthingsingeneral.com/portfolio/)
 1. [Open Table with Many Portfolios](https://docs.google.com/spreadsheets/d/1aLOpW2oQHw5r2vc70o8TiM5SJctR9TuH4a70d-ZtbXA/edit#gid=248793142)
 
 * Badges with basic visitor counter: https://visitorbadge.io/ | https://visitor-badge.laobi.icu/

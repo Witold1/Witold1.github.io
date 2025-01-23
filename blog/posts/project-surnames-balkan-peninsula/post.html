@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Import no tracking of personal data web analytics -->
+      <script data-goatcounter="https://witold1.goatcounter.com/count"
+         async src="//gc.zgo.at/count.js"></script>
+      <!-- Import CSS styles -->
+      <link rel="stylesheet" href="../../../partial/assets/css/main.css" />
+      <link rel="stylesheet" href="../../assets/css/blog-main.css" />
+      <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇼</text></svg>">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Blogpost - Witold's Data Consulting 💫</title>
+      <!-- Site Navigation Bar -->
+      <div class="top-navigation-bar" id="top-navigation"></div>
+   </head>
+   <body>
+      <!-- Hidden/Showen OnClick About Panel -->
+      <div id="panel"></div>
+      <div class="blog-navigation">
+         ☰ <a href="../../index.html">⚐ blog</a> » <a href="./post.html">⚑ this post</a>
+      </div>
+      <div class="article-content">
+         <div class="article-title" id="title">
+            <p>
+               <h1 style="margin: 0px;">Surnames <i>of</i> Balkan Peninsula</h1>
+            </p>
+            <p style="margin: 0px; margin-top: -1em; ">
+               • <em>version:</em> public • <em>created:</em> Mid-2024
+            </p>
+         </div>
+         <hr>
+         <div class="article-text">
+            <h2>Introduction</h2>
+            <p>
+               This post explores the most common surnames across the <b>Balkan Peninsula</b> through wordcloud visualisation.
+               Region includes selected countries of Southern Europe, Eastern Europe, and Western Asia <i>(<a href="https://en.wikipedia.org/wiki/East_Thrace">the European portion of Türkiye, a.k.a East Thrace</a>, not shown here)</i> from <a href="https://unstats.un.org/unsd/methodology/m49/">"UN M49, Standard Country or Area Codes for Statistical Use (Series M, No. 49)" ⎋</a>.
+               Political boundaries shown according to their <a href="https://www.naturalearthdata.com/about/disputed-boundaries-policy">"de facto" status ⎋</a>. Data came from <a href="https://forebears.io./">Forebears.io</a>.
+         </div>
+         <hr>
+         <div class="article-text" id="charts-figures">
+            <h2>Charts and figures</h2>
+            <p>
+               ⇱ <b>Click</b> preview images to enlarge in better quality<br>
+               ⇔ <b>Swipe</b> &#10094; left or right &#10095; to see other image(s)<br>
+               ⛟ Some elements may display differently across platforms (desktop, smartphone, etc)<br>
+            </p>
+         </div>
+         <div class="article-image">
+            <p style="text-align:center; margin-bottom:5px; ">
+               Fig 1. <b>Surnames of Balkan Peninsula.</b>
+            </p>
+            <!-- Image Slideshow -->
+            <div class="slideshow-container">
+               <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">1 / 3</div>
+                  <img class="myImages" id="myImg" src="./figures/Balkan Peninsula_merged_preview.jpeg" width="99%" height="99%" loading="lazy"
+                     alt="🇦🇱 🇧🇦 🇧🇬 🇭🇷 🇽🇰 🇲🇪 🇲🇰 🇷🇴 🇷🇸 🇸🇮 🇬🇷 🇲🇩<br>Surnames of Balkan Peninsula - Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo<sup>†</sup>, Montenegro, North Macedonia, Romania, Serbia, Slovenia, Greece (raster, .jpeg | converted from .svg with vincerubinetti.github.io/svg-to-png/) [method 1]"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+               </div>
+               <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">2 / 3</div>
+                  <img class="myImages" id="myImg" src="./figures/Balkan Peninsula_merged.svg" width="99%" height="99%" loading="lazy"
+                     alt="🇦🇱 🇧🇦 🇧🇬 🇭🇷 🇽🇰 🇲🇪 🇲🇰 🇷🇴 🇷🇸 🇸🇮 🇬🇷 🇲🇩<br>Surnames of Balkan Peninsula - Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo<sup>†</sup>, Montenegro, North Macedonia, Romania, Serbia, Slovenia, Greece (vector format, .svg)️ [method 1]"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+               </div>
+               <div class="mySlides fade" style="text-align:center; ">
+                  <div class="slideshow-slide-number-text" style="color:darkgray; writing-mode: vertical-rl; padding: 2px 0.6%; ">3 / 3</div>
+                  <img class="myImages" id="myImg" src="./figures/Balkan Peninsula_merged_tight_rasters_preview.jpeg" width="99%" height="99%" loading="lazy"
+                     alt="🇦🇱 🇧🇦 🇧🇬 🇭🇷 🇽🇰 🇲🇪 🇲🇰 🇷🇴 🇷🇸 🇸🇮 🇬🇷 🇲🇩<br>Surnames of Balkan Peninsula - Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo<sup>†</sup>, Montenegro, North Macedonia, Romania, Serbia, Slovenia, Greece (raster format, .png)️ [method 2]"
+                     style="background-color: #f2f3f4; box-shadow: 1px 2px 2px silver; ">
+               </div>
+               <a class="prev">&#10094;</a>
+               <a class="next">&#10095;</a>
+               <div style="text-align:center; ">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+               </div>
+            </div>
+         </div>
+         <div class="article-text">
+            <p>
+              Read more about local naming customs at <b><a href="https://Familysearch.org/en/wiki">Familysearch.org's wiki ⎋</a></b>:
+              <a href="https://www.familysearch.org/en/wiki/Albania_Naming_Customs"><i>Albania Naming Customs</i> ⎋</a>, <a href="https://www.familysearch.org/en/wiki/Bosnia_and_Herzegovina_Naming_Customs"><i> Bosnia and Herzegovina Naming Customs</i> ⎋</a>,
+              <a href="https://www.familysearch.org/en/wiki/Bulgaria_Naming_Customs"><i>Bulgaria Naming Customs</i> ⎋</a>, <a href="https://www.familysearch.org/en/wiki/Croatia_Naming_Customs"><i>Croatia Naming Customs</i> ⎋</a>,
+              <a href="https://www.familysearch.org/en/wiki/Kosovo_Naming_Customs"><i>Kosovo Naming Customs</i> ⎋</a>, <a href="https://www.familysearch.org/en/wiki/Montenegro_Naming_Customs"><i>Montenegro Naming Customs</i> ⎋</a>,
+              <a href="https://www.familysearch.org/en/wiki/North_Macedonia_Naming_Customs"><i>North Macedonia Naming Customs</i> ⎋</a>, <a href="https://www.familysearch.org/en/wiki/Romania_Naming_Customs"><i>Romania Naming Customs</i> ⎋</a>,
+              <a href="https://www.familysearch.org/en/wiki/Serbia_Naming_Customs"><i>Serbia Naming Customs</i> ⎋</a>, <a href="https://www.familysearch.org/en/wiki/Slovenia_Naming_Customs"><i>Slovenia Naming Customs</i> ⎋</a>,
+              <a href="https://www.familysearch.org/en/wiki/Greece_Naming_Customs"><i>Greece Naming Customs</i> ⎋</a>.
+              Also, for some countries and regions you can find academic papers that explain how names were forming there.
+            </p>
+         </div>
+         <hr>
+         <div class="article-image">
+            <p style="text-align:center; margin-bottom:5px; ">
+               Fig 2. <b>Surnames of Balkan Peninsula, by country.</b>
+            </p>
+            <!-- Image Gallery Grid -->
+            <div class="page-main-content-responsive">
+               <!-- Gallery page-column-content-responsive i -->
+               <div class="page-column-content-responsive">
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/ALB_wordcloud_tight.svg" loading="lazy" alt="ALB_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇦🇱 Albania <a href="https://forebears.io/slovenia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/GRC_wordcloud_tight.svg" loading="lazy" alt="GRC_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇬🇷 Greece <a href="https://forebears.io/slovenia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/MKD_wordcloud_tight.svg" loading="lazy" alt="MKD_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇲🇰 North Macedonia <a href="https://forebears.io/slovenia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/SRB_wordcloud_tight.svg" loading="lazy" alt="SRB_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇷🇸 Serbia <a href="https://forebears.io/slovenia/surnames">🔗</a></p>
+                  </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+1 -->
+               <div class="page-column-content-responsive">
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/BGR_wordcloud_tight.svg" loading="lazy" alt="BGR_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇧🇬 Bulgaria <a href="https://forebears.io/croatia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/HRV_wordcloud_tight.svg" loading="lazy" alt="HRV_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇭🇷 Croatia <a href="https://forebears.io/croatia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/MNE_wordcloud_tight.svg" loading="lazy" alt="MNE_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇲🇪 Montenegro <a href="https://forebears.io/croatia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/SVN_wordcloud_tight.svg" loading="lazy" alt="SVN_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇸🇮 Slovenia <a href="https://forebears.io/croatia/surnames">🔗</a></p>
+                  </div>
+               </div>
+               <!-- Gallery page-column-content-responsive i+2 -->
+               <div class="page-column-content-responsive">
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/BIH_wordcloud_tight.svg" loading="lazy" alt="BIH_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇧🇦 Bosnia and Herzegovina <a href="https://forebears.io/bosnia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/MDA_wordcloud_tight.svg" loading="lazy" alt="MDA_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇲🇩 Moldova <a href="https://forebears.io/bosnia/surnames">🔗</a></p>
+                  </div>
+                  <div >
+                     <img class="myImages" id="myImg" src="./figures/ROU_wordcloud_tight.svg" loading="lazy" alt="ROU_wordcloud (raw vector, .svg)️">
+                     <p style="background-color: silver; margin-top: 0px; margin-bottom: 5px; text-align:center" >🇷🇴 Romania <a href="https://forebears.io/bosnia/surnames">🔗</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="article-text">
+            <p dir="auto">
+               <b style="display: inline; ">Table of Content:</b> <a href="#charts-figures" rel="nofollow">Charts and figures</a> • <a href="../project-surnames-navigator/post.html" rel="nofollow">To Navigator ↩</a> •
+            </p>
+         </div>
+         <div class="article-text">
+            <p dir="auto">
+               <b style="display: inline; ">Media presence:</b> <a href="https://www.linkedin.com/posts/vital-yevtushenko_python-matplotlib-dataviz-activity-7221960185865457665-w2vB?utm_source=share&utm_medium=member_desktop">LinkedIn post ⎋</a>  •
+            </p>
+         </div>
+         <div>
+            <p style="text-align: right">
+               <a href="#"><mark><b>Back to top ⇪</b></mark></a>
+             </p>
+         </div>
+      </div>
+      <!-- Trigger modal images -->
+      <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+         <div id="caption"></div>
+      </div>
+      <!-- Import JS scripts -->
+      <script src="../../../partial/assets/js/website-navitation-bar.js"></script>
+      <script src="../../../partial/assets/js/gallery-filter-content.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-modal.js"></script>
+      <script src="../../../partial/assets/js/gallery-images-slideshow.js"></script>
+   </body>
+   <footer>
+      <!-- Site Bottom Bar -->
+      <div class="bottom-bar" id="bottom-navigation"></div>
+      <script src="../../../partial/assets/js/sharable-header-footer.js"></script>
+   </footer>
+</html>

@@ -4,9 +4,9 @@
     1.1. Top Navigation visual style
     1.2. Top Navigation responsive style
 
-  2. Buttom Navigation panel
-    2.1. Buttom Navigation visual style
-    2.2. Buttom Navigation responsive style
+  2. Bottom Navigation panel
+    2.1. Bottom Navigation visual style
+    2.2. Bottom Navigation responsive style
 
   3. Page Header [text and content filtering] mega-block
     3.1. Page Header [text and content filtering] mega-block visual style
@@ -46,10 +46,11 @@
   overflow: hidden;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   font-size: 17px;
   height: 50px;
+  align-items: center;
 }
 
 /* Change the color of links on hover */
@@ -59,8 +60,8 @@
 }
 
 /* Add a color to the active/current link */
-.top-navigation-bar a.active_page {
-  background-color: #04AA6D;
+.top-navigation-bar > a.home-page {
+  background-color: #04aa6d;
   color: white;
 }
 
@@ -71,7 +72,9 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .top-navigation-bar a:not(:first-child) {display: none;}
+  .top-navigation-bar a:not(:first-child) {
+    display: none;
+  }
   .top-navigation-bar a.icon {
     float: right;
     display: block;
@@ -80,7 +83,9 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .top-navigation-bar.responsive {position: relative;}
+  .top-navigation-bar.responsive {
+    position: relative;
+  }
   .top-navigation-bar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -144,17 +149,36 @@
 */
 .page-main-content-header-block {
   text-align: left;
-  padding: 32px;
-  background-color: #white;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 #panel {
+  background-color: white;
   display: none;
-  padding: 32px;
-  box-shadow: 10px 5px 5px #C9C9C9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 10px 5px 5px #c9c9c9;
 }
 
-#panel, .flip {
+#panel > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#panel a {
+  color: black;
+  text-decoration: underline;
+}
+
+#panel a:hover {
+  color: gray;
+}
+
+#panel,
+.flip {
   background-color: #white;
   font-size: 16px;
   margin: auto;
@@ -181,7 +205,7 @@
   /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
-  background-color : #white;
+  background-color: #white;
 }
 
 /* Create N, where N = 100 / max-width, equal page-column-content-responsives that sits next to each other */
@@ -294,11 +318,11 @@
 
 @keyframes zoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
@@ -393,7 +417,7 @@
 .slideshow-slide-number-text {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 8px 4px;
   position: absolute;
   top: 1%;
 }
@@ -425,21 +449,21 @@
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -448,8 +472,12 @@
 }
 
 body {
-  margin: 0;
   font-family: Arial;
+  background: #ffffff;
+  max-width: 2560px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -467,10 +495,11 @@ body {
     Currently this is active only image can't be loaded.
     Otherwise the standard lazy loading is in priority, with no regard to speed and size.
 */
-#myImg:after, .loading {
-  content: ' ';
-  background: transparent url('../preload.gif')  center no-repeat ;
-  background-size : auto 100%;
+#myImg:after,
+.loading {
+  content: " ";
+  background: transparent url("../preload.gif") center no-repeat;
+  background-size: auto 100%;
   width: 100%;
   height: 106px;
   float: left;
