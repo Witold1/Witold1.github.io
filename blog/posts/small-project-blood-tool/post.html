@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import no tracking of personal data web analytics -->
+    <script data-goatcounter="https://witold1.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+    <!-- Import CSS styles -->
+    <link rel="stylesheet" href="../../../partial/assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/blog-main.css" />
+    <!-- https://stackoverflow.com/questions/59431371/use-emoji-as-favicon-in-websites -->
+    <link rel="icon" href="data:image/svg+xml,
+      <svg
+      xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+      <text y=%22.9em%22 font-size=%2290%22>🇼</text>
+      </svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ukraine's bloody tool - Blogpost at Witold's Data Consulting 💫</title>
+    <!-- Site Navigation Bar -->
+    <div class="top-navigation-bar" id="top-navigation"></div>
+  </head>
+  <body>
+    <!-- Hidden/Showen OnClick About Panel -->
+    <div id="panel"></div>
+    <div class="blog-navigation">
+      ☰
+      <a href="../../index.html">⚐ blog</a> »
+      <a href="./post.html">⚑ this post</a>
+    </div>
+    <div class="article-content">
+      <div class="article-title" id="title">
+        <p>
+        <h1 style="margin: 0px; padding-bottom:0px; " id="header-text-change">Ukraine's bloody tool</h1>
+        </p>
+        <p style="margin: 0px; margin-top: -1em; ">
+          •
+          <em>version:</em> public •
+          <em>created:</em> Apr 2025
+        </p>
+      </div>
+      <hr>
+      <div class="article-image">
+        <p style="text-align:center; margin-bottom:5px; ">
+          Fig 1.
+          <b>Officially reported casualties in Russia-Ukraine war, since Feb 2022</b>
+          <br>⇱
+          <b>Click</b> preview image to enlarge in better quality
+        </p>
+        <div style="text-align:center; ">
+          <img class="myImages" id="myImg" src="./figures/project-bloody-toll_preview.jpeg" width="99%" height="99%" loading="lazy"
+              alt="Officially reported casualties in Russia-Ukraine war, since Feb 2022 (raster format, .jpeg)️" style="background-color: #f2f3f4; border: 2px solid silver; ">
+        </div>
+      </div>
+      <hr>
+      <div class="article-text">
+        <h2 id="introduction">Introduction</h2>
+        <p>
+          Visualize official casualty reports from active stage of Russia-Ukraine war using PyData, Selenium and beautifulsoup4, and <a href="https://grok.com/">Grok 3 by xAI</a>.
+        </p>
+        <blockquote >
+          <span>
+            <p>
+              <b>Here is a chart that illustrates casualty figures in current phase of Russia-Ukraine war, since 2022.</b>
+            </p>
+            <p>
+              We see Russian-side casualties called by Ukrainian-side <i>(in dark red)</i>, and Ukrainian-side casualties called by Russian-side <i>(in light red)</i>, during ongoing military conflict. Information came from daily briefings held by adversaries military commands. Realistically, official data available is as doubtful as it could be, so this is a beautiful visualization of horrifying topic rather than an analytical product. Think of numbers as of extreme and distorted estimates of losses.
+            </p>
+          </span>
+        </blockquote >
+          <p>
+            <b>What's important here?</b>
+            <ol>
+              <li style="list-style-type: '① '; "> <b>These are "casualties" not "fatalities", or fatal casualties</b>. According to American Battlefield Trust's <a href="https://www.battlefields.org/learn/articles/civil-war-casualties">“Civil War Casualties The Cost of War: Killed, Wounded, Captured, and Missing”</a> article, <i>a "casualty" is a military person lost through death, wounds, injury, sickness, internment, capture, or through being missing in action. In practice, officers would usually be responsible for recording casualties that occurred within their commands. One soldier could be marked as a casualty several times throughout the course of the war</i>. Obviously, how armies report, process, and count this sensitive data may vary. For some domain example, see <a href="https://gist.github.com/idan/4124398">"How Israel Classifies its Wounded"</a>.
+              </li>
+              <li style="list-style-type: '② '; "> <b>This is "cross-reported"</b>. Means, <i>Country 1 reports how many combatants Country 2 lost (killed, injured, surrended, etc.) in respective date, and vice-versa</i>. Both adversaries don't share their own daily (or cumulative) casualties so freely. By many means, we can claim these numbers are nothing more than propaganda. But, this propaganda is official, direct and open. Other current or further research would work with alternative sources (including, but not limited to, measuring "excessive" death in whatever way, researching graveyard satellite images, counting inheritance cases, analyzing social networks, reading memoir and third-party reports, interviewing insighters or whistleblower, applying complex joint methodologies, ​quoting or criticizing each other), and someday will access archives with raw records.
+              </li>
+              <li style="list-style-type: '③ '; "> <b>Trying to qualify</b>, I would just write "a lot"; then it's up to involved entities to answer whether their vision of "a lot" justifies gains. <b>Trying to quantify</b>, personally, I would call a "ground truth" can easily lie within 25%-200% from cross-reported for any given figure. Participants are incentivized to mis-report about opponents to the public and there is no standardized public framework for how participants gather and classify both own and opponent casualties. Moreover, perhaps they are always evolving and changing their internal report accountability approaches over conflict.
+              </li>
+              <li style="list-style-type: '④ '; "><b>To ​advance into casualty figures</b>, you may apply whatever <a href="https://en.wikipedia.org/wiki/Loss_exchange_ratio">"wounded-to-killed ratios"</a> you think is reasonable for respective warfare. For example, "1:2:2", for "killed (died)" to "heavily wounded (to hospital)" to "lightly wounded (no medical attention needed)", respectively. However, at some extreme scenarios, with no regard to attrition ratios and assumption every casualty is unique, cross-reports share that <b>around 1.3% of Russian and 5% of Ukrainian pre-war total male population was somehow directly injured from war that not yet</b>.
+              </li>
+            </ol>
+          </p>
+          <p>
+            <b>How open and official data looks now?</b>
+            <ol>
+              <li style="list-style-type: 'X '; ">
+                Russian reports: daily briefings with opponent losses reported by military command. Then there is non-official daily table with informaton extracterd from briefings by some media.
+                See examples: <a href="https://briefing-mo.ru/briefings/brifing-minoborony-rf-ot-16-aprelya-2022.html">Briefing of the Russian Ministry of Defense on April 16, 2022</a>
+              </li>
+              <li style="list-style-type: 'X '; ">
+                Ukrainian reports: daily tables with opponent losses shared by military command on their facebook page, also sometimes official briefings by military command with no personnel losses reported in briefings. Then, regional media copies it.
+                See examples <a href="https://www.zsu.gov.ua/operatyvna-informacziya-stanom-na-08-00-09-04-2025-shhodo-rosijskogo-vtorgnennya/">Operational information as of 08.00 09.04.2025 regarding the Russian invasion</a> and <a href="facebook.com/GeneralStaff.ua/posts/pfbid027UZwnf3TpCqVhgcJ5ufyYuyPczH7JTeRHRqYEqNhBYaL3gkEkXCmNLdgnGQgeWzzl">The estimated total combat losses of the enemy from 24.02.22 to 09.04.25</a>
+              </li>
+              <li style="list-style-type: 'X '; ">
+                Once in a while, either side reports their own (and/or opponent's) cumulative losses outside of briefings. Media who publish non-official daily table who works with Russian-side briefinds wrote it accounts for them. Official tables by Ukrainian-side does not share how they count.
+              </li>
+            </ol>
+          </p>
+          <p>
+            <b>What methods and processing used?</b>
+            <br>
+            <ol>
+              <li style="list-style-type: ''; ">
+                <b>We parsed figures from aggregated tables avaliable</b> on <a href="minfin.com.ua">"МiнфiнМедiа" (minfin.com.ua)</a> and <a href="minfin.com.ua">"Время МСК" (mskvremya.ru)</a>. Both media says data comes from official cross-reports by their respective military commands.
+              </li>
+              <ol>
+                <li style="list-style-type: '❶ '; ">
+                  "Время МСК" was the only ​found media source that stores Russian-reported data for a full period. Moreover, their "media status" is shady (very new, few news besides table itself; will not surprise me if this media and website is AI-generated).
+                </li>
+                <li style="list-style-type: '❷ '; ">
+                  "МiнфiнМедiа" was the most convenient to crawl found media source that stores Ukrainian-reported data for full period; because Ukrainian​-side aggregated reports are much easier to get, there are tens of Ukrainian media who copy daily tables from military command page, but most of them does not store complete array.
+                </li>
+              </ol>
+              <br>
+              <li style="list-style-type: ''; ">
+                <b>To check data quality of these secondary-source tables</b>,
+                <ol>
+                  <li style="list-style-type: '❶ '; ">
+                    For "Время МСК" tables and Russian-side military command briefings, we collected a dataset of available primary-source daily briefings in unstructured texts format. Then, we used Grok 3 LLm to help us extract and normalize casualty information from briefings and matched it against respective aggregated table. <i>For the first half-a-year of conflict, from 24.02.2022 to 30.06.2023</i>, we got around 244,000 in secondary-source table to 176,000 losses in primary-source briefings, or ~30% overreporting with average exceeding ​​equaled to 4,000 per month (with some peaks) and median exceeding equaled to 1,400 per month. However, in methodology section they noted: <i>"The Russian Ministry of Defense periodically provides clarifications on the overall figures of killed and wounded Ukrainian Armed Forces militants <...> It is more correct to distribute clarification figures over the period specified in the clarification, but in this case there will be a discrepancy with the daily reports. For this reason, difference is added to the table on the day the relevant information is received"</i>. This note accounts for around 40K difference, or 204,400 in secondary-source table to 176,000 losses in primary-source briefings, or ~15% overreporting. At the same time, it did look that sometimes they distributed figures over time anyway. Also, I assume they forward filled some empty values in first month. Still, for this project I can accept 30% disparity (or more) with no issues.
+                  </li>
+                  <li style="list-style-type: '❷ '; ">
+                    For "МiнфiнМедiа" and Ukrainian-side military command briefings, I did no computerized benchmarking. Ukrainian-side follows different communication format and itself reports daily tables in addition to briefings. Manual check showed that almost always secondary-source media just copy tables reported on facebook accounts of their military command with no modification, see "How open official data looks now?" above.
+                    If there are disparities, for this project I can accept it with no issues.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </p>
+        <p>
+          <b style="display: inline; ">Dataset: </b>
+          <a href="https://docs.google.com/spreadsheets/d/1zthDwswqgwaYF823zvGDj5EslY3XWL24VyfgiP9t7Q8/edit?usp=sharing">collected dataset for project "Bloody tool" on google tables ⎋</a>
+        </p>
+        <p>
+          <b style="display: inline; ">Inspiration: </b>
+          <a href="https://multimedia.scmp.com/culture/article/SCMP-printed-graphics-memory/lonelyGraphics/201112A131.html">"Iraq’s bloody toll" ⎋</a> by
+          <a href="https://www.simonscarr.com/iraqs-bloody-toll">Simon Scarr ⎋</a>
+        </p>
+      </div>
+      <hr>
+      <div class="article-text">
+        <h3 id="how-to">🏗️ How-to: Make this product</h3>
+        <div>
+          To be released soon.
+          <p>
+            <b style="display: inline; ">Dataset: </b>
+            <a href="https://docs.google.com/spreadsheets/d/1zthDwswqgwaYF823zvGDj5EslY3XWL24VyfgiP9t7Q8/edit?usp=sharing">collected dataset for project "Bloody tool" on google tables ⎋</a>
+          </p>
+          <p>
+            <b style="display: inline; ">Viz: </b>
+            I will share visualisation code
+          </p>
+          <p>
+            <b style="display: inline; ">AI: </b>
+            Practically, in very natural and polite language I asked a chat model to help me extract some information from web pages.
+            <ol>
+              <li>
+                I explained the data (topic, where came from, cadence) and defined desired format (daily summary, with notes and summary table, also with notes). We worked some examples.
+              </li>
+              <li>
+                It took extra time to make sure model extracts data from given files and does not use any prior knowledge (mostly, news saved in memory).
+                Prior knowledge were the reason model "confidently lied" (it just generated something like it was trained with)
+              </li>
+              <li>
+                It took extra time to make sure model use whole file (first, I attached each briefing, then I merged them into batches of five with length less than model's cutout).
+              </li>
+              <li>
+                It took extra time to make sure model see what I need (sometimes model missed very explicit pieces of information). After a few "are you sure"-questions model found what it lost.
+              </li>
+            </ol>
+            <br>
+            After I thought I got what I wanted, I tried to evaluate consistency of model so run the same basic prompts in six new sessions.
+            <ol>
+              <li>
+                Initial session. Model was surprisingly smart. After we worked things out (no internet, only process attached files, pay attention to details you miss), it was able to propoce output format I liked.
+                It was able to improve output when data changed (f.e. offered to track cumulative uncertainties or to add additional columns). Overall, it was kinda "vibe exploratory analysis".
+              </li>
+              <li>
+                Second session. Model worked so-so. We couldn't handle all gimmicks after the same prompts, then after additional prompts, then I stopped it.
+              </li>
+              <li>
+                Third session. Model stalled and run into coding mode (offered some semantically wrong, oversimplified regular expressions that does not compile). I stopped.
+              </li>
+              <li>
+                Fourth session. Right away model generated output format that I liked more than the first time. It provided smarter notes, better quotes. However, it complitely broke after I asked not to repeat some paragraphs each time to save window space. I couldn't get the initial format againn and stopped.
+              </li>
+              <li>
+                Fifth, sixth, seven. Model worked so-so. Same prompts as initial one returned different output formats every time. Notes were so-so. Sometimes it shortened quotes in semantically wrong places. Sometimes it skipped paragraphs. Sometimes it accounted for wrong info and didn't want to correct it.
+              </li>
+            </ol>
+            Overall, it made an impression that "random seed" mattered more than prompts. Some generic old tricks (f.e. "I will tip you", "you are an expert in X", "please, please, please, my dear, don't hurt me and return your model state back") did not work much. Try not to lose the "lucky and smart" session and automate it right away if needed.
+            To sup up, you run the same prompt in ten different instances and you get ten different output formats and ten different "moods" of model (test your luck).
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="article-text">
+        <p dir="auto">
+          <b style="display: inline;">Media presence:</b>
+          <br />
+          To be released soon
+        </p>
+      </div>
+      <div class="article-text">
+        <p dir="auto">
+          <b style="display: inline; ">Table of Content:</b>
+          <br>
+          <a href="#introduction" rel="nofollow">Introduction</a> •
+        </p>
+      </div>
+      <hr>
+      <div class="article-text">
+         <p>
+            <b>★ How to cite this work</b>
+            <br>
+            <blockquote ><span>
+              Visualization "Ukraine's bloody tool" (2025), Vitaliy Y from Witold's Data Consulting
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;<i><a href="https://witold1.github.io/blog/posts/small-project-blood-tool/post" style="word-break: break-all; ">https://witold1.github.io/blog/posts/small-project-blood-tool/post</a></i>
+            </span></blockquote>
+         </p>
+      </div>
+      <div>
+        <p style="text-align: right">
+          <a href="#">
+          <mark>
+          <b>Back to top ⇪</b>
+          </mark>
+          </a>
+        </p>
+      </div>
+    </div>
+    <!-- Trigger modal images -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <!-- Import JS scripts -->
+    <script src="../../../partial/assets/js/website-navitation-bar.js"></script>
+    <script src="../../../partial/assets/js/gallery-images-modal.js"></script>
+    <script src="../../../partial/assets/js/gallery-images-slideshow.js"></script>
+    <script src="../../assets/js/prismjs-custom-toolbar-copy-buttom.js"></script>
+    <!-- https://stackoverflow.com/questions/48507815/animate-text-change-over-time-with-javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      var TEXTS = ["Кровавая цена Украины", "Криваві ціна України", "Ukraine's bloody tool", ];
+
+      var index = 0;
+
+      $(function() {
+        setInterval(function() {
+          $('#header-text-change').fadeOut(800, function() {
+            $(this).text(TEXTS[index++]).fadeIn(800);
+            if (index === TEXTS.length)
+              index = 0
+          });
+        }, 2500);
+      });
+    </script>
+  </body>
+  <footer>
+    <!-- Site Bottom Bar -->
+    <div class="bottom-bar" id="bottom-navigation"></div>
+    <script src="../../../partial/assets/js/sharable-header-footer.js"></script>
+  </footer>
+</html>
