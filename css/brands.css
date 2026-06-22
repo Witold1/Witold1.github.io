@@ -580,6 +580,12 @@
 	--button-background:#008CFF;
 }
 
+/* Zelle */
+.button-zelle {
+	--button-text:#ffffff;
+	--button-background:#6D1ED4;
+}
+
 /* Vimeo */
 .button-vimeo {
 	--button-text:#ffffff;
