@@ -291,13 +291,6 @@
 	--button-background:#05ce78;
 }
 
-/* Kit */
-.button-kit {
-	--button-text:#ffffff;
-	--button-background:#000000;
-	--button-border:1px solid #FFFFFF;
-}
-
 /* Ko-fi */
 .button-ko-fi {
 	--button-text:#ffffff;

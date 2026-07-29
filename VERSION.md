@@ -10,6 +10,7 @@
 - Icons: fixed missing `viewBox` on both Bluesky icons (they rendered clipped) and optimized several oversized icons; removed stale unused icons and `google-podcasts.svg` (service discontinued).
 - Deployment: moved `.dockerignore` to the repo root so Docker actually applies it, and added `.assetsignore` so Cloudflare deploys stop serving repo metadata like `.git/`.
 - CI: the contrast check now catches edits to existing buttons and handles hyphenated class names.
+- Removed Kit (Kit.co shut down in May 2026).
 
 ### v3.10.0 - 01/27/2026
 - Added quick deploy files for Cloudflare & DigitalOcean.
