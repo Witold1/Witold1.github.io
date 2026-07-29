@@ -578,12 +578,6 @@
 	--button-background:#008CFF;
 }
 
-/* Zelle */
-.button-zelle {
-	--button-text:#ffffff;
-	--button-background:#6D1ED4;
-}
-
 /* Vimeo */
 .button-vimeo {
 	--button-text:#ffffff;
@@ -634,6 +628,12 @@
 .button-yt-alt {
 	--button-text:#ffffff;
 	--button-background:#FF0000;
+}
+
+/* Zelle */
+.button-zelle {
+	--button-text:#ffffff;
+	--button-background:#6D1ED4;
 }
 
 /* Zoom */
