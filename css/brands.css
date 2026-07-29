@@ -7,11 +7,9 @@
 
 /* Brand Button Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Only include brand-specific button styling here */
+/* Only include brand-specific button styling here.
+   The color/background/border plumbing lives in style.css. */
 .button,button {
-  color:var(--button-text,#000000);
-  background-color:var(--button-background,transparent);
-	border:var(--button-border,none);
 	transition:filter 0.2s ease,transform 0.2s ease;
 }
 
@@ -620,6 +618,13 @@
 
 /* YouTube */
 .button-yt {
+	--button-text:#ffffff;
+	--button-background:#282828;
+	--button-border:1px solid #FFFFFF;
+}
+
+/* YouTube Music */
+.button-yt-music {
 	--button-text:#ffffff;
 	--button-background:#282828;
 	--button-border:1px solid #FFFFFF;

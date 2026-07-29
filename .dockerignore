@@ -1,0 +1,33 @@
+# Applied when building with the repo root as the context:
+#   docker build -f docker/Dockerfile .
+# Keeps repo metadata and deploy config out of the served image.
+
+# Git & repo metadata
+.git
+.github
+.gitignore
+.pre-commit-config.yaml
+
+# Deploy configs (not part of the site)
+docker
+.do
+wrangler.toml
+.assetsignore
+.dockerignore
+
+# Documentation
+README.md
+LICENSE.md
+VERSION.md
+
+# Logs
+*.log
+
+# Editor, OS, and tooling files
+.idea
+.vscode
+.devcontainer
+.claude
+.wrangler
+node_modules
+**/.DS_Store

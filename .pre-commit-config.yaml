@@ -8,8 +8,6 @@ repos:
       - id: end-of-file-fixer
         exclude: \.svg$
       - id: check-yaml
-      - id: double-quote-string-fixer
-        exclude: \.svg$
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.26.0
     hooks:

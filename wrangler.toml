@@ -1,5 +1,5 @@
 name = "littlelink"
-compatibility_date = "2025-01-27"
+compatibility_date = "2026-01-27"
 
 [assets]
 directory = "./"

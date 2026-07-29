@@ -6,7 +6,7 @@ Docker configuration to run LittleLink in a container.
 
 - `Dockerfile`: Defines how the image is built using nginx:alpine
 - `compose.yaml`: Configuration for Docker Compose with volumes for development
-- `.dockerignore`: Excludes unnecessary files from the image
+- `.dockerignore` (at the repo root): Excludes unnecessary files from the image
 
 ## Technical Details
 
@@ -127,7 +127,7 @@ You can customize the content in production by mounting a local directory:
 ```bash
 # Prepare a directory with your custom content
 mkdir -p /path/on/server/custom-content
-cp -r index.html css/ images/ /path/on/server/custom-content/
+cp -r index.html privacy.html css/ fonts/ images/ /path/on/server/custom-content/
 
 # Run with the custom content mounted
 docker run -d --name littlelink -p 80:80 \

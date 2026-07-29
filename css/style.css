@@ -5,12 +5,6 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-/* Base Typography Settings
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-	font-size:16px;
-}
-
 /* Grid
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .container {
@@ -19,7 +13,7 @@
 	max-width:37.5rem;     				/* 600px */
     text-align:center;
 	margin:0 auto;
-	padding:3rem 1.25rem 0 1.25rem;
+	padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
 	box-sizing:border-box;
 }
 .container-left {
@@ -35,28 +29,18 @@
 	margin-bottom: 1rem;  				/* 16px space between paragraphs */
   }
 .column {
-	position:center;
 	width:100%;
-	float:center;
 	box-sizing:border-box;
 }
 /* For devices larger than 400px */
   @media (min-width:25rem) {            /* 400px */
     .container {
 	width:85%;
-	padding-left:0;
-	padding-right:0;
 }
 }/* For devices larger than 550px */
   @media (min-width:34.375rem) {        /* 550px */
     .container {
 	width:80%;
-}
-.column,.columns {
-	margin-left:0;
-}
-.column:first-child,.columns:first-child {
-	margin-left:0;
 }
 }
 
@@ -68,25 +52,8 @@
 	background-color:#ffffff;
 	color:#1a1a1a;
 	font-family:"Open Sans",system-ui;
-	font-size:1.125rem;     				/* 18px */
     font-weight:400;
 	line-height:1.6;
-}
-
-/* Typography
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  h1 {
-	margin:0 0 0.5rem 0;
-	font-size:3rem;         		/* 48px */
-    font-weight:800;
-	line-height:1;
-	letter-spacing:0;
-	word-wrap:break-word;
-	overflow-wrap:break-word;
-	hyphens:auto;           		/* Delete this to remove automatic hyphen on line break */
-}
-.container p {
-	margin:0 0 2rem 0;
 }
 
 /* Base Typography Settings
@@ -132,6 +99,7 @@ h1 {
 	letter-spacing:-0.02em;
 	word-wrap:break-word;
 	overflow-wrap:break-word;
+	hyphens:auto;           /* Delete this to remove automatic hyphen on line break */
 }
 body {
 	font-size:var(--scale-1);           /* 20px */
@@ -143,12 +111,6 @@ body {
 	line-height:1.6;
 }
 
-/* Container spacing */
-.container {
-	padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
-	text-align:center;
-}
-
 /* Footer */
 footer {
 	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
@@ -158,7 +120,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width:34.375rem) {              /* 550px */
   h1 {
-	font-size:var(--scale-4);
+	font-size:2rem;
 }
 body {
 	font-size:var(--scale-0);
@@ -218,16 +180,8 @@ a:hover {
 	flex-shrink:0;
 }
 
-/* Avatar
+/* Avatar Modifiers
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.avatar {
-	width: 8rem;             /* 128px */
-	height: 8rem;
-	object-fit: cover;
-	background-position: center;
-	margin-bottom: var(--spacing-l);
-  }
-
    /* Modifier for no avatar rounding */
    .avatar--none {
 	border-radius: 0%;
@@ -246,6 +200,11 @@ a:hover {
 /* Theme System
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Light theme is default above */
+
+/* Light theme (forced) */
+:root.theme-light {
+	color-scheme:light;
+}
 
 /* Dark theme */
 :root.theme-dark {
@@ -290,23 +249,12 @@ a:hover {
 /* Button Text Color Override
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .button:hover,button:hover {
-	color:var(--button-text);
-}
-
-/* Responsive Typography
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media (max-width:34.375rem) {            /* 550px */
-    h1 {
-	font-size:2rem;                         /* 32px */
-	}
-	body {
-	font-size:1rem;                    		/* 16px */
-	}
+	color:var(--button-text,#000000);
 }
 
 /* Privacy Page Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav {
+.container-left nav {
 	margin:var(--spacing-l) 0;
 	text-align:left;
 }
@@ -353,30 +301,26 @@ ul li {
 	font-family:'Open Sans';
 	font-style:normal;
 	font-weight:400;
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot');
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff') format('woff'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg#OpenSans') format('svg');
+	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2');
 }
 @font-face {
 	font-display:swap;
 	font-family:'Open Sans';
 	font-style:normal;
 	font-weight:600;
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.eot');
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.woff') format('woff'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.svg#OpenSans') format('svg');
+	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.woff2') format('woff2');
 }
 @font-face {
 	font-display:swap;
 	font-family:'Open Sans';
 	font-style:normal;
 	font-weight:700;
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.eot');
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff') format('woff'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.svg#OpenSans') format('svg');
+	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2') format('woff2');
 }
 @font-face {
 	font-display:swap;
 	font-family:'Open Sans';
 	font-style:normal;
 	font-weight:800;
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.eot');
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff') format('woff'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#OpenSans') format('svg');
+	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2');
 }

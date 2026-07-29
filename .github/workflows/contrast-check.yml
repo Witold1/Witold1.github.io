@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup for PR comparison
         run: |
           echo "Fetching base branch for comparison"
-          git fetch origin ${{ github.base_ref }}
+          git fetch origin ${{ github.base_ref || 'main' }}
 
       - name: Contrast Check (Review Me)
         run: |
@@ -31,9 +31,30 @@ jobs:
           ALL_RESOLVED=1
           NEEDS_MANUAL_REVIEW=0
 
-          # Only get buttons that were modified in the PR
+          # PRs set GITHUB_BASE_REF; manual workflow_dispatch runs fall back to main
+          BASE_REF="${GITHUB_BASE_REF:-main}"
+
+          # Map each line of css/brands.css to its enclosing .button-* rule
+          # (lines between rules map to nothing)
+          LINE_MAP=$(awk '{
+            if (match($0, /\.button-[a-zA-Z0-9-]+/)) { cur = substr($0, RSTART+1, RLENGTH-1); inrule = 1 }
+            if (inrule) print NR ":" cur
+            if (index($0, "}") > 0) inrule = 0
+          }' css/brands.css)
+
+          # Collect the buttons whose rule bodies contain changed lines,
+          # so edits to existing buttons are checked too, not just newly added selectors.
           echo "Finding changed button styles..."
-          BUTTON_CLASSES=$(git diff origin/$GITHUB_BASE_REF -- css/brands.css | grep -E "^\+.*\.button-[a-zA-Z0-9]+" | sed -E 's/.*\.button-([a-zA-Z0-9]+).*/\1/' | sort -u)
+          BUTTON_CLASSES=$(git diff -U0 "origin/$BASE_REF" -- css/brands.css \
+            | grep -E '^@@' \
+            | sed -E 's/^@@ [^+]*\+([0-9]+)(,([0-9]+))?.*/\1 \3/' \
+            | while read -r start count; do
+                count=${count:-1}
+                if [[ "$count" -eq 0 ]]; then count=1; fi
+                for ((n=start; n<start+count; n++)); do
+                  echo "$LINE_MAP" | grep "^$n:" | cut -d: -f2
+                done
+              done | sed 's/^button-//' | sort -u)
 
           if [[ -z "$BUTTON_CLASSES" ]]; then
             echo "✅ No button changes to check."
@@ -175,7 +196,8 @@ jobs:
               fi
 
               if [[ -z "$button_start" ]]; then
-                  echo "Could not find button-$button_class in css/brands.css"
+                  echo "🚩 Could not find button-$button_class in css/brands.css → Flagging for manual review."
+                  NEEDS_MANUAL_REVIEW=1
                   continue
               fi
 
@@ -225,7 +247,7 @@ jobs:
 
           # Final report
           if [[ "$NEEDS_MANUAL_REVIEW" -eq 1 ]]; then
-              echo "⚠️ Manual review required for gradients!"
+              echo "⚠️ Manual review required (gradient background or unresolvable button selector)!"
               exit 1
           elif [[ "$ALL_RESOLVED" -eq 1 ]]; then
               echo "✅ All contrast checks passed!"

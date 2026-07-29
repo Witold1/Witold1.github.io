@@ -1,0 +1,22 @@
+# Cloudflare Workers static assets ignore list.
+# Unlike Pages, Workers uploads everything in the assets directory by default —
+# this keeps repo metadata and deploy config out of the deployed site.
+.git
+.github
+.gitignore
+.pre-commit-config.yaml
+docker
+.do
+wrangler.toml
+.dockerignore
+.assetsignore
+README.md
+LICENSE.md
+VERSION.md
+.idea
+.vscode
+.devcontainer
+.claude
+.wrangler
+node_modules
+**/.DS_Store

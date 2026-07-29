@@ -13,7 +13,7 @@ Please confirm that you've met the following criteria before submitting your con
    - [ ] If the primary logo doesn’t scale well, you’ve adapted it using the brand’s social media avatar or favicon while maintaining the essence of the original logo.  
    - [ ] The icon is provided in `.svg` format.  
 - [ ] **Theme Testing:** You've tested the button against both light and dark themes:  
-   - [ ] Manually swapped `theme-auto.css` with `theme-light.css` and `theme-dark.css` in `index.html` to check contrast or used [LittleLink Button Builder](https://builder.littlelink.io) contrast checker.
+   - [ ] Manually switched the `<html>` class in `index.html` between `theme-light` and `theme-dark` to check contrast or used [LittleLink Button Builder](https://builder.littlelink.io) contrast checker.
    - [ ] Added a `#000000`/`#FFFFFF` stroke if necessary to improve contrast and accessibility. [LittleLink Button Builder](https://builder.littlelink.io) will automatically recommend when to add a stroke.  
 - [ ] **Accessibility Compliance:** The button's background and text colors meet visual accessibility standards (unless it contradicts brand guidelines).  
 - [ ] **Alphabetical Order:** Your contribution is alphabetically organized in `brands.css` and `index.html`.  

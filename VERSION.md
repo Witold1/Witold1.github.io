@@ -1,6 +1,15 @@
 # LittleLink Version History
 
-## Current Version: v3.10.0
+## Current Version: v3.11.0
+
+### v3.11.0 - 07/28/2026
+- Google icon refresh (2025/2026 redesigns): new buttons for Google, Google Calendar, Google Chat, Google Docs, Google Forms, Gmail, Google Meet, Google Photos, Google Sheets, and Google Slides; updated the Google Drive icon. Added a dedicated `.button-yt-music` class for YouTube Music.
+- Accessibility & markup: removed `role="button"` from link buttons, converted the button stack to `<nav aria-label="Links">`, wrapped page content in `<main>`, fixed the canonical tag (was an invalid `<meta>`), removed the obsolete keywords meta, made the favicon path relative, and added `theme-color` metas plus a fill-in Open Graph/Twitter block.
+- Performance: preload hints for the three above-the-fold font weights, explicit dimensions and `fetchpriority` on the avatar, and placeholder avatars re-exported at true 128px/256px.
+- CSS cleanup: removed the duplicated legacy typography block in `style.css`, implemented the documented `theme-light` class, and simplified `@font-face` to woff2-only (deleting ~1.2 MB of legacy .eot/.svg/.ttf/.woff files).
+- Icons: fixed missing `viewBox` on both Bluesky icons (they rendered clipped) and optimized several oversized icons; removed stale unused icons and `google-podcasts.svg` (service discontinued).
+- Deployment: moved `.dockerignore` to the repo root so Docker actually applies it, and added `.assetsignore` so Cloudflare deploys stop serving repo metadata like `.git/`.
+- CI: the contrast check now catches edits to existing buttons and handles hyphenated class names.
 
 ### v3.10.0 - 01/27/2026
 - Added quick deploy files for Cloudflare & DigitalOcean.

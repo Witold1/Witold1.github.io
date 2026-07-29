@@ -18,14 +18,14 @@ LittleLink offers `auto`, `light`, and `dark` themes right out of the box. If th
 
 ![Performance](https://cdn.cottle.cloud/GitHub/LittleLink/ranking.gif)
 
-LittleLink epitomizes simplicity and minimalism. When evaluating the [LittleLink sample page](https://littlelink.io/sample/seth) (which mirrors a typical LittleLink setup for an individual) through tools such as [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-littlelink-io-sample-seth/17ex80ryq4?form_factor=mobile), showcases LittleLink's excellence with 100/100 in Performance, Accessibility, Best Practices, and SEO. My initial vision for LittleLink was to craft it from the fundamentals. LittleLink leverages it's own vanilla `css` to remove the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity.
+LittleLink epitomizes simplicity and minimalism. When evaluating the [LittleLink sample page](https://littlelink.io/sample/seth) (which mirrors a typical LittleLink setup for an individual) through tools such as [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-littlelink-io-sample-seth/17ex80ryq4?form_factor=mobile), showcases LittleLink's excellence with 100/100 in Performance, Accessibility, Best Practices, and SEO. My initial vision for LittleLink was to craft it from the fundamentals. LittleLink leverages its own vanilla `css` to remove the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity.
 
 ---
 ### ☁️ Deploy
 
 ![Publish](https://cdn.cottle.cloud/GitHub/LittleLink/test/css/deploy.gif)
 
-No need for gulp, npm, or anything else to make LittleLink work—it uses the bare essentials. You can automatically fork and deploy LittleLink with [Cloudflare](https://workers.cloudflare.com/), [DigitalOcean](https://www.digitalocean.com/products/app-platform), [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [Amplify](https://aws.amazon.com/amplify) using the buttons below. LittleLink is also easy to host through [GitHub Pages](https://pages.github.com/) or on your home lab server, CDN, or other frontend hosting services. To edit, all you need is a little basic HTML knowledge to add a link to the exisiting buttons or you can create your own. See our [adding custom buttons to your own fork wiki](https://github.com/sethcottle/littlelink/wiki/Adding-custom-buttons-to-your-own-fork). It's simple, promise. 🤞
+No need for gulp, npm, or anything else to make LittleLink work—it uses the bare essentials. You can automatically fork and deploy LittleLink with [Cloudflare](https://workers.cloudflare.com/), [DigitalOcean](https://www.digitalocean.com/products/app-platform), [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [Amplify](https://aws.amazon.com/amplify) using the buttons below. LittleLink is also easy to host through [GitHub Pages](https://pages.github.com/) or on your home lab server, CDN, or other frontend hosting services. To edit, all you need is a little basic HTML knowledge to add a link to the existing buttons or you can create your own. See our [adding custom buttons to your own fork wiki](https://github.com/sethcottle/littlelink/wiki/Adding-custom-buttons-to-your-own-fork). It's simple, promise. 🤞
 
 ---
 ##### One-Click Deployments
@@ -118,7 +118,7 @@ To help build a more privacy focused product, we recommend using [Fathom Analyti
 
 ---
 ### 🐳 Docker Support
-LittleLink includes Docker support for easy deployment and development. All Docker-related files are located in the `docker/` directory.
+LittleLink includes Docker support for easy deployment and development. All Docker-related files are located in the `docker/` directory, with the build's `.dockerignore` at the repo root so Docker applies it.
 
 To run LittleLink using Docker:
 
