@@ -1,0 +1,116 @@
+/*
+ * Polygon visual theme for LittleLink
+ * Adapted from LinkStackOrg/polygon (GPLv3)
+ * https://github.com/LinkStackOrg/polygon
+ * Interactive particles via tsParticles (MIT)
+ * https://github.com/matteobruni/tsparticles
+ */
+
+html.theme-polygon {
+  color-scheme: dark;
+  --polygon-bg: #20193b;
+  --polygon-bg2: #050608;
+  --polygon-accent: #ffffff;
+}
+
+html.theme-polygon body {
+  background: radial-gradient(ellipse at bottom, var(--polygon-bg) 0%, var(--polygon-bg2) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html.theme-polygon a:not(.button) {
+  color: #ffffff;
+}
+
+html.theme-polygon a:not(.button):hover {
+  color: #cfd8e3;
+}
+
+html.theme-polygon .container,
+html.theme-polygon .container-left {
+  position: relative;
+  z-index: 1;
+}
+
+html.theme-polygon h1,
+html.theme-polygon h2,
+html.theme-polygon h3,
+html.theme-polygon .container p,
+html.theme-polygon .container-left p,
+html.theme-polygon footer,
+html.theme-polygon li {
+  color: #ffffff;
+}
+
+html.theme-polygon .theme-fx--polygon {
+  display: block;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+html.theme-polygon .theme-fx--polygon #polygon-particles,
+html.theme-polygon .theme-fx--polygon canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+html.theme-polygon .avatar--rounded {
+  border: 2px solid #ffffff;
+}
+
+/* Outline buttons matching Galaxy / upstream Polygon */
+html.theme-polygon a.button {
+  --button-text: #ffffff;
+  --button-background: transparent;
+  --button-border: 2px solid #ffffff;
+  position: relative;
+  color: #ffffff;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease, filter 0.2s ease, transform 0.1s ease;
+  filter: none;
+  transform: none;
+}
+
+@media (hover: hover) {
+  html.theme-polygon a.button:hover {
+    --button-text: #223344;
+    color: #223344;
+    background-color: #ffffff;
+    filter: none;
+    transform: scale(1.02);
+  }
+
+  html.theme-polygon a.button:hover .icon {
+    filter: invert(1);
+  }
+}
+
+html.theme-polygon a.button:focus-visible,
+html.theme-polygon a.button:active {
+  --button-text: #223344;
+  color: #223344;
+  background-color: #ffffff;
+  filter: none;
+}
+
+html.theme-polygon a.button:focus-visible .icon,
+html.theme-polygon a.button:active .icon {
+  filter: invert(1);
+}
+
+html.theme-polygon a.button .icon {
+  filter: none;
+}

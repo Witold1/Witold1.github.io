@@ -1,0 +1,98 @@
+/*
+ * Theme switcher chrome + effect visibility
+ */
+
+.theme-fx {
+  display: none;
+}
+
+.theme-picker {
+  position: fixed;
+  z-index: 100;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.75rem;
+  background: rgba(18, 18, 18, 0.72);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  color: #f2f2f2;
+}
+
+.theme-picker label {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.theme-picker select {
+  margin: 0;
+  min-height: 2rem;
+  padding: 0.3rem 1.75rem 0.3rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23f2f2f2' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
+  background-size: 0.7rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.theme-picker select:hover,
+.theme-picker select:focus-visible {
+  border-color: rgba(255, 255, 255, 0.55);
+  outline: none;
+}
+
+.theme-picker select option {
+  color: #121212;
+  background: #fff;
+}
+
+html.theme-winter .theme-picker {
+  background: rgba(255, 255, 255, 0.78);
+  color: #1f365c;
+}
+
+html.theme-winter .theme-picker select {
+  border-color: rgba(31, 54, 92, 0.35);
+  background-color: rgba(255, 255, 255, 0.65);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231f365c' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  color: #1f365c;
+}
+
+html.theme-winter .theme-picker select:hover,
+html.theme-winter .theme-picker select:focus-visible {
+  border-color: rgba(31, 54, 92, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.theme-stargazer .object1,
+  html.theme-stargazer .object1:before,
+  html.theme-stargazer .object1:after,
+  html.theme-winter .parallax-background,
+  html.theme-winter .parallax-background:before,
+  html.theme-winter .parallax-background:after,
+  html.theme-galaxy .galaxy-layer--1,
+  html.theme-galaxy .galaxy-layer--1:after,
+  html.theme-galaxy .galaxy-layer--2,
+  html.theme-galaxy .galaxy-layer--2:after,
+  html.theme-galaxy .galaxy-layer--3,
+  html.theme-galaxy .galaxy-layer--3:after {
+    animation: none !important;
+  }
+}
